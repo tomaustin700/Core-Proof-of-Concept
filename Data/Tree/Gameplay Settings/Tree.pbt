@@ -67,7 +67,7 @@ Objects {
         }
         Overrides {
           Name: "PlayerJumpVelocity"
-          Float: 600
+          Float: 800
         }
       }
     }
@@ -171,7 +171,7 @@ Objects {
     RespawnSettings {
       RespawnDelay: 1000
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:none"
+        Value: "mc:erespawnmode:atclosestspawnpoint"
       }
     }
   }
