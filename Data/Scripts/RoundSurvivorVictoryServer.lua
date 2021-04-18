@@ -39,7 +39,6 @@ function WinBeginOverlap(trigger, other)
         if other:IsA("Player") then
             winner = other
             Events.Broadcast("PlayerVictory", winner)
-            -- winner:SetVisibility(false)
             Task.Wait(30)
             ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
         end
