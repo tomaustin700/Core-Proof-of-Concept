@@ -13,69 +13,52 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
-
---[[
+--]] --[[
 This component ends the round when either a single team or single player remain (depending on the "ByTeam" property). It
 also broadcasts the following events (server only):
 
 PlayerVictory(Player winner)
 TeamVictory(int winningTeam)
 TieVictory()
---]]
-
--- Internal custom properties
+--]] -- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local WIN_TRIGGER = script:GetCustomProperty("WinTrigger"):WaitForObject()
 local winner = nil
+local completedPlayers = {}
 
 -- User exposed properties
 local BY_TEAM = COMPONENT_ROOT:GetCustomProperty("ByTeam")
 
 function WinBeginOverlap(trigger, other)
-	
-	if winner == nil then
-	    if other:IsA("Player") then
-	        winner = other
-			Events.Broadcast("PlayerVictory", winner)
-			--winner:SetVisibility(false)
-			Task.Wait(30)
-			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
-	    end
-	end
+
+    other:Die()
+    table.insert(completedPlayers, other)
+
+    if winner == nil then
+        if other:IsA("Player") then
+            winner = other
+            Events.Broadcast("PlayerVictory", winner)
+            -- winner:SetVisibility(false)
+            Task.Wait(30)
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+        end
+    end
 end
 
 -- nil Tick(float)
 -- Watches the end condition of only one team or one player alive
 function Tick(deltaTime)
-	if not ABGS.IsGameStateManagerRegistered() then
-		return
-	end
+    if not ABGS.IsGameStateManagerRegistered() then return end
 
-	--if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
-			--local winner = nil
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
 
-			--for _, player in pairs(Game.GetPlayers()) do
-				--if not player.isDead then
-					--if winner then
-						--return		-- Two players are alive
-					--else
-						--winner = player
-					--end
-				--end
-			--end
+        if #Game.GetPlayers() == #completedPlayers then
+        	completedPlayers = {}
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+        end
 
-			--if winner then
-				--Events.Broadcast("PlayerVictory", winner)
-			--else
-				--Events.Broadcast("TieVictory")
-			--end
-
-			-- We didn't exit early, so at most one player is alive
-			--ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
-		
-	--end
+    end
 end
 
 -- Connect trigger overlap event
