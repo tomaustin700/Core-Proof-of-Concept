@@ -18,6 +18,7 @@ Objects {
   ChildIds: 14037771509087251097
   ChildIds: 4271671823915000242
   ChildIds: 14239520690379884257
+  ChildIds: 4333704250574148718
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +31,46 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4333704250574148718
+  Name: "Main Street Building - Roof Template"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3200078150229013768
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Main Street Building - Roof Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1000
+            Y: -6500
+            Z: 2200
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11585343490748121356
+    }
   }
 }
 Objects {

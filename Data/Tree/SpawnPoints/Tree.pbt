@@ -1,6 +1,39 @@
 Name: "SpawnPoints"
 RootId: 10132089353512407308
 Objects {
+  Id: 9503567556418185465
+  Name: "Lobby Spawn"
+  Transform {
+    Location {
+      X: 1950
+      Y: -7400
+      Z: 2250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10132089353512407308
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
   Id: 13717019989827260654
   Name: "NearEnd"
   Transform {
@@ -19,6 +52,7 @@ Objects {
     }
   }
   ParentId: 10132089353512407308
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -52,6 +86,9 @@ Objects {
     }
   }
   ParentId: 10132089353512407308
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -84,6 +121,7 @@ Objects {
     }
   }
   ParentId: 10132089353512407308
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
