@@ -37,6 +37,7 @@ Objects {
   Name: "Terrain"
   Transform {
     Location {
+      Z: 50
     }
     Rotation {
     }
@@ -47,6 +48,8 @@ Objects {
     }
   }
   ParentId: 8568336417442047963
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -58,7 +61,7 @@ Objects {
   }
   Terrain {
     Material {
-      Id: 841534158063459245
+      Id: 14862163971916689170
     }
     VoxelSize: 100
     OctreeDepth: 5

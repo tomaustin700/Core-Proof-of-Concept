@@ -55,7 +55,7 @@ Objects {
         }
         Overrides {
           Name: "PlayerGravityScale"
-          Float: 1.6
+          Float: 1.9
         }
         Overrides {
           Name: "PlayerJumpMaxCount"
@@ -67,7 +67,11 @@ Objects {
         }
         Overrides {
           Name: "PlayerJumpVelocity"
-          Float: 800
+          Float: 600
+        }
+        Overrides {
+          Name: "PlayerFlipOnMultiJump"
+          Bool: true
         }
       }
     }

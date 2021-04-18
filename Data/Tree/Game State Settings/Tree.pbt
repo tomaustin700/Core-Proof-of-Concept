@@ -96,9 +96,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13209380357897052551
+  Id: 5056591131134987722
   Name: "Lobby Start Respawn Players"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -106,6 +110,21 @@ Objects {
     }
   }
   ParentId: 9679182277709680139
+  ChildIds: 10794068986492945990
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Period"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "cs:RespawnOnRoundStart"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Period:tooltip"
+      String: "Period over which players are respawned to avoid a spike of network traffic."
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -115,37 +134,71 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13354720253605587128
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Lobby Start Respawn Players"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 5056591131134987722
+    SubobjectId: 13354720253605587128
+    InstanceId: 13209380357897052551
+    TemplateId: 714839591765825575
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 10794068986492945990
+  Name: "LobbyStartRespawnPlayersServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5056591131134987722
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
       }
     }
-    TemplateAsset {
-      Id: 714839591765825575
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 5056591131134987722
+      }
     }
+    Overrides {
+      Name: "cs:StartSpawn"
+      ObjectReference {
+        SelfId: 16680154865371612401
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4596364718294812401
+    }
+  }
+  InstanceHistory {
+    SelfId: 10794068986492945990
+    SubobjectId: 7689294975764800308
+    InstanceId: 13209380357897052551
+    TemplateId: 714839591765825575
   }
 }
 Objects {

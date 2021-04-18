@@ -28,18 +28,22 @@ TieVictory()
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local WIN_TRIGGER = script:GetCustomProperty("WinTrigger"):WaitForObject()
+local winner = nil
 
 -- User exposed properties
 local BY_TEAM = COMPONENT_ROOT:GetCustomProperty("ByTeam")
 
 function WinBeginOverlap(trigger, other)
-	local winner = nil
 	
-    if other:IsA("Player") then
-        winner = other
-		Events.Broadcast("PlayerVictory", winner)
-		ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
-    end
+	if winner == nil then
+	    if other:IsA("Player") then
+	        winner = other
+			Events.Broadcast("PlayerVictory", winner)
+			--winner:SetVisibility(false)
+			Task.Wait(30)
+			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+	    end
+	end
 end
 
 -- nil Tick(float)

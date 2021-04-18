@@ -18,6 +18,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 -- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+local STARTSPAWN = script:GetCustomProperty("StartSpawn"):WaitForObject()
 
 -- User exposed properties
 local PERIOD = COMPONENT_ROOT:GetCustomProperty("Period")
@@ -32,11 +33,14 @@ end
 -- nil RespawnPlayers()
 -- Respawns players with a slight stagger
 function RespawnPlayers()
+	World.FindObjectByName("Start").isEnabled = true
+	World.FindObjectByName("NearEnd").isEnabled = true
+	World.FindObjectByName("Mid").isEnabled = true
+	World.FindObjectByName("Lobby Spawn").isEnabled = false
 	local numPlayers = #Game.GetPlayers()
 	local perPlayerDelay = PERIOD / numPlayers
 	for _, player in pairs(Game.GetPlayers()) do
-		player:Respawn()
-
+	player:Respawn({ position = STARTSPAWN:GetPosition(),  rotation = STARTSPAWN:GetRotation()})
 		Task.Wait(perPlayerDelay)
 	end
 end

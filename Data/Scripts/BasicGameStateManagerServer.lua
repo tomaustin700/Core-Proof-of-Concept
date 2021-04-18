@@ -139,4 +139,9 @@ end
 -- Initialize
 SetGameState(ABGS.GAME_STATE_LOBBY)
 
+-- Disable all spawns apart from lobby spawn
+World.FindObjectByName("Start").isEnabled = false
+World.FindObjectByName("NearEnd").isEnabled = false
+World.FindObjectByName("Mid").isEnabled = false
+
 ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState)
