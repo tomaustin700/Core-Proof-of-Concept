@@ -21,6 +21,7 @@ PlayerVictory(Player winner)
 TeamVictory(int winningTeam)
 TieVictory()
 --]] -- Internal custom properties
+
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local WIN_TRIGGER = script:GetCustomProperty("WinTrigger"):WaitForObject()
@@ -32,15 +33,17 @@ local BY_TEAM = COMPONENT_ROOT:GetCustomProperty("ByTeam")
 
 function WinBeginOverlap(trigger, other)
 
-    other:Die()
-    table.insert(completedPlayers, other)
+    if other:IsA("Player") then
+        other:Die()
+        table.insert(completedPlayers, other)
 
-    if winner == nil then
-        if other:IsA("Player") then
+        if winner == nil then
+
             winner = other
             Events.Broadcast("PlayerVictory", winner)
             Task.Wait(30)
             ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+
         end
     end
 end
@@ -48,12 +51,14 @@ end
 -- nil Tick(float)
 -- Watches the end condition of only one team or one player alive
 function Tick(deltaTime)
-    if not ABGS.IsGameStateManagerRegistered() then return end
+    if not ABGS.IsGameStateManagerRegistered() then
+        return
+    end
 
     if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
 
         if #Game.GetPlayers() == #completedPlayers then
-        	completedPlayers = {}
+            completedPlayers = {}
             ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
         end
 

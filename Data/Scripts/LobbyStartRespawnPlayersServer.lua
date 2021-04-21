@@ -33,7 +33,7 @@ end
 -- Respawns players with a slight stagger
 
 function RespawnPlayers()
-    
+    World.FindObjectByName("Lobby").visibility = Visibility.FORCE_OFF
     World.FindObjectByName("Start").isEnabled = true
     World.FindObjectByName("NearEnd").isEnabled = true
     World.FindObjectByName("Mid").isEnabled = true
