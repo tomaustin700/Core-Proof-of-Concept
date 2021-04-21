@@ -5,9 +5,9 @@ Objects {
   Name: "Lobby Spawn"
   Transform {
     Location {
-      X: 1950
-      Y: -7400
-      Z: 2250
+      X: 9050
+      Y: -6600
+      Z: 10050
     }
     Rotation {
     }
