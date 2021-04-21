@@ -13,9 +13,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
+--]] -- Internal custom properties
 
--- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local STARTSPAWN = script:GetCustomProperty("StartSpawn"):WaitForObject()
@@ -32,31 +31,49 @@ end
 
 -- nil RespawnPlayers()
 -- Respawns players with a slight stagger
+
 function RespawnPlayers()
-	World.FindObjectByName("Start").isEnabled = true
-	World.FindObjectByName("NearEnd").isEnabled = true
-	World.FindObjectByName("Mid").isEnabled = true
-	World.FindObjectByName("Lobby Spawn").isEnabled = false
-	local numPlayers = #Game.GetPlayers()
-	local perPlayerDelay = PERIOD / numPlayers
-	for _, player in pairs(Game.GetPlayers()) do
-	player:Respawn({ position = STARTSPAWN:GetPosition(),  rotation = STARTSPAWN:GetRotation()})
-		Task.Wait(perPlayerDelay)
-	end
+    
+    World.FindObjectByName("Start").isEnabled = true
+    World.FindObjectByName("NearEnd").isEnabled = true
+    World.FindObjectByName("Mid").isEnabled = true
+    World.FindObjectByName("Lobby Spawn").isEnabled = false
+    local numPlayers = #Game.GetPlayers()
+    local perPlayerDelay = PERIOD / numPlayers
+    for _, player in pairs(Game.GetPlayers()) do
+        player:Respawn({
+            position = STARTSPAWN:GetPosition(),
+            rotation = STARTSPAWN:GetRotation()
+        })
+        Task.Wait(perPlayerDelay)
+        player.maxWalkSpeed = 0
+        
+    end
+
+end
+
+function StartRound()
+    for _, player in pairs(Game.GetPlayers()) do
+        
+        player.maxWalkSpeed = 1000
+    end
 end
 
 -- nil OnGameStateChanged(int, int, bool, float)
 -- Handles respawning players when the game state switches to or from lobby state
 function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
-	if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) then
-		RespawnPlayers()
-	end
+    if (newState == ABGS.GAME_STATE_ROUND and oldState == ABGS.GAME_STATE_ROUND_START) then
+        StartRound()
+    end
 
-	if RESPAWN_ON_ROUND_START and
-	newState ~= ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_LOBBY then
-		RespawnPlayers()
-	end
+    if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) then
+        RespawnPlayers()
+    end
+
+    if RESPAWN_ON_ROUND_START and newState ~= ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_LOBBY then
+        RespawnPlayers()
+    end
 end
 
 -- Initialize

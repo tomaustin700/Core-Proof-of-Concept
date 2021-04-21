@@ -76,6 +76,9 @@ function SetGameState(newState)
 	elseif newState == ABGS.GAME_STATE_ROUND_END then
 		stateHasduration = ROUND_END_HAS_DURATION
 		stateDuration = ROUND_END_DURATION
+	elseif newState == ABGS.GAME_STATE_ROUND_START then
+		stateHasduration = true
+		stateDuration = 10
 	else
 		error("Tried to set game state to unknown state %d", newState)
 	end
@@ -118,6 +121,17 @@ function SetTimeRemainingInState(remainingTime)
 	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
 end
 
+function SetRoundStartTime(remainingTime)
+	local stateEndTime = time() + remainingTime
+	local currentState = GetGameState()
+
+	-- We broadcast the event because the time changed, even though we are still in the same state
+	Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
+	Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
+
+	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
+end
+
 -- nil Tick(float)
 -- Handles condition when state timer ran out
 function Tick(deltaTime)
@@ -125,6 +139,8 @@ function Tick(deltaTime)
 		local previousState = GetGameState()
 		local nextState
 		if previousState == ABGS.GAME_STATE_LOBBY then
+			nextState = ABGS.GAME_STATE_ROUND_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_START then
 			nextState = ABGS.GAME_STATE_ROUND
 		elseif previousState == ABGS.GAME_STATE_ROUND then
 			nextState = ABGS.GAME_STATE_ROUND_END
@@ -144,4 +160,4 @@ World.FindObjectByName("Start").isEnabled = false
 World.FindObjectByName("NearEnd").isEnabled = false
 World.FindObjectByName("Mid").isEnabled = false
 
-ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState)
+ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState, SetRoundStartTime)

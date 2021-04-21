@@ -26,8 +26,6 @@ BannerMessage(String message, float duration)
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
-local ELIMINATION_PANEL = script:GetCustomProperty("EliminationPanel"):WaitForObject()
-local ELIMINATION_TEXT = script:GetCustomProperty("EliminationText"):WaitForObject()
 
 -- User exposed properties
 local DEFAULT_DURATION = COMPONENT_ROOT:GetCustomProperty("DefaultDuration")
@@ -40,9 +38,6 @@ end
 
 -- Variables
 local messageEndTime = 0.0
-local eliminationMessageEndTime = 0.0
-local startingEliminationText = ELIMINATION_TEXT.text
-
 -- nil OnBannerMessageEvent(string, <float>)
 -- Handles a client side banner message event
 function OnBannerMessageEvent(message, duration)
@@ -56,22 +51,6 @@ function OnBannerMessageEvent(message, duration)
     TEXT_BOX.text = message
 end
 
--- nil OnAddKillFeedKill(killerPlayer, killedPlayer, abilityName)
--- Handles network message event when a player kills another player
-function OnAddKillFeedKill(killerPlayer, killedPlayer, abilityName)
-	if Game:GetLocalPlayer() ~= killerPlayer then
-		return
-	end
-	
-	ELIMINATION_PANEL.visibility = Visibility.INHERIT
-	ELIMINATION_TEXT.text = string.gsub(startingEliminationText, "{name}", killedPlayer.name)
-	
-	if duration then
-		eliminationMessageEndTime = time() + duration
-	else
-		eliminationMessageEndTime = time() + DEFAULT_DURATION
-	end
-end
 
 -- nil Tick(float)
 -- Hides the banner when the message has expired
@@ -79,13 +58,8 @@ function Tick(deltaTime)
     if time() > messageEndTime then
         PANEL.visibility = Visibility.FORCE_OFF
     end
-	
-	if time() > eliminationMessageEndTime then
-		ELIMINATION_PANEL.visibility = Visibility.FORCE_OFF
-	end
 end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
 Events.Connect("BannerMessage", OnBannerMessageEvent)
-Events.Connect("AddKillFeedKill_Internal", OnAddKillFeedKill)
