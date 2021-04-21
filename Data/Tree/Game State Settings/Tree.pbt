@@ -241,6 +241,10 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:CountdownTime"
+          Float: 10
+        }
       }
     }
     TemplateAsset {
@@ -353,7 +357,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RoundMessage"
-          String: "Eliminate the Enemies"
+          String: "Race to the end"
         }
       }
     }
