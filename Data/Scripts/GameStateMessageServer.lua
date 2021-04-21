@@ -13,14 +13,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
-
---[[
+--]] --[[
 This component tracks current game state and broadcasts banner messages (that can be seen with the Message Banner
 component)
---]]
+--]] -- Internal custom properties
 
--- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
@@ -39,6 +36,8 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
         if SHOW_LOBBY_MESSAGE then
             Events.BroadcastToAllPlayers("BannerMessage", LOBBY_MESSAGE)
         end
+    elseif newState == ABGS.GAME_STATE_ROUND_START and oldState ~= ABGS.GAME_STATE_ROUND_START then
+        Events.BroadcastToAllPlayers("BannerMessage", "Ready?")
     elseif newState == ABGS.GAME_STATE_ROUND and oldState ~= ABGS.GAME_STATE_ROUND then
         if SHOW_ROUND_MESSAGE then
             Events.BroadcastToAllPlayers("BannerMessage", ROUND_MESSAGE)

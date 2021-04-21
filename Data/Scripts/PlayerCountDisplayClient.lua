@@ -17,7 +17,6 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
-local ALIVE_COUNT_TEXT = script:GetCustomProperty("AliveCountText"):WaitForObject()
 local TOTAL_COUNT_TEXT = script:GetCustomProperty("TotalCountText"):WaitForObject()
 
 -- User exposed properties
@@ -41,7 +40,7 @@ end
 function Tick()
     local alivePlayerCount, totalPlayerCount = GetPlayerCounts()
 
-    ALIVE_COUNT_TEXT.text = tostring(alivePlayerCount)
+    
     TOTAL_COUNT_TEXT.text = tostring(totalPlayerCount)
 end
 
