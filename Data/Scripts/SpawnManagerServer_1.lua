@@ -29,51 +29,36 @@ if PERIOD < 0.0 then
     PERIOD = 0.0
 end
 
--- nil RespawnPlayers()
--- Respawns players with a slight stagger
-
-function RespawnPlayers()
-
-    local numPlayers = #Game.GetPlayers()
-    local perPlayerDelay = PERIOD / numPlayers
-    for _, player in pairs(Game.GetPlayers()) do
-        player:Respawn({
-            position = STARTSPAWN:GetPosition(),
-            rotation = STARTSPAWN:GetRotation()
-        })
-        Task.Wait(perPlayerDelay)
-        player.maxWalkSpeed = 0
-
-    end
-
-end
-
-function StartRound()
-    -- for _, player in pairs(Game.GetPlayers()) do
-
-    --     player.maxWalkSpeed = 1000
-    -- end
-end
 
 -- nil OnGameStateChanged(int, int, bool, float)
 -- Handles respawning players when the game state switches to or from lobby state
 function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
-    if (newState == ABGS.GAME_STATE_ROUND_1 and oldState == ABGS.GAME_STATE_ROUND_1_START) then
-        StartRound()
-    end
-
+    --Spawn players at L1 Start
     if (newState == ABGS.GAME_STATE_ROUND_1_START and oldState == ABGS.GAME_STATE_LOBBY) then
-        RespawnPlayers()
-    end
-    if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) then
-        -- RespawnPlayers()
+        local numPlayers = #Game.GetPlayers()
+        local perPlayerDelay = PERIOD / numPlayers
+        local start = World.FindObjectByName("1Start")
+        for _, player in pairs(Game.GetPlayers()) do
+            player:Respawn({
+                position = start:GetPosition(),
+                rotation = start:GetRotation()
+            })
+            Task.Wait(perPlayerDelay)
+            player.maxWalkSpeed = 0
+
+        end
     end
 
-    if RESPAWN_ON_ROUND_START and newState ~= ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_LOBBY then
-        -- RespawnPlayers()
+    --L1 started so unfreeze players
+    if (newState == ABGS.GAME_STATE_ROUND_1 and oldState == ABGS.GAME_STATE_ROUND_1_START) then
+        for _, player in pairs(Game.GetPlayers()) do
+            player.maxWalkSpeed = 1000
+        end
     end
+
+   
 end
 
 -- Initialize
- Events.Connect("GameStateChanged", OnGameStateChanged)
+Events.Connect("GameStateChanged", OnGameStateChanged)

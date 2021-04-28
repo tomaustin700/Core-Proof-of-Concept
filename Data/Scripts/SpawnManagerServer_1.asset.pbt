@@ -1,5 +1,5 @@
 Assets {
-  Id: 15682782457868925629
+  Id: 4596364718294812401
   Name: "SpawnManagerServer"
   PlatformAssetType: 3
   TextAsset {

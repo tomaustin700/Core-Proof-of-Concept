@@ -225,7 +225,7 @@ Objects {
 }
 Objects {
   Id: 5056591131134987722
-  Name: "Lobby Start Respawn Players"
+  Name: "Spawn Manager"
   Transform {
     Location {
     }
@@ -275,7 +275,7 @@ Objects {
 }
 Objects {
   Id: 10794068986492945990
-  Name: "LobbyStartRespawnPlayersServer"
+  Name: "SpawnManagerServer"
   Transform {
     Location {
     }

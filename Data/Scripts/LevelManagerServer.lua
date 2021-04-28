@@ -23,12 +23,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_ROUND_1) then
-        for _, player in pairs(Game.GetPlayers()) do
-            player.maxWalkSpeed = 1000
-        end
-
-    end
+    
 
 end
 
