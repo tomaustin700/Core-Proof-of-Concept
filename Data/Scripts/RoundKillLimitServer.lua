@@ -43,14 +43,14 @@ function Tick(deltaTime)
 		return
 	end
 
-	if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
+	if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1 then
 		local winner = nil
 
 		for _, player in pairs(Game.GetPlayers()) do
 			if player.kills >= KILL_LIMIT then
 				if winner then
 					Events.Broadcast("TieVictory")
-					ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+					ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
 					return
 				else
 					winner = player
@@ -60,7 +60,7 @@ function Tick(deltaTime)
 
 		if winner then
 			Events.Broadcast("PlayerVictory", winner)
-			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
 		end
 	end
 end

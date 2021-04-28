@@ -53,16 +53,16 @@ function Tick(deltaTime)
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_START  then
+        if currentState == ABGS.GAME_STATE_ROUND_1_START  then
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND and SHOW_DURING_ROUND then
+        if currentState == ABGS.GAME_STATE_ROUND_1 and SHOW_DURING_ROUND then
             STATE_NAME_TEXT.text = "Round"
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_END and SHOW_DURING_ROUND_END then
+        if currentState == ABGS.GAME_STATE_ROUND_1_END and SHOW_DURING_ROUND_END then
             STATE_NAME_TEXT.text = "End"
             UpdateTimeRemaining(remainingTime)
         end

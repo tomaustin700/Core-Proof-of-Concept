@@ -42,14 +42,14 @@ function Tick(deltaTime)
 		return
 	end
 
-	if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
+	if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1 then
 		local winningTeam = nil
 
 		for i = 0, 4 do
 			if Game.GetTeamScore(i) >= TEAM_SCORE_LIMIT then
 				if winningTeam then
 					Events.Broadcast("TieVictory")
-					ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+					ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
 					return
 				else
 					winningTeam = i
@@ -59,7 +59,7 @@ function Tick(deltaTime)
 
 		if winningTeam then
 			Events.Broadcast("TeamVictory", winningTeam)
-			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+			ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
 		end
 	end
 end

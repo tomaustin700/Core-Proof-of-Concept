@@ -1,9 +1,13 @@
 Name: "Game State Settings"
 RootId: 9679182277709680139
 Objects {
-  Id: 5584035972389845471
-  Name: "Round Survivor Victory"
+  Id: 9474335929114005652
+  Name: "Level Manager"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -11,35 +15,159 @@ Objects {
     }
   }
   ParentId: 9679182277709680139
+  ChildIds: 500422002957740461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8266501221334044612
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Round Survivor Victory"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 500422002957740461
+  Name: "LevelManagerServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9474335929114005652
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
       }
     }
-    TemplateAsset {
-      Id: 15406517448433874319
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9073805425153031123
     }
+  }
+}
+Objects {
+  Id: 15128781710814917861
+  Name: "Round Survivor Victory"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9679182277709680139
+  ChildIds: 5773794076396143626
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ByTeam"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ByTeam:tooltip"
+      String: "Unchecked, the round ends when only one player remains alive (or zero). Checked the round ends when only one team has living players."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 15128781710814917861
+    SubobjectId: 8266501221334044612
+    InstanceId: 5584035972389845471
+    TemplateId: 15406517448433874319
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 5773794076396143626
+  Name: "RoundSurvivorVictoryServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15128781710814917861
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 15128781710814917861
+      }
+    }
+    Overrides {
+      Name: "cs:WinTrigger"
+      ObjectReference {
+        SelfId: 16650158223419659758
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6636377056633664642
+    }
+  }
+  InstanceHistory {
+    SelfId: 5773794076396143626
+    SubobjectId: 17540424062460149547
+    InstanceId: 5584035972389845471
+    TemplateId: 15406517448433874319
   }
 }
 Objects {

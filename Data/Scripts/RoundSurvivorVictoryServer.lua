@@ -42,7 +42,7 @@ function WinBeginOverlap(trigger, other)
             winner = other
             Events.Broadcast("PlayerVictory", winner)
             Task.Wait(30)
-            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
 
         end
     end
@@ -55,11 +55,11 @@ function Tick(deltaTime)
         return
     end
 
-    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1 then
 
         if #Game.GetPlayers() == #completedPlayers then
             completedPlayers = {}
-            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
         end
 
     end

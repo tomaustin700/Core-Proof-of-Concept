@@ -70,13 +70,13 @@ function SetGameState(newState)
 	if newState == ABGS.GAME_STATE_LOBBY then
 		stateHasduration = LOBBY_HAS_DURATION
 		stateDuration = LOBBY_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND then
+	elseif newState == ABGS.GAME_STATE_ROUND_1 then
 		stateHasduration = ROUND_HAS_DURATION
 		stateDuration = ROUND_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND_END then
+	elseif newState == ABGS.GAME_STATE_ROUND_1_END then
 		stateHasduration = ROUND_END_HAS_DURATION
 		stateDuration = ROUND_END_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND_START then
+	elseif newState == ABGS.GAME_STATE_ROUND_1_START then
 		stateHasduration = true
 		stateDuration = 10
 	else
@@ -91,9 +91,9 @@ function SetGameState(newState)
 	local oldState = GetGameState()
 
 	-- Broadcast built-in round events
-	if oldState ~= ABGS.GAME_STATE_ROUND and newState == ABGS.GAME_STATE_ROUND then
+	if oldState ~= ABGS.GAME_STATE_ROUND_1 and newState == ABGS.GAME_STATE_ROUND_1 then
 		Game.StartRound()
-	elseif oldState == ABGS.GAME_STATE_ROUND and newState ~= ABGS.GAME_STATE_ROUND then
+	elseif oldState == ABGS.GAME_STATE_ROUND_1 and newState ~= ABGS.GAME_STATE_ROUND_1 then
 		Game.EndRound()
 	end
 
@@ -139,12 +139,12 @@ function Tick(deltaTime)
 		local previousState = GetGameState()
 		local nextState
 		if previousState == ABGS.GAME_STATE_LOBBY then
-			nextState = ABGS.GAME_STATE_ROUND_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_START then
-			nextState = ABGS.GAME_STATE_ROUND
-		elseif previousState == ABGS.GAME_STATE_ROUND then
-			nextState = ABGS.GAME_STATE_ROUND_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_END then
+			nextState = ABGS.GAME_STATE_ROUND_1_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_1_START then
+			nextState = ABGS.GAME_STATE_ROUND_1
+		elseif previousState == ABGS.GAME_STATE_ROUND_1 then
+			nextState = ABGS.GAME_STATE_ROUND_1_END
+		elseif previousState == ABGS.GAME_STATE_ROUND_1_END then
 			nextState = ABGS.GAME_STATE_LOBBY
 		end
 
@@ -156,8 +156,10 @@ end
 SetGameState(ABGS.GAME_STATE_LOBBY)
 
 -- Disable all spawns apart from lobby spawn
-World.FindObjectByName("Start").isEnabled = false
-World.FindObjectByName("NearEnd").isEnabled = false
-World.FindObjectByName("Mid").isEnabled = false
+for _, spawn in pairs(World.FindObjectsByType("PlayerStart")) do
+	spawn.isEnabled = false
+end
+
+World.FindObjectByName("LobbySpawn").isEnabled = true
 
 ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState, SetRoundStartTime)

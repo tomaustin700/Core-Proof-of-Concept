@@ -33,11 +33,7 @@ end
 -- Respawns players with a slight stagger
 
 function RespawnPlayers()
-    World.FindObjectByName("Lobby").visibility = Visibility.FORCE_OFF
-    World.FindObjectByName("Start").isEnabled = true
-    World.FindObjectByName("NearEnd").isEnabled = true
-    World.FindObjectByName("Mid").isEnabled = true
-    World.FindObjectByName("Lobby Spawn").isEnabled = false
+
     local numPlayers = #Game.GetPlayers()
     local perPlayerDelay = PERIOD / numPlayers
     for _, player in pairs(Game.GetPlayers()) do
@@ -47,34 +43,37 @@ function RespawnPlayers()
         })
         Task.Wait(perPlayerDelay)
         player.maxWalkSpeed = 0
-        
+
     end
 
 end
 
 function StartRound()
-    for _, player in pairs(Game.GetPlayers()) do
-        
-        player.maxWalkSpeed = 1000
-    end
+    -- for _, player in pairs(Game.GetPlayers()) do
+
+    --     player.maxWalkSpeed = 1000
+    -- end
 end
 
 -- nil OnGameStateChanged(int, int, bool, float)
 -- Handles respawning players when the game state switches to or from lobby state
 function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
-    if (newState == ABGS.GAME_STATE_ROUND and oldState == ABGS.GAME_STATE_ROUND_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_1 and oldState == ABGS.GAME_STATE_ROUND_1_START) then
         StartRound()
     end
 
-    if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) then
+    if (newState == ABGS.GAME_STATE_ROUND_1_START and oldState == ABGS.GAME_STATE_LOBBY) then
         RespawnPlayers()
+    end
+    if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) then
+        -- RespawnPlayers()
     end
 
     if RESPAWN_ON_ROUND_START and newState ~= ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_LOBBY then
-        RespawnPlayers()
+        -- RespawnPlayers()
     end
 end
 
 -- Initialize
-Events.Connect("GameStateChanged", OnGameStateChanged)
+ Events.Connect("GameStateChanged", OnGameStateChanged)

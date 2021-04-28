@@ -2,7 +2,7 @@ Name: "SpawnPoints"
 RootId: 10132089353512407308
 Objects {
   Id: 9503567556418185465
-  Name: "Lobby Spawn"
+  Name: "LobbySpawn"
   Transform {
     Location {
       X: 9050
@@ -35,7 +35,7 @@ Objects {
 }
 Objects {
   Id: 13717019989827260654
-  Name: "NearEnd"
+  Name: "1End"
   Transform {
     Location {
       X: 6550
@@ -69,7 +69,7 @@ Objects {
 }
 Objects {
   Id: 16258598664045697348
-  Name: "Mid"
+  Name: "1Mid"
   Transform {
     Location {
       X: -1400
@@ -105,7 +105,7 @@ Objects {
 }
 Objects {
   Id: 16680154865371612401
-  Name: "Start"
+  Name: "1Start"
   Transform {
     Location {
       X: 9500
