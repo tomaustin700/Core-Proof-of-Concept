@@ -17,7 +17,6 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
-local STARTSPAWN = script:GetCustomProperty("StartSpawn"):WaitForObject()
 
 -- User exposed properties
 local PERIOD = COMPONENT_ROOT:GetCustomProperty("Period")

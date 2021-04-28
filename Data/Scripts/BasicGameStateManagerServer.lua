@@ -145,7 +145,31 @@ function Tick(deltaTime)
 		elseif previousState == ABGS.GAME_STATE_ROUND_1 then
 			nextState = ABGS.GAME_STATE_ROUND_1_END
 		elseif previousState == ABGS.GAME_STATE_ROUND_1_END then
-			nextState = ABGS.GAME_STATE_LOBBY
+			nextState = ABGS.GAME_STATE_ROUND_2_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_2_START then
+			nextState = ABGS.GAME_STATE_ROUND_2
+		elseif previousState == ABGS.GAME_STATE_ROUND_2 then
+			nextState = ABGS.GAME_STATE_ROUND_2_END
+		elseif previousState == ABGS.GAME_STATE_ROUND_2_END then
+			nextState = ABGS.GAME_STATE_ROUND_3_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_3_START then
+			nextState = ABGS.GAME_STATE_ROUND_3
+		elseif previousState == ABGS.GAME_STATE_ROUND_3 then
+			nextState = ABGS.GAME_STATE_ROUND_3_END
+		elseif previousState == ABGS.GAME_STATE_ROUND_3_END then
+			nextState = ABGS.GAME_STATE_ROUND_4_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_4_START then
+			nextState = ABGS.GAME_STATE_ROUND_4
+		elseif previousState == ABGS.GAME_STATE_ROUND_4 then
+			nextState = ABGS.GAME_STATE_ROUND_4_END
+		elseif previousState == ABGS.GAME_STATE_ROUND_4_END then
+			nextState = ABGS.GAME_STATE_ROUND_5_START
+		elseif previousState == ABGS.GAME_STATE_ROUND_5_START then
+			nextState = ABGS.GAME_STATE_ROUND_5
+		elseif previousState == ABGS.GAME_STATE_ROUND_5 then
+			nextState = ABGS.GAME_STATE_ROUND_5_END
+		elseif previousState == ABGS.GAME_STATE_ROUND_5_END then
+			nextState = ABGS.GAME_STATE_END
 		end
 
 		SetGameState(nextState)
