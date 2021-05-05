@@ -1,19 +1,20 @@
 Name: "Misc"
 RootId: 10264328964602095615
 Objects {
-  Id: 9984253331777009407
-  Name: "Urban Plank Debris 01"
+  Id: 5240559338544846561
+  Name: "Modern Stairs 01 - Straight 4m Template"
   Transform {
     Location {
-      X: -13250
-      Y: -8600
-      Z: 2600
+      X: -1750
+      Y: 1600
+      Z: 2850
     }
     Rotation {
+      Yaw: -89.9999924
     }
     Scale {
-      X: 15
-      Y: 2
+      X: 1
+      Y: 1
       Z: 1
     }
   }
@@ -24,40 +25,72 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3584007417411989222
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1906366709119602474
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 190
+            Z: 50
+          }
+        }
       }
-      BoundsScale: 1
+    }
+    ParameterOverrideMap {
+      key: 7865527436468043526
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Modern Stairs 01 - Straight 4m Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9100
+            Y: -8550
+            Z: 2600
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15184245716144049340
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8146957584482921712
     }
   }
 }
 Objects {
-  Id: 4593777963373424495
-  Name: "Urban Plank Debris 01"
+  Id: 9062909246142895959
+  Name: "Modern Stairs 01 - Straight 4m Template"
   Transform {
-    Location {
-      X: -13250
-      Y: -8700
-      Z: 2600
-    }
-    Rotation {
-    }
     Scale {
-      X: 15
-      Y: 2
+      X: 1
+      Y: 1
       Z: 1
     }
   }
@@ -68,23 +101,50 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3584007417411989222
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7865527436468043526
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Modern Stairs 01 - Straight 4m Template"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9500
+            Y: -8550
+            Z: 2900
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
-      BoundsScale: 1
+    }
+    ParameterOverrideMap {
+      key: 15184245716144049340
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8146957584482921712
     }
   }
 }
