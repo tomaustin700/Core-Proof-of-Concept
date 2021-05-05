@@ -13,6 +13,7 @@ function ScoreManager.PlayerFirst(player)
         
     end
 
+
 end
 
 function ScoreManager.PlayerSecond(player)
@@ -60,11 +61,15 @@ function ScoreManager.GetOverallWinner()
         table.insert(scoreOrdered, k)
     end
 
+    local winner = nil
     if scoreOrdered[0] ~= nil then
-        print(scoreOrdered[0])
+        winner = scoreOrdered[0]
     else
-        print (scoreOrdered[1])
+        winner = scoreOrdered[1]
     end
+
+    Events.Broadcast("OverallVictory", winner)
+
  
 end
 

@@ -23,7 +23,11 @@ component)
 -- nil OnPlayerVictory(Player)
 -- Announces the winning player
 function OnPlayerVictory(player)
-	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s wins!", player.name))
+	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s wins round!", player.name))
+end
+
+function OnOverallVictory(player)
+	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s is the overall winner!", player))
 end
 
 -- nil OnPlayerVictory(Player)
@@ -42,3 +46,4 @@ end
 Events.Connect("PlayerVictory", OnPlayerVictory)
 Events.Connect("TeamVictory", OnTeamVictory)
 Events.Connect("TieVictory", OnTieVictory)
+Events.Connect("OverallVictory", OnOverallVictory)
