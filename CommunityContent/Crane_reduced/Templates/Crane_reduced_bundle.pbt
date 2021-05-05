@@ -51,5 +51,5 @@ Assets {
     Version: "1.0.0"
     Description: "reduced object count from first version"
   }
-  SerializationVersion: 81
+  SerializationVersion: 84
 }

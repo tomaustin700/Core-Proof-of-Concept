@@ -2,7 +2,7 @@ Assets {
   Id: 1111508170927184097
   Name: "Custom Edgeline Wavy Object Fade Advanced"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10522222064658400397
     ParameterOverrides {

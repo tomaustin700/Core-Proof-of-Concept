@@ -2,7 +2,7 @@ Assets {
   Id: 3681641045308564004
   Name: "Grey plastic"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 132672053610873933
     ParameterOverrides {

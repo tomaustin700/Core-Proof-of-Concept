@@ -49,5 +49,5 @@ Assets {
     Version: "1.0.0"
     Description: "Misccellaneous Apartment Building 1 (Tier 2)"
   }
-  SerializationVersion: 81
+  SerializationVersion: 84
 }

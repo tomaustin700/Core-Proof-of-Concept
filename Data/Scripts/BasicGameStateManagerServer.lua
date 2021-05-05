@@ -70,16 +70,17 @@ function SetGameState(newState)
 	if newState == ABGS.GAME_STATE_LOBBY then
 		stateHasduration = LOBBY_HAS_DURATION
 		stateDuration = LOBBY_DURATION
+	elseif newState == ABGS.GAME_STATE_ROUND_1_START then
+		stateHasduration = true
+		stateDuration = 10
 	elseif newState == ABGS.GAME_STATE_ROUND_1 then
 		stateHasduration = ROUND_HAS_DURATION
 		stateDuration = ROUND_DURATION
 	elseif newState == ABGS.GAME_STATE_ROUND_1_END then
 		stateHasduration = ROUND_END_HAS_DURATION
 		stateDuration = ROUND_END_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND_1_START then
-		stateHasduration = true
-		stateDuration = 10
 	else
+		--NEED TO ADD MORE STATES HERE
 		error("Tried to set game state to unknown state %d", newState)
 	end
 

@@ -112,7 +112,7 @@ function Tick(deltaTime)
     end
 
     if bindingDown or atRoundEnd then
-        --CANVAS.visibility = Visibility.INHERIT
+        CANVAS.visibility = Visibility.INHERIT
 
         local players = Game.GetPlayers() 
         table.sort(players, ComparePlayers)
@@ -149,5 +149,5 @@ LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
 
 if SHOW_AT_ROUND_END then
-    --Game.roundEndEvent:Connect(OnRoundEnd)
+    Game.roundEndEvent:Connect(OnRoundEnd)
 end

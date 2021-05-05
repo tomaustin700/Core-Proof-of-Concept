@@ -2,7 +2,7 @@ Assets {
   Id: 17072171019182617144
   Name: "Custom Additive Edgeline Top Fade"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 1358256482357241138
     ParameterOverrides {

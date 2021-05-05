@@ -2,7 +2,7 @@ Assets {
   Id: 11811336691451993512
   Name: "Rubber"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 17892039050704465680
     ParameterOverrides {
