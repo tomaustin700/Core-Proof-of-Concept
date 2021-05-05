@@ -10,6 +10,7 @@ Objects {
       Z: 5000
     }
     Rotation {
+      Yaw: 180
     }
     Scale {
       X: 1

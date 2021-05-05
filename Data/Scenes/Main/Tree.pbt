@@ -20,6 +20,7 @@ Objects {
   ChildIds: 14767116562912319140
   ChildIds: 4235079353815018496
   ChildIds: 1762394650260175503
+  ChildIds: 5561596894153728145
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,6 +33,48 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5561596894153728145
+  Name: "Ambience Nature Wind 01 SFX"
+  Transform {
+    Location {
+      X: -1950
+      Y: -2100
+      Z: 2250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9250553188382621454
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: 100000
+    IsSpatializationEnabled: true
   }
 }
 Objects {
