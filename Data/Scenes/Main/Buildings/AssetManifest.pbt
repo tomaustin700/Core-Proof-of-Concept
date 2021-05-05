@@ -125,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16931855142661323466
+  Name: "Craftsman Roof 01 Beam"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_beam"
+  }
+}
+Assets {
   Id: 16931630116077975102
   Name: "Main Street Pillar 01"
   PlatformAssetType: 1
@@ -971,6 +980,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5904229792949433869
+  Name: "Craftsman Stairs 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001"
+  }
+}
+Assets {
   Id: 5517650793586535881
   Name: "Main Street Wall 01 - Doorway 01"
   PlatformAssetType: 1
@@ -1121,6 +1139,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+  }
+}
+Assets {
+  Id: 3757607954138577006
+  Name: "Sci-fi Base Roof 01 - 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_roof_001_ref"
   }
 }
 Assets {

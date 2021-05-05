@@ -13,9 +13,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
+--]] -- Internal custom properties
 
--- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
@@ -46,135 +45,186 @@ end
 -- int GetGameState()
 -- Gets the current state. Passed to API
 function GetGameState()
-	return script:GetCustomProperty("State")
+    return script:GetCustomProperty("State")
 end
 
 -- <float> GetTimeRemainingInState()
 -- Gets time remaining in state, or nil. Passed to API
 function GetTimeRemainingInState()
-	if not script:GetCustomProperty("StateHasDuration") then
-		return nil
-	end
+    if not script:GetCustomProperty("StateHasDuration") then
+        return nil
+    end
 
-	local endTime = script:GetCustomProperty("StateEndTime")
-	return math.max(endTime - time(), 0.0)
+    local endTime = script:GetCustomProperty("StateEndTime")
+    return math.max(endTime - time(), 0.0)
 end
 
 -- nil SetGameState()
 -- Sets the state and configures timing. Passed to API
 function SetGameState(newState)
-	local stateHasduration
-	local stateDuration
+    local stateHasduration
+    local stateDuration
 
-	-- Get new state duration information
-	if newState == ABGS.GAME_STATE_LOBBY then
-		stateHasduration = LOBBY_HAS_DURATION
-		stateDuration = LOBBY_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND_1_START then
-		stateHasduration = true
-		stateDuration = 10
-	elseif newState == ABGS.GAME_STATE_ROUND_1 then
-		stateHasduration = ROUND_HAS_DURATION
-		stateDuration = ROUND_DURATION
-	elseif newState == ABGS.GAME_STATE_ROUND_1_END then
-		stateHasduration = ROUND_END_HAS_DURATION
-		stateDuration = ROUND_END_DURATION
-	else
-		--NEED TO ADD MORE STATES HERE
-		error("Tried to set game state to unknown state %d", newState)
-	end
+    -- Get new state duration information
+    if newState == ABGS.GAME_STATE_LOBBY then
+        stateHasduration = LOBBY_HAS_DURATION
+        stateDuration = LOBBY_DURATION
+    elseif newState == ABGS.GAME_STATE_ROUND_1_START then
+        stateHasduration = true
+        stateDuration = 10
+    elseif newState == ABGS.GAME_STATE_ROUND_1 then
+        stateHasduration = ROUND_HAS_DURATION
+        stateDuration = ROUND_DURATION
+    elseif newState == ABGS.GAME_STATE_ROUND_1_END then
+        stateHasduration = true
+        stateDuration = 5
+    elseif newState == ABGS.GAME_STATE_ROUND_2_START then
+        stateHasduration = true
+        stateDuration = 10
+    elseif newState == ABGS.GAME_STATE_ROUND_2 then
+        stateHasduration = false
+        stateDuration = 120
+    elseif newState == ABGS.GAME_STATE_ROUND_2_END then
+        stateHasduration = true
+        stateDuration = 5
+    elseif newState == ABGS.GAME_STATE_ROUND_3_START then
+        stateHasduration = true
+        stateDuration = 10
+    elseif newState == ABGS.GAME_STATE_ROUND_3 then
+        stateHasduration = false
+        stateDuration = 120
+    elseif newState == ABGS.GAME_STATE_ROUND_3_END then
+        stateHasduration = true
+        stateDuration = 5
+    elseif newState == ABGS.GAME_STATE_ROUND_4_START then
+        stateHasduration = true
+        stateDuration = 10
+    elseif newState == ABGS.GAME_STATE_ROUND_4 then
+        stateHasduration = false
+        stateDuration = 120
+    elseif newState == ABGS.GAME_STATE_ROUND_4_END then
+        stateHasduration = true
+        stateDuration = 5
+    elseif newState == ABGS.GAME_STATE_ROUND_5_START then
+        stateHasduration = true
+        stateDuration = 10
+    elseif newState == ABGS.GAME_STATE_ROUND_5 then
+        stateHasduration = false
+        stateDuration = 120
+    elseif newState == ABGS.GAME_STATE_ROUND_5_END then
+        stateHasduration = true
+        stateDuration = 5
+    else
+        error("Tried to set game state to unknown state %d", newState)
+    end
 
-	local stateEndTime = 0.0
-	if stateHasduration then
-		stateEndTime = time() + stateDuration
-	end
+    local stateEndTime = 0.0
+    if stateHasduration then
+        stateEndTime = time() + stateDuration
+    end
 
-	local oldState = GetGameState()
+    local oldState = GetGameState()
 
-	-- Broadcast built-in round events
-	if oldState ~= ABGS.GAME_STATE_ROUND_1 and newState == ABGS.GAME_STATE_ROUND_1 then
-		Game.StartRound()
-	elseif oldState == ABGS.GAME_STATE_ROUND_1 and newState ~= ABGS.GAME_STATE_ROUND_1 then
-		Game.EndRound()
-	end
+    -- Broadcast built-in round events
+    if oldState ~= ABGS.GAME_STATE_ROUND_1 and newState == ABGS.GAME_STATE_ROUND_1 then
+        Game.StartRound()
+    elseif oldState == ABGS.GAME_STATE_ROUND_1 and newState ~= ABGS.GAME_STATE_ROUND_1 then
+        Game.EndRound()
+    elseif oldState ~= ABGS.GAME_STATE_ROUND_2 and newState == ABGS.GAME_STATE_ROUND_2 then
+        Game.StartRound()
+    elseif oldState == ABGS.GAME_STATE_ROUND_2 and newState ~= ABGS.GAME_STATE_ROUND_2 then
+        Game.EndRound()
+	elseif oldState ~= ABGS.GAME_STATE_ROUND_3 and newState == ABGS.GAME_STATE_ROUND_3 then
+        Game.StartRound()
+    elseif oldState == ABGS.GAME_STATE_ROUND_3 and newState ~= ABGS.GAME_STATE_ROUND_3 then
+        Game.EndRound()
+	elseif oldState ~= ABGS.GAME_STATE_ROUND_4 and newState == ABGS.GAME_STATE_ROUND_4 then
+        Game.StartRound()
+    elseif oldState == ABGS.GAME_STATE_ROUND_4 and newState ~= ABGS.GAME_STATE_ROUND_4 then
+        Game.EndRound()
+	elseif oldState ~= ABGS.GAME_STATE_ROUND_5 and newState == ABGS.GAME_STATE_ROUND_5 then
+        Game.StartRound()
+    elseif oldState == ABGS.GAME_STATE_ROUND_5 and newState ~= ABGS.GAME_STATE_ROUND_5 then
+        Game.EndRound()
+    end
 
-	-- Broadcast basic game state event
-	Events.Broadcast("GameStateChanged", oldState, newState, stateHasDuration, stateEndTime)
-	Events.BroadcastToAllPlayers("GameStateChanged", oldState, newState, stateHasDuration, stateEndTime)
+    -- Broadcast basic game state event
+    Events.Broadcast("GameStateChanged", oldState, newState, stateHasDuration, stateEndTime)
+    Events.BroadcastToAllPlayers("GameStateChanged", oldState, newState, stateHasDuration, stateEndTime)
 
-	-- Set replicator fields
-	script:SetNetworkedCustomProperty("State", newState)
-	script:SetNetworkedCustomProperty("StateHasDuration", stateHasduration)
-	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
+    -- Set replicator fields
+    script:SetNetworkedCustomProperty("State", newState)
+    script:SetNetworkedCustomProperty("StateHasDuration", stateHasduration)
+    script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
 end
 
 -- nil SetTimeRemainingInState(float)
 -- Sets time remaining in state. Passed to API
 function SetTimeRemainingInState(remainingTime)
-	local stateEndTime = time() + remainingTime
-	local currentState = GetGameState()
+    local stateEndTime = time() + remainingTime
+    local currentState = GetGameState()
 
-	-- We broadcast the event because the time changed, even though we are still in the same state
-	Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
-	Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
+    -- We broadcast the event because the time changed, even though we are still in the same state
+    Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
+    Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
 
-	script:SetNetworkedCustomProperty("StateHasDuration", true)
-	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
+    script:SetNetworkedCustomProperty("StateHasDuration", true)
+    script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
 end
 
 function SetRoundStartTime(remainingTime)
-	local stateEndTime = time() + remainingTime
-	local currentState = GetGameState()
+    local stateEndTime = time() + remainingTime
+    local currentState = GetGameState()
 
-	-- We broadcast the event because the time changed, even though we are still in the same state
-	Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
-	Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
+    -- We broadcast the event because the time changed, even though we are still in the same state
+    Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
+    Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
 
-	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
+    script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
 end
 
 -- nil Tick(float)
 -- Handles condition when state timer ran out
 function Tick(deltaTime)
-	if GetTimeRemainingInState() == 0.0 and script:GetCustomProperty("StateHasDuration") then
-		local previousState = GetGameState()
-		local nextState
-		if previousState == ABGS.GAME_STATE_LOBBY then
-			nextState = ABGS.GAME_STATE_ROUND_1_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_1_START then
-			nextState = ABGS.GAME_STATE_ROUND_1
-		elseif previousState == ABGS.GAME_STATE_ROUND_1 then
-			nextState = ABGS.GAME_STATE_ROUND_1_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_1_END then
-			nextState = ABGS.GAME_STATE_ROUND_2_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_2_START then
-			nextState = ABGS.GAME_STATE_ROUND_2
-		elseif previousState == ABGS.GAME_STATE_ROUND_2 then
-			nextState = ABGS.GAME_STATE_ROUND_2_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_2_END then
-			nextState = ABGS.GAME_STATE_ROUND_3_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_3_START then
-			nextState = ABGS.GAME_STATE_ROUND_3
-		elseif previousState == ABGS.GAME_STATE_ROUND_3 then
-			nextState = ABGS.GAME_STATE_ROUND_3_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_3_END then
-			nextState = ABGS.GAME_STATE_ROUND_4_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_4_START then
-			nextState = ABGS.GAME_STATE_ROUND_4
-		elseif previousState == ABGS.GAME_STATE_ROUND_4 then
-			nextState = ABGS.GAME_STATE_ROUND_4_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_4_END then
-			nextState = ABGS.GAME_STATE_ROUND_5_START
-		elseif previousState == ABGS.GAME_STATE_ROUND_5_START then
-			nextState = ABGS.GAME_STATE_ROUND_5
-		elseif previousState == ABGS.GAME_STATE_ROUND_5 then
-			nextState = ABGS.GAME_STATE_ROUND_5_END
-		elseif previousState == ABGS.GAME_STATE_ROUND_5_END then
-			nextState = ABGS.GAME_STATE_END
-		end
+    if GetTimeRemainingInState() == 0.0 and script:GetCustomProperty("StateHasDuration") then
+        local previousState = GetGameState()
+        local nextState
+        if previousState == ABGS.GAME_STATE_LOBBY then
+            nextState = ABGS.GAME_STATE_ROUND_1_START
+        elseif previousState == ABGS.GAME_STATE_ROUND_1_START then
+            nextState = ABGS.GAME_STATE_ROUND_1
+        elseif previousState == ABGS.GAME_STATE_ROUND_1 then
+            nextState = ABGS.GAME_STATE_ROUND_1_END
+        elseif previousState == ABGS.GAME_STATE_ROUND_1_END then
+            nextState = ABGS.GAME_STATE_ROUND_2_START
+        elseif previousState == ABGS.GAME_STATE_ROUND_2_START then
+            nextState = ABGS.GAME_STATE_ROUND_2
+        elseif previousState == ABGS.GAME_STATE_ROUND_2 then
+            nextState = ABGS.GAME_STATE_ROUND_2_END
+        elseif previousState == ABGS.GAME_STATE_ROUND_2_END then
+            nextState = ABGS.GAME_STATE_ROUND_3_START
+        elseif previousState == ABGS.GAME_STATE_ROUND_3_START then
+            nextState = ABGS.GAME_STATE_ROUND_3
+        elseif previousState == ABGS.GAME_STATE_ROUND_3 then
+            nextState = ABGS.GAME_STATE_ROUND_3_END
+        elseif previousState == ABGS.GAME_STATE_ROUND_3_END then
+            nextState = ABGS.GAME_STATE_ROUND_4_START
+        elseif previousState == ABGS.GAME_STATE_ROUND_4_START then
+            nextState = ABGS.GAME_STATE_ROUND_4
+        elseif previousState == ABGS.GAME_STATE_ROUND_4 then
+            nextState = ABGS.GAME_STATE_ROUND_4_END
+        elseif previousState == ABGS.GAME_STATE_ROUND_4_END then
+            nextState = ABGS.GAME_STATE_ROUND_5_START
+        elseif previousState == ABGS.GAME_STATE_ROUND_5_START then
+            nextState = ABGS.GAME_STATE_ROUND_5
+        elseif previousState == ABGS.GAME_STATE_ROUND_5 then
+            nextState = ABGS.GAME_STATE_ROUND_5_END
+        elseif previousState == ABGS.GAME_STATE_ROUND_5_END then
+            nextState = ABGS.GAME_STATE_END
+        end
 
-		SetGameState(nextState)
-	end
+        SetGameState(nextState)
+    end
 end
 
 -- Initialize
@@ -182,9 +232,10 @@ SetGameState(ABGS.GAME_STATE_LOBBY)
 
 -- Disable all spawns apart from lobby spawn
 for _, spawn in pairs(World.FindObjectsByType("PlayerStart")) do
-	spawn.isEnabled = false
+    spawn.isEnabled = false
 end
 
 World.FindObjectByName("LobbySpawn").isEnabled = true
 
-ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState, SetRoundStartTime)
+ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState,
+    SetRoundStartTime)

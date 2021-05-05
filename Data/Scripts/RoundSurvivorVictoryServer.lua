@@ -45,9 +45,26 @@ function WinBeginOverlap(trigger, other)
             SCOREMANAGERAPI.PlayerFirst(winner)
 
             Task.Wait(30)
-            --NEED LOGIC TO CATER FOR DIFFERENT LEVELS HERE
-            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
-            
+            if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1) then
+                ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
+            end
+
+            if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2) then
+                ABGS.SetGameState(ABGS.GAME_STATE_ROUND_2_END)
+            end
+
+            if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3) then
+                ABGS.SetGameState(ABGS.GAME_STATE_ROUND_3_END)
+            end
+
+            if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_4) then
+                ABGS.SetGameState(ABGS.GAME_STATE_ROUND_4_END)
+            end
+
+            if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5) then
+                ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_END)
+            end
+
         elseif second == nil then
             second = other
             SCOREMANAGERAPI.PlayerSecond(second)
@@ -67,7 +84,8 @@ function Tick(deltaTime)
         return
     end
 
-    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or
+        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
         completedPlayers = {}
         winner = nil
         second = nil

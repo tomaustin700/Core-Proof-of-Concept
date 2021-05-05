@@ -13,9 +13,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
+--]] -- Internal custom properties
 
--- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local STATE_NAME_TEXT = script:GetCustomProperty("StateNameText"):WaitForObject()
@@ -53,16 +52,22 @@ function Tick(deltaTime)
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1_START  then
+        if currentState == ABGS.GAME_STATE_ROUND_1_START or currentState == ABGS.GAME_STATE_ROUND_2_START or
+            currentState == ABGS.GAME_STATE_ROUND_3_START or currentState == ABGS.GAME_STATE_ROUND_4_START or
+            currentState == ABGS.GAME_STATE_ROUND_5_START then
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1 and SHOW_DURING_ROUND then
+        if currentState == ABGS.GAME_STATE_ROUND_1 or currentState == ABGS.GAME_STATE_ROUND_2 or currentState ==
+            ABGS.GAME_STATE_ROUND_3 or currentState == ABGS.GAME_STATE_ROUND_4 or currentState ==
+            ABGS.GAME_STATE_ROUND_5 and SHOW_DURING_ROUND then
             STATE_NAME_TEXT.text = "Round"
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1_END and SHOW_DURING_ROUND_END then
+        if currentState == ABGS.GAME_STATE_ROUND_1_END or currentState == ABGS.GAME_STATE_ROUND_2_END or currentState ==
+            ABGS.GAME_STATE_ROUND_3_END or currentState == ABGS.GAME_STATE_ROUND_4_END or currentState ==
+            ABGS.GAME_STATE_ROUND_5_END and SHOW_DURING_ROUND_END then
             STATE_NAME_TEXT.text = "End"
             UpdateTimeRemaining(remainingTime)
         end
