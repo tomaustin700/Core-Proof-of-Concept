@@ -111,7 +111,7 @@ function Tick(deltaTime)
         atRoundEnd = false
     end
 
-    if bindingDown or atRoundEnd then
+    if atRoundEnd then
         CANVAS.visibility = Visibility.INHERIT
 
         local players = Game.GetPlayers() 
@@ -127,12 +127,16 @@ function Tick(deltaTime)
             local line = playerLines[i]
             line:GetCustomProperty("Name"):WaitForObject().text = player.name
             --line:GetCustomProperty("Name"):WaitForObject():SetColor(teamColor)
-            --line:GetCustomProperty("KillsText"):WaitForObject().text = tostring(player.kills)
+            line:GetCustomProperty("KillsText"):WaitForObject().text = tostring(player.kills)
             --line:GetCustomProperty("DeathsText"):WaitForObject().text = tostring(player.deaths)
         end
     else
         CANVAS.visibility = Visibility.FORCE_OFF
     end
+end
+
+function OnRoundStart()
+
 end
 
 -- Initialize
@@ -148,6 +152,11 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
 
-if SHOW_AT_ROUND_END then
-    Game.roundEndEvent:Connect(OnRoundEnd)
-end
+-- if SHOW_AT_ROUND_END then
+--     --Game.roundEndEvent:Connect(OnRoundEnd)
+-- end
+
+-- Game.roundEndEvent:Connect(OnRoundEnd)
+-- Game.roundEndEvent:Connect(OnRoundStart)
+
+Events.Connect("GameStateChanged", OnGameStateChanged)
