@@ -141,6 +141,7 @@ Objects {
   ChildIds: 12406666706148076886
   ChildIds: 15754248311059917898
   ChildIds: 10264328964602095615
+  ChildIds: 16650158223419659758
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -153,6 +154,43 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 16650158223419659758
+  Name: "L1WinTrigger"
+  Transform {
+    Location {
+      X: -7250
+      Y: -2300
+      Z: 2050
+    }
+    Rotation {
+    }
+    Scale {
+      X: 15
+      Y: 15
+      Z: 1
+    }
+  }
+  ParentId: 17108141444533171744
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }
 Objects {

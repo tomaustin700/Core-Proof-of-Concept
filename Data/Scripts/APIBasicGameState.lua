@@ -25,6 +25,8 @@ GameStateChanged(int oldState, int newState, bool stateHasDuration, float stateE
 
 local API = {}
 
+local completedPlayers = {}
+
 API.GAME_STATE_LOBBY = 0
 API.GAME_STATE_ROUND_1 = 1
 API.GAME_STATE_ROUND_1_END = 2

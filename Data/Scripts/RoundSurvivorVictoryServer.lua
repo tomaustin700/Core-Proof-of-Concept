@@ -23,27 +23,36 @@ TieVictory()
 --]] -- Internal custom properties
 
 local ABGS = require(script:GetCustomProperty("API"))
+local SCOREMANAGERAPI = require(script:GetCustomProperty("ScoreManagerAPI"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
-local WIN_TRIGGER = script:GetCustomProperty("WinTrigger"):WaitForObject()
+local L1WIN_TRIGGER = script:GetCustomProperty("L1WinTrigger"):WaitForObject()
 local winner = nil
+local second = nil
+local third = nil
 local completedPlayers = {}
 
 -- User exposed properties
 local BY_TEAM = COMPONENT_ROOT:GetCustomProperty("ByTeam")
 
 function WinBeginOverlap(trigger, other)
-
     if other:IsA("Player") then
         other:Die()
         table.insert(completedPlayers, other)
 
         if winner == nil then
-
             winner = other
             Events.Broadcast("PlayerVictory", winner)
+            SCOREMANAGERAPI.PlayerFirst()
+
             Task.Wait(30)
             ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
-
+            
+        elseif second == nil then
+            second = other
+            SCOREMANAGERAPI.PlayerSecond(other)
+        elseif third == nil then
+            third = other
+            SCOREMANAGERAPI.PlayerThird(other)
         end
     end
 end
@@ -55,6 +64,13 @@ function Tick(deltaTime)
         return
     end
 
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
+        completedPlayers = {}
+        winner = nil
+        second = nil
+        third = nil
+    end
+
     if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1 then
 
         if #Game.GetPlayers() == #completedPlayers then
@@ -63,8 +79,44 @@ function Tick(deltaTime)
         end
 
     end
+
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2 then
+
+        if #Game.GetPlayers() == #completedPlayers then
+            completedPlayers = {}
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_2_END)
+        end
+
+    end
+
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3 then
+
+        if #Game.GetPlayers() == #completedPlayers then
+            completedPlayers = {}
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_3_END)
+        end
+
+    end
+
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_4 then
+
+        if #Game.GetPlayers() == #completedPlayers then
+            completedPlayers = {}
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_4_END)
+        end
+
+    end
+
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5 then
+
+        if #Game.GetPlayers() == #completedPlayers then
+            completedPlayers = {}
+            ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_END)
+        end
+
+    end
 end
 
 -- Connect trigger overlap event
-WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
+L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 

@@ -75,9 +75,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:WinTrigger"
+      Name: "cs:L1WinTrigger"
       ObjectReference {
         SelfId: 16650158223419659758
+      }
+    }
+    Overrides {
+      Name: "cs:ScoreManagerAPI"
+      AssetReference {
+        Id: 5552338303805604554
       }
     }
   }
