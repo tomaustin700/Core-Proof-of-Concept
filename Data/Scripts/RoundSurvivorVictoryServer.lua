@@ -42,17 +42,20 @@ function WinBeginOverlap(trigger, other)
         if winner == nil then
             winner = other
             Events.Broadcast("PlayerVictory", winner)
-            SCOREMANAGERAPI.PlayerFirst()
+            SCOREMANAGERAPI.PlayerFirst(winner)
 
             Task.Wait(30)
+            --NEED LOGIC TO CATER FOR DIFFERENT LEVELS HERE
             ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
             
         elseif second == nil then
             second = other
-            SCOREMANAGERAPI.PlayerSecond(other)
+            SCOREMANAGERAPI.PlayerSecond(second)
         elseif third == nil then
             third = other
-            SCOREMANAGERAPI.PlayerThird(other)
+            SCOREMANAGERAPI.PlayerThird(third)
+        else
+            SCOREMANAGERAPI.PlayerOther(other)
         end
     end
 end
