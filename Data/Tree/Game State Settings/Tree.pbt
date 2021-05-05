@@ -1,74 +1,6 @@
 Name: "Game State Settings"
 RootId: 9679182277709680139
 Objects {
-  Id: 9474335929114005652
-  Name: "Level Manager"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9679182277709680139
-  ChildIds: 500422002957740461
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 500422002957740461
-  Name: "LevelManagerServer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9474335929114005652
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 11974742996071064388
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9073805425153031123
-    }
-  }
-}
-Objects {
   Id: 15128781710814917861
   Name: "Round Survivor Victory"
   Transform {
@@ -225,7 +157,7 @@ Objects {
 }
 Objects {
   Id: 5056591131134987722
-  Name: "Spawn Manager"
+  Name: "Level Manager"
   Transform {
     Location {
     }
@@ -275,7 +207,7 @@ Objects {
 }
 Objects {
   Id: 10794068986492945990
-  Name: "SpawnManagerServer"
+  Name: "LevelManagerServer"
   Transform {
     Location {
     }
@@ -299,12 +231,6 @@ Objects {
       Name: "cs:ComponentRoot"
       ObjectReference {
         SelfId: 5056591131134987722
-      }
-    }
-    Overrides {
-      Name: "cs:StartSpawn"
-      ObjectReference {
-        SelfId: 16680154865371612401
       }
     }
   }
