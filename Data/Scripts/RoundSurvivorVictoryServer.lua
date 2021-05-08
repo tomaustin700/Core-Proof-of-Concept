@@ -37,7 +37,7 @@ local BY_TEAM = COMPONENT_ROOT:GetCustomProperty("ByTeam")
 
 function WinBeginOverlap(trigger, other)
     if other:IsA("Player") then
-        other:Die()
+        other:EnableRagdoll()
         table.insert(completedPlayers, other)
 
         if winner == nil then
@@ -142,4 +142,5 @@ end
 -- Connect trigger overlap event
 L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L2WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
+
 

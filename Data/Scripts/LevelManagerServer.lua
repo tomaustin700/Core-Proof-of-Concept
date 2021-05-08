@@ -47,8 +47,6 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Lobby").visibility = Visibility.FORCE_OFF
         local start = World.FindObjectByName("1Start")
         start.isEnabled = true
-        World.FindObjectByName("1End").isEnabled = true
-        World.FindObjectByName("1Mid").isEnabled = true
         World.FindObjectByName("LobbySpawn").isEnabled = false
 
         local numPlayers = #Game.GetPlayers()
@@ -76,8 +74,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("1Start").isEnabled = false
-        World.FindObjectByName("1End").isEnabled = false
-        World.FindObjectByName("1Mid").isEnabled = false
+  
 
         local start = World.FindObjectByName("2Start")
         start.isEnabled = true
