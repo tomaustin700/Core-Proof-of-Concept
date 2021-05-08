@@ -215,7 +215,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DefaultDuration"
-      Float: 3
+      Float: 5
     }
     Overrides {
       Name: "cs:DefaultDuration:tooltip"
@@ -363,8 +363,9 @@ Objects {
   }
   Control {
     Width: 600
-    Height: 100
-    UIY: -345
+    Height: 200
+    UIX: -100
+    UIY: -450
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -421,7 +422,6 @@ Objects {
   Control {
     Width: 600
     Height: 100
-    UIY: -100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -447,12 +447,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }

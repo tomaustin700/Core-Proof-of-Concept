@@ -431,6 +431,10 @@ Objects {
           Name: "cs:RoundMessage"
           String: "Race to the end"
         }
+        Overrides {
+          Name: "cs:ShowRoundMessage"
+          Bool: false
+        }
       }
     }
     TemplateAsset {

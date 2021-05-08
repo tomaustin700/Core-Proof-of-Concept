@@ -26,12 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4367680979899409124
-  Name: "Wireframe"
+  Id: 7150195764860297452
+  Name: "Grid Glow Topographical"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "wireframe_glow_001"
+    AssetId: "mi_grid_topographical_001_wa"
   }
 }
 Assets {

@@ -177,15 +177,15 @@ Objects {
   Name: "L2WinTrigger"
   Transform {
     Location {
-      X: -27600
+      X: -27100
       Y: -12200
-      Z: 2100
+      Z: 1850
     }
     Rotation {
     }
     Scale {
-      X: 28
-      Y: 27
+      X: 30
+      Y: 30
       Z: 1
     }
   }
@@ -234,19 +234,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -301,19 +301,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -368,19 +368,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -435,19 +435,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -502,19 +502,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -569,19 +569,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -636,19 +636,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -703,19 +703,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -770,19 +770,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -837,19 +837,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -904,19 +904,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -971,19 +971,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -1038,19 +1038,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -1105,19 +1105,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -1172,19 +1172,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }
@@ -1239,19 +1239,19 @@ Objects {
     Overrides {
       Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
     Overrides {
       Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 4367680979899409124
+        Id: 7150195764860297452
       }
     }
   }

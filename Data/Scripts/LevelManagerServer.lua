@@ -60,6 +60,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
             player.maxWalkSpeed = 0
 
         end
+
+
     end
 
     --L1 started so unfreeze players
@@ -67,6 +69,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
+
+
     end
 
     --Spawn players at L2 Start
@@ -91,6 +95,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
             player.maxWalkSpeed = 0
 
         end
+
+
     end
 
     --L2 started so unfreeze players
@@ -98,6 +104,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
+
+
     end
 
      --Spawn players at L3 Start
@@ -121,6 +129,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
             player.maxWalkSpeed = 0
 
         end
+
+
     end
 
     --L3 started so unfreeze players
@@ -128,6 +138,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
+
+
     end
     
 

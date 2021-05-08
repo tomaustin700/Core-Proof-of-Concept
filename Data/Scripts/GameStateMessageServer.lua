@@ -17,7 +17,6 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 This component tracks current game state and broadcasts banner messages (that can be seen with the Message Banner
 component)
 --]] -- Internal custom properties
-
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
@@ -26,27 +25,39 @@ local SHOW_LOBBY_MESSAGE = COMPONENT_ROOT:GetCustomProperty("ShowLobbyMessage")
 local LOBBY_MESSAGE = COMPONENT_ROOT:GetCustomProperty("LobbyMessage")
 local SHOW_ROUND_MESSAGE = COMPONENT_ROOT:GetCustomProperty("ShowRoundMessage")
 local ROUND_MESSAGE = COMPONENT_ROOT:GetCustomProperty("RoundMessage")
-local SHOW_ROUND_END_MESSAGE = COMPONENT_ROOT:GetCustomProperty("ShowRoundEndMessage")
+local SHOW_ROUND_END_MESSAGE = COMPONENT_ROOT:GetCustomProperty(
+                                   "ShowRoundEndMessage")
 local ROUND_END_MESSAGE = COMPONENT_ROOT:GetCustomProperty("RoundEndMessage")
 
 -- nil GameStateChanged(int, int, bool, float)
 -- Broadcasts the message when the game state is changed.
 function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
+
     if newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY then
         if SHOW_LOBBY_MESSAGE then
             Events.BroadcastToAllPlayers("BannerMessage", LOBBY_MESSAGE)
         end
-    elseif newState == ABGS.GAME_STATE_ROUND_1_START and oldState ~= ABGS.GAME_STATE_ROUND_1_START then
-        Events.BroadcastToAllPlayers("BannerMessage", "Ready?")
-    elseif newState == ABGS.GAME_STATE_ROUND_1 and oldState ~= ABGS.GAME_STATE_ROUND_1 then
-        if SHOW_ROUND_MESSAGE then
-            Events.BroadcastToAllPlayers("BannerMessage", ROUND_MESSAGE)
-        end
-    elseif newState == ABGS.GAME_STATE_ROUND_1_END and oldState ~= ABGS.GAME_STATE_ROUND_1_END then
-        if SHOW_ROUND_END_MESSAGE then
-            Events.BroadcastToAllPlayers("BannerMessage", ROUND_END_MESSAGE)
-        end
+    elseif newState == ABGS.GAME_STATE_ROUND_1_START and oldState ~=
+        ABGS.GAME_STATE_ROUND_1_START then
+        Events.BroadcastToAllPlayers("BannerMessage", "Round 1 - Rooftops")
+    elseif newState == ABGS.GAME_STATE_ROUND_1 and oldState ~=
+        ABGS.GAME_STATE_ROUND_1 then
+        Events.BroadcastToAllPlayers("BannerMessage", "Race to the end")
+    elseif newState == ABGS.GAME_STATE_ROUND_2_START and oldState ~=
+        ABGS.GAME_STATE_ROUND_2_START then
+        Events.BroadcastToAllPlayers("BannerMessage", "Round 2 - Jump Pads")
+    elseif newState == ABGS.GAME_STATE_ROUND_2 and oldState ~=
+        ABGS.GAME_STATE_ROUND_2 then
+        Events.BroadcastToAllPlayers("BannerMessage", "Race to the end")
+    elseif newState == ABGS.GAME_STATE_ROUND_3_START and oldState ~=
+        ABGS.GAME_STATE_ROUND_3_START then
+        Events.BroadcastToAllPlayers("BannerMessage", "Round 3 - Dropzone")
+    elseif newState == ABGS.GAME_STATE_ROUND_3 and oldState ~=
+        ABGS.GAME_STATE_ROUND_3 then
+        Events.BroadcastToAllPlayers("BannerMessage", "Race to the bottom")
+
     end
+
 end
 
 -- Initialize

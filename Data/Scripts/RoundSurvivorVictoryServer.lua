@@ -21,7 +21,6 @@ PlayerVictory(Player winner)
 TeamVictory(int winningTeam)
 TieVictory()
 --]] -- Internal custom properties
-
 local ABGS = require(script:GetCustomProperty("API"))
 local SCOREMANAGERAPI = require(script:GetCustomProperty("ScoreManagerAPI"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
@@ -70,9 +69,13 @@ function WinBeginOverlap(trigger, other)
         elseif second == nil then
             second = other
             SCOREMANAGERAPI.PlayerSecond(second)
+            Events.BroadcastToAllPlayers("BannerMessage",  second.name .. " comes in second")
+
         elseif third == nil then
             third = other
             SCOREMANAGERAPI.PlayerThird(third)
+            Events.BroadcastToAllPlayers("BannerMessage",  third.name .. " is third")
+
         else
             SCOREMANAGERAPI.PlayerOther(other)
         end
@@ -82,12 +85,12 @@ end
 -- nil Tick(float)
 -- Watches the end condition of only one team or one player alive
 function Tick(deltaTime)
-    if not ABGS.IsGameStateManagerRegistered() then
-        return
-    end
+    if not ABGS.IsGameStateManagerRegistered() then return end
 
-    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or
-        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
+    if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or
+        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or
+        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or
+        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
         completedPlayers = {}
         winner = nil
         second = nil
@@ -144,5 +147,4 @@ end
 L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L2WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L3WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
-
 
