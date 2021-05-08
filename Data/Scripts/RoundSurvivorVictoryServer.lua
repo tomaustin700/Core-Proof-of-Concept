@@ -26,6 +26,7 @@ local ABGS = require(script:GetCustomProperty("API"))
 local SCOREMANAGERAPI = require(script:GetCustomProperty("ScoreManagerAPI"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local L1WIN_TRIGGER = script:GetCustomProperty("L1WinTrigger"):WaitForObject()
+local L2WIN_TRIGGER = script:GetCustomProperty("L2WinTrigger"):WaitForObject()
 local winner = nil
 local second = nil
 local third = nil
@@ -140,4 +141,5 @@ end
 
 -- Connect trigger overlap event
 L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
+L2WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 

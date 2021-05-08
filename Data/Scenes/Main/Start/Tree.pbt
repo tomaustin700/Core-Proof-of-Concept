@@ -1,6 +1,100 @@
 Name: "Start"
 RootId: 14768814636993011725
 Objects {
+  Id: 13998121483946249681
+  Name: "Sci-fi Base Roof 01 - 8m"
+  Transform {
+    Location {
+      X: 7050
+      Y: -11550
+      Z: 1800
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14768814636993011725
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3757607954138577006
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16466371954867554795
+  Name: "Sci-fi Base Roof 01 - 8m"
+  Transform {
+    Location {
+      X: 7050
+      Y: -10750
+      Z: 1800
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14768814636993011725
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3757607954138577006
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 591209068638457011
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
@@ -240,7 +334,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 9500
+      X: 9450
       Y: -13150
       Z: 1800
     }
@@ -287,7 +381,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 9500
+      X: 9450
       Y: -11550
       Z: 1800
     }
@@ -334,7 +428,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 9500
+      X: 9450
       Y: -12350
       Z: 1800
     }
@@ -381,7 +475,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 9500
+      X: 9450
       Y: -10750
       Z: 1800
     }
@@ -428,7 +522,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 8700
+      X: 8650
       Y: -13150
       Z: 1800
     }
@@ -475,7 +569,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 8700
+      X: 8650
       Y: -11550
       Z: 1800
     }
@@ -522,7 +616,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 8700
+      X: 8650
       Y: -12350
       Z: 1800
     }
@@ -569,7 +663,7 @@ Objects {
   Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: 8700
+      X: 8650
       Y: -10750
       Z: 1800
     }

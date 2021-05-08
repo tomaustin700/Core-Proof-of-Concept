@@ -1142,15 +1142,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3757607954138577006
-  Name: "Sci-fi Base Roof 01 - 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_scf_base_roof_001_ref"
-  }
-}
-Assets {
   Id: 3584007417411989222
   Name: "Urban Plank Debris 01"
   PlatformAssetType: 1

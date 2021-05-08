@@ -86,6 +86,12 @@ Objects {
         Id: 5552338303805604554
       }
     }
+    Overrides {
+      Name: "cs:L2WinTrigger"
+      ObjectReference {
+        SelfId: 17137778680319736694
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
