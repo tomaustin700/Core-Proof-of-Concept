@@ -105,6 +105,9 @@ Objects {
     }
   }
   ParentId: 7335477459098176817
+  ChildIds: 13968773500198811288
+  ChildIds: 14193472477606496562
+  ChildIds: 5008768442939200306
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -117,6 +120,102 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 5008768442939200306
+  Name: "Platforms"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369984808392032631
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Platforms"
+  }
+}
+Objects {
+  Id: 14193472477606496562
+  Name: "End"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369984808392032631
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "End"
+  }
+}
+Objects {
+  Id: 13968773500198811288
+  Name: "Start"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369984808392032631
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Start"
   }
 }
 Objects {
@@ -213,7 +312,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start"
+    FilePartitionName: "Start_1"
   }
 }
 Objects {
@@ -245,7 +344,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End"
+    FilePartitionName: "End_1"
   }
 }
 Objects {
@@ -6793,7 +6892,7 @@ Objects {
   Name: "Main Street Damaged Building - Tall Template"
   Transform {
     Location {
-      X: -12800
+      X: -12850
       Y: -1750
     }
     Rotation {

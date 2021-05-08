@@ -100,6 +100,37 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         end
     end
 
+     --Spawn players at L3 Start
+     if (newState == ABGS.GAME_STATE_ROUND_3_START and oldState == ABGS.GAME_STATE_ROUND_2_END) then
+        World.FindObjectByName("Level3").visibility = Visibility.FORCE_ON
+        World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("2Start").isEnabled = false
+  
+
+        local start = World.FindObjectByName("3Start")
+        start.isEnabled = true
+
+        local numPlayers = #Game.GetPlayers()
+        local perPlayerDelay = PERIOD / numPlayers
+        for _, player in pairs(Game.GetPlayers()) do
+            player:Respawn({
+                position = start:GetPosition(),
+                rotation = start:GetRotation()
+            })
+            Task.Wait(perPlayerDelay)
+            player.maxWalkSpeed = 0
+
+        end
+    end
+
+    --L3 started so unfreeze players
+    if (newState == ABGS.GAME_STATE_ROUND_3 and oldState == ABGS.GAME_STATE_ROUND_3_START) then
+        for _, player in pairs(Game.GetPlayers()) do
+            player.maxWalkSpeed = 1000
+        end
+    end
+    
+
    
 end
 

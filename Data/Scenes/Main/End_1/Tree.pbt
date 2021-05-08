@@ -1,13 +1,53 @@
-Name: "Start"
-RootId: 13968773500198811288
+Name: "End_1"
+RootId: 17703299596797693643
 Objects {
-  Id: 2712260292594219726
-  Name: "Plane 4m - One Sided"
+  Id: 17137778680319736694
+  Name: "L2WinTrigger"
   Transform {
     Location {
-      X: -8500
-      Y: -20600
-      Z: 50000
+      X: -26650
+      Y: -11800
+      Z: 2200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 28
+      Y: 27
+      Z: 1
+    }
+  }
+  ParentId: 17703299596797693643
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16066813399903276960
+  Name: "Sci-fi Base Roof 01 - 8m"
+  Transform {
+    Location {
+      X: -28700
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -17,7 +57,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32,7 +72,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -48,13 +88,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15507490422603211406
-  Name: "Plane 4m - One Sided"
+  Id: 4115056605546165016
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -20250
-      Z: 50000
+      X: -28700
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -64,7 +104,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +119,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -95,13 +135,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11768456558845588508
-  Name: "Plane 4m - One Sided"
+  Id: 14166471270491043197
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -19850
-      Z: 50000
+      X: -27900
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -111,7 +151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -126,7 +166,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -142,13 +182,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8214142080032361523
-  Name: "Plane 4m - One Sided"
+  Id: 9449547977541225044
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -19500
-      Z: 50000
+      X: -27900
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -158,7 +198,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -173,7 +213,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -189,13 +229,13 @@ Objects {
   }
 }
 Objects {
-  Id: 10087910818242976144
-  Name: "Plane 4m - One Sided"
+  Id: 2110333031304444537
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -20600
-      Z: 50000
+      X: -28700
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -205,7 +245,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -220,7 +260,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -236,13 +276,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16189946397438821283
-  Name: "Plane 4m - One Sided"
+  Id: 5830455354243445713
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -20250
-      Z: 50000
+      X: -28700
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -252,7 +292,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -267,7 +307,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -283,13 +323,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4959762796676518923
-  Name: "Plane 4m - One Sided"
+  Id: 18186291071203065611
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -19850
-      Z: 50000
+      X: -27900
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -299,7 +339,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -314,7 +354,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -330,13 +370,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8715742826265396719
-  Name: "Plane 4m - One Sided"
+  Id: 13056759564178102026
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -19500
-      Z: 50000
+      X: -26300
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -346,7 +386,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -361,7 +401,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -377,13 +417,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6678274326399341348
-  Name: "Plane 4m - One Sided"
+  Id: 9464819996382794719
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -20600
-      Z: 50000
+      X: -26300
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -393,7 +433,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -408,7 +448,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -424,13 +464,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7340679746283408673
-  Name: "Plane 4m - One Sided"
+  Id: 15249384810387046962
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -20250
-      Z: 50000
+      X: -26300
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -440,7 +480,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -455,7 +495,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -471,13 +511,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4545983560136664582
-  Name: "Plane 4m - One Sided"
+  Id: 18388075866246115093
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -19850
-      Z: 50000
+      X: -26300
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -487,7 +527,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -502,7 +542,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -518,13 +558,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1877804969775933268
-  Name: "Plane 4m - One Sided"
+  Id: 14670141702935711342
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -19500
-      Z: 50000
+      X: -27100
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -534,7 +574,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -549,7 +589,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -565,13 +605,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16475659745212227229
-  Name: "Plane 4m - One Sided"
+  Id: 16370385690986458169
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7450
-      Y: -20600
-      Z: 50000
+      X: -27100
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -581,7 +621,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -596,7 +636,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -612,13 +652,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12276674443011599234
-  Name: "Plane 4m - One Sided"
+  Id: 4181682719786993778
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7450
-      Y: -20250
-      Z: 50000
+      X: -27100
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -628,7 +668,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -643,7 +683,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -659,13 +699,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8157476872938783771
-  Name: "Plane 4m - One Sided"
+  Id: 13424946787419148052
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7450
-      Y: -19850
-      Z: 50000
+      X: -27100
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -675,7 +715,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -690,7 +730,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -706,13 +746,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5285927364122784848
-  Name: "Plane 4m - One Sided"
+  Id: 14837239282848274774
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7450
-      Y: -19500
-      Z: 50000
+      X: -27900
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -722,7 +762,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 17703299596797693643
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -737,7 +777,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
