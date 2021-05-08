@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17208998314379974155
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
   Id: 16931855142661323466
   Name: "Craftsman Roof 01 Beam"
   PlatformAssetType: 1
@@ -206,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14176234275809442376
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 13913679398007785057
   Name: "Craftsman Wall Interior 01 Corner"
   PlatformAssetType: 1
@@ -284,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_wall_001_windowL"
+  }
+}
+Assets {
+  Id: 12289240702164032973
+  Name: "Diamond"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_001"
   }
 }
 Assets {
@@ -761,6 +788,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wallpaper_abstract_001_uv"
+  }
+}
+Assets {
+  Id: 1358256482357241138
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
   }
 }
 Assets {
