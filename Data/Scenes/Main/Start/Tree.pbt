@@ -5,7 +5,7 @@ Objects {
   Name: "Main Street Floor 01 - 8m x 8m"
   Transform {
     Location {
-      X: 13650
+      X: 12800
       Y: -20800
       Z: 20050
     }
