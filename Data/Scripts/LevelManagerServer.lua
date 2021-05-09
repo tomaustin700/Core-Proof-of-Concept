@@ -36,6 +36,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     if (newState == ABGS.GAME_STATE_LOBBY) then
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("Level2N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
@@ -76,6 +77,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     --Spawn players at L2 Start
     if (newState == ABGS.GAME_STATE_ROUND_2_START and oldState == ABGS.GAME_STATE_ROUND_1_END) then
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_ON
+        World.FindObjectByName("Level2N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("1Start").isEnabled = false
   
@@ -112,6 +114,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
      if (newState == ABGS.GAME_STATE_ROUND_3_START and oldState == ABGS.GAME_STATE_ROUND_2_END) then
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("Level2N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("2Start").isEnabled = false
   
 

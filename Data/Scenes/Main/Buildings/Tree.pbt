@@ -91,53 +91,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9319168610389406377
-  Name: "Goal"
-  Transform {
-    Location {
-      X: -8000
-      Y: -20050
-      Z: 800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.5
-      Z: 1.5
-    }
-  }
-  ParentId: 7335477459098176817
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 2752319624123459090
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9319168610389406377
-    SubobjectId: 15607021917237138495
-    InstanceId: 7105807845509239239
-    TemplateId: 804434200567944567
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 4369984808392032631
+  Id: 3530011650646499949
   Name: "Level3"
   Transform {
     Location {
@@ -151,9 +105,6 @@ Objects {
     }
   }
   ParentId: 7335477459098176817
-  ChildIds: 13968773500198811288
-  ChildIds: 14193472477606496562
-  ChildIds: 5008768442939200306
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -164,13 +115,17 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  NetworkContext {
-    Type: RuntimeStatic
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Level3"
   }
 }
 Objects {
-  Id: 5008768442939200306
-  Name: "Platforms"
+  Id: 7005519380444341682
+  Name: "Level2N"
   Transform {
     Location {
     }
@@ -182,7 +137,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4369984808392032631
+  ParentId: 7335477459098176817
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -197,71 +153,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Platforms"
-  }
-}
-Objects {
-  Id: 14193472477606496562
-  Name: "End"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4369984808392032631
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "End"
-  }
-}
-Objects {
-  Id: 13968773500198811288
-  Name: "Start"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4369984808392032631
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Start"
+    FilePartitionName: "Level2N"
   }
 }
 Objects {
