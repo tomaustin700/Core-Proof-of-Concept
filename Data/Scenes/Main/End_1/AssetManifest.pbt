@@ -1,10 +1,19 @@
 Assets {
-  Id: 17208998314379974155
-  Name: "Emissive Glow Transparent"
+  Id: 15417948799177636893
+  Name: "Plane 4m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_4m_001"
+  }
+}
+Assets {
+  Id: 14582790818618070150
+  Name: "Asphalt 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_emissive_001"
+    AssetId: "mi_gen_asphault_001"
   }
 }
 Assets {
@@ -17,38 +26,29 @@ Assets {
   }
 }
 Assets {
-  Id: 12289240702164032973
-  Name: "Diamond"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_001"
-  }
-}
-Assets {
-  Id: 7150195764860297452
-  Name: "Grid Glow Topographical"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grid_topographical_001_wa"
-  }
-}
-Assets {
-  Id: 3757607954138577006
-  Name: "Sci-fi Base Roof 01 - 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_scf_base_roof_001_ref"
-  }
-}
-Assets {
-  Id: 1358256482357241138
+  Id: 11721941323670792327
   Name: "Additive Edgeline Top Fade"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 6804933249785415704
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
+  Id: 3052095933182283692
+  Name: "Diamond"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_001"
   }
 }

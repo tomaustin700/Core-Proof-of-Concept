@@ -62,7 +62,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9519436770358989001
+  Id: 13782128520403945010
   Name: "Level4"
   Transform {
     Location {
@@ -86,8 +86,12 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  NetworkContext {
-    Type: RuntimeStatic
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Level4"
   }
 }
 Objects {
@@ -250,7 +254,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start_1"
+    FilePartitionName: "Start_2"
   }
 }
 Objects {
@@ -258,6 +262,7 @@ Objects {
   Name: "End"
   Transform {
     Location {
+      X: 400
     }
     Rotation {
     }
@@ -282,7 +287,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End_1"
+    FilePartitionName: "End_2"
   }
 }
 Objects {
@@ -79687,8 +79692,9 @@ Objects {
   Name: "ConcretePanel"
   Transform {
     Location {
-      X: 1800
-      Y: -1800.00024
+      X: 1800.00049
+      Y: -1800.00049
+      Z: 785.685181
     }
     Rotation {
       Yaw: 179.999893

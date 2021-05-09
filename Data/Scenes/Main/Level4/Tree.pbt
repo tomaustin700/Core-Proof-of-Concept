@@ -1,7 +1,7 @@
-Name: "Level3"
-RootId: 3530011650646499949
+Name: "Level4"
+RootId: 13782128520403945010
 Objects {
-  Id: 14193472477606496562
+  Id: 3130381744395711183
   Name: "End"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3530011650646499949
+  ParentId: 13782128520403945010
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,11 +30,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End_1"
+    FilePartitionName: "End"
   }
 }
 Objects {
-  Id: 13968773500198811288
+  Id: 16207422659821075962
   Name: "Start"
   Transform {
     Location {
@@ -47,7 +47,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3530011650646499949
+  ParentId: 13782128520403945010
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -63,12 +63,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start_1"
+    FilePartitionName: "Start"
   }
 }
 Objects {
-  Id: 5008768442939200306
-  Name: "Platforms"
+  Id: 9157674828328727308
+  Name: "Beams"
   Transform {
     Location {
     }
@@ -80,7 +80,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3530011650646499949
+  ParentId: 13782128520403945010
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -96,6 +96,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Platforms"
+    FilePartitionName: "Beams"
   }
 }

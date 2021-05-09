@@ -326,7 +326,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -18450
+      X: -18950
       Y: -11200
       Z: 1800
     }

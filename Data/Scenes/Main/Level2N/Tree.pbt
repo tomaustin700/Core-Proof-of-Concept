@@ -88,7 +88,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Distance"
-      Int: 2000
+      Int: 500
     }
   }
   WantsNetworking: true
@@ -238,7 +238,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Distance"
-      Int: 2000
+      Int: 500
     }
   }
   WantsNetworking: true
@@ -305,7 +305,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -20200
+      X: -20600
       Y: -9850
       Z: 4750
     }
@@ -388,7 +388,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Distance"
-      Int: 2000
+      Int: 500
     }
   }
   WantsNetworking: true
@@ -455,7 +455,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -22100
+      X: -22650
       Y: -11200
       Z: 4750
     }
@@ -538,7 +538,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Distance"
-      Int: 2000
+      Int: 500
     }
   }
   WantsNetworking: true

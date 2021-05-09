@@ -1,4 +1,3 @@
--- local propDestination = script:GetCustomProperty("Destination"):WaitForObject()
 local DELAY = script:GetCustomProperty("Delay")
 local DISTANCE = script:GetCustomProperty("Distance")
 
@@ -39,7 +38,7 @@ while true do
             destIndex = 1
         end
 
-        Task.Wait(propDelay)
+        Task.Wait(DELAY)
 
         object:MoveTo(positions[destIndex], 7)
     end

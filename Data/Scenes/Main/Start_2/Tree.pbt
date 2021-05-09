@@ -1,16 +1,15 @@
-Name: "Start_1"
-RootId: 13968773500198811288
+Name: "Start_2"
+RootId: 14768814636993011725
 Objects {
-  Id: 3749022084029515641
-  Name: "Main Street Wall 02"
+  Id: 13998121483946249681
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7300
-      Y: -20800
-      Z: 50000
+      X: 7050
+      Y: -11550
+      Z: 1800
     }
     Rotation {
-      Yaw: 89.9999847
     }
     Scale {
       X: 1
@@ -18,28 +17,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -54,7 +52,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -70,16 +68,15 @@ Objects {
   }
 }
 Objects {
-  Id: 13032965164966683189
-  Name: "Main Street Wall 02"
+  Id: 16466371954867554795
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7300
-      Y: -20100
-      Z: 50000
+      X: 7050
+      Y: -10750
+      Z: 1800
     }
     Rotation {
-      Yaw: 89.9999771
     }
     Scale {
       X: 1
@@ -87,28 +84,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -123,7 +119,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -139,16 +135,15 @@ Objects {
   }
 }
 Objects {
-  Id: 8487677330983089967
-  Name: "Main Street Wall 02"
+  Id: 591209068638457011
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8700
-      Y: -20100
-      Z: 50000
+      X: 7850
+      Y: -12350
+      Z: 1800
     }
     Rotation {
-      Yaw: 89.9999847
     }
     Scale {
       X: 1
@@ -156,28 +151,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -192,7 +186,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -208,16 +202,15 @@ Objects {
   }
 }
 Objects {
-  Id: 17148969091468888856
-  Name: "Main Street Wall 02"
+  Id: 10622639754444409944
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8700
-      Y: -20800
-      Z: 50000
+      X: 7850
+      Y: -13150
+      Z: 1800
     }
     Rotation {
-      Yaw: 89.9999924
     }
     Scale {
       X: 1
@@ -225,28 +218,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -261,7 +253,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -277,13 +269,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13092199343521763448
-  Name: "Main Street Wall 02"
+  Id: 2784319118858341198
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8700
-      Y: -20800
-      Z: 50000
+      X: 7050
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -293,28 +285,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -329,7 +320,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -345,13 +336,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3285261194588147908
-  Name: "Main Street Wall 02"
+  Id: 392638100748911198
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8100
-      Y: -20800
-      Z: 50000
+      X: 7050
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -361,28 +352,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_TrimInner:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallInner:id"
+      Name: "ma:Shared_Trim:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
     Overrides {
-      Name: "ma:Building_WallOuter:id"
+      Name: "ma:Building_Roof:id"
       AssetReference {
-        Id: 8544744120378356195
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -397,7 +387,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17775019098342521252
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -413,13 +403,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2712260292594219726
-  Name: "Plane 4m - One Sided"
+  Id: 16548450459900872037
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -20600
-      Z: 50000
+      X: 7850
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -429,16 +419,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -453,7 +454,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -469,13 +470,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15507490422603211406
-  Name: "Plane 4m - One Sided"
+  Id: 14671806673195238928
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -20250
-      Z: 50000
+      X: 9450
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -485,16 +486,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -509,7 +521,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -525,13 +537,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11768456558845588508
-  Name: "Plane 4m - One Sided"
+  Id: 8534868632736479979
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -19850
-      Z: 50000
+      X: 9450
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -541,16 +553,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -565,7 +588,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -581,13 +604,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8214142080032361523
-  Name: "Plane 4m - One Sided"
+  Id: 14874867339760690579
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8500
-      Y: -19500
-      Z: 50000
+      X: 9450
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -597,16 +620,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -621,7 +655,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -637,13 +671,13 @@ Objects {
   }
 }
 Objects {
-  Id: 10087910818242976144
-  Name: "Plane 4m - One Sided"
+  Id: 9751217907447711434
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -20600
-      Z: 50000
+      X: 9450
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -653,16 +687,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -677,7 +722,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -693,13 +738,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16189946397438821283
-  Name: "Plane 4m - One Sided"
+  Id: 18008989418654654564
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -20250
-      Z: 50000
+      X: 8650
+      Y: -13150
+      Z: 1800
     }
     Rotation {
     }
@@ -709,16 +754,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -733,7 +789,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -749,13 +805,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4959762796676518923
-  Name: "Plane 4m - One Sided"
+  Id: 2448255350559371508
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -19850
-      Z: 50000
+      X: 8650
+      Y: -11550
+      Z: 1800
     }
     Rotation {
     }
@@ -765,16 +821,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -789,7 +856,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -805,13 +872,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8715742826265396719
-  Name: "Plane 4m - One Sided"
+  Id: 6215517045601532115
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -8150
-      Y: -19500
-      Z: 50000
+      X: 8650
+      Y: -12350
+      Z: 1800
     }
     Rotation {
     }
@@ -821,16 +888,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -845,7 +923,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -861,13 +939,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6678274326399341348
-  Name: "Plane 4m - One Sided"
+  Id: 2598515133608869711
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -20600
-      Z: 50000
+      X: 8650
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -877,16 +955,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -901,7 +990,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -917,13 +1006,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7340679746283408673
-  Name: "Plane 4m - One Sided"
+  Id: 13025892700018478794
+  Name: "Sci-fi Base Roof 01 - 8m"
   Transform {
     Location {
-      X: -7800
-      Y: -20250
-      Z: 50000
+      X: 7850
+      Y: -10750
+      Z: 1800
     }
     Rotation {
     }
@@ -933,16 +1022,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13968773500198811288
+  ParentId: 14768814636993011725
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Building_Ceiling:id"
       AssetReference {
-        Id: 14582790818618070150
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 2249794126015640337
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 2249794126015640337
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -957,343 +1057,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 4545983560136664582
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7800
-      Y: -19850
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 1877804969775933268
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7800
-      Y: -19500
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16475659745212227229
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7450
-      Y: -20600
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12276674443011599234
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7450
-      Y: -20250
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 8157476872938783771
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7450
-      Y: -19850
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 5285927364122784848
-  Name: "Plane 4m - One Sided"
-  Transform {
-    Location {
-      X: -7450
-      Y: -19500
-      Z: 50000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13968773500198811288
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14582790818618070150
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15417948799177636893
+      Id: 3757607954138577006
     }
     Teams {
       IsTeamCollisionEnabled: true
