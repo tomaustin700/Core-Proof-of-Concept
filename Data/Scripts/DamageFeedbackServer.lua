@@ -1,7 +1,7 @@
 
 local jumpStartHeight = {}
 
-local MAX_SAFE_FALL_HEIGHT = 1000
+local MAX_SAFE_FALL_HEIGHT = 2000
 local FALL_DAMAGE_MULTIPLIER = 5/10
 
 function OnMovementModeChanged(player, mode)
