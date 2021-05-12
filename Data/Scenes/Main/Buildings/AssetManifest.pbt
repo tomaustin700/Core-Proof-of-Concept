@@ -836,6 +836,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1068928828899867094
+  Name: "Ring - Beveled Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
   Id: 736184928439099396
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1

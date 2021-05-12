@@ -40,6 +40,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
+
+       
     end
 
     --Spawn players at L1 Start
@@ -62,6 +64,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         end
 
+        ABGS.SetGameState(ABGS.GAME_STATE_ROUND_4_START) -- TEMP
+
 
     end
 
@@ -80,7 +84,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level2N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("1Start").isEnabled = false
-  
+
 
         local start = World.FindObjectByName("2Start")
         start.isEnabled = true
@@ -116,7 +120,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level2N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("2Start").isEnabled = false
-  
+
 
         local start = World.FindObjectByName("3Start")
         start.isEnabled = true
@@ -146,11 +150,13 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     --Spawn players at L4 Start
-    if (newState == ABGS.GAME_STATE_ROUND_4_START and oldState == ABGS.GAME_STATE_ROUND_3_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_4_START) then -- and oldState == ABGS.GAME_STATE_ROUND_3_END) then
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("3Start").isEnabled = false
-  
+
+        World.FindObjectByName("1Start").isEnabled = false --TEMP
+
 
         local start = World.FindObjectByName("4Start")
         start.isEnabled = true
@@ -172,15 +178,21 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     --L4 started so unfreeze players
     if (newState == ABGS.GAME_STATE_ROUND_4 and oldState == ABGS.GAME_STATE_ROUND_4_START) then
+
+        for _, player in pairs(Game.GetPlayers()) do
+            player:ActivateFlying()
+
+        end
+
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
 
 
     end
-    
 
-   
+
+
 end
 
 -- Initialize

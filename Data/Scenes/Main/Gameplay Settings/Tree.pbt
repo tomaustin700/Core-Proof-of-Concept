@@ -73,6 +73,10 @@ Objects {
           Name: "PlayerFlipOnMultiJump"
           Bool: true
         }
+        Overrides {
+          Name: "PlayerMaxFlightSpeed"
+          Float: 6000
+        }
       }
     }
     TemplateAsset {
