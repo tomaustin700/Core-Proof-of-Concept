@@ -4,6 +4,8 @@ local ABGS = require(script:GetCustomProperty("API"))
 function OnPlayerRespawn(player)
     if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_4 or ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_4_END then
         player:ActivateFlying()
+        player:AddImpulse(Vector3.FORWARD * player.mass * -2000)
+
     end 
 
 end

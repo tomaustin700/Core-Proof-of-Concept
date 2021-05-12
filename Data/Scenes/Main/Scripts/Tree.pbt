@@ -1,6 +1,39 @@
 Name: "Scripts"
 RootId: 17045676539577920579
 Objects {
+  Id: 16664450313372726402
+  Name: "DamageFeedbackServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17045676539577920579
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10075954645707622603
+    }
+  }
+}
+Objects {
   Id: 6349830695748574909
   Name: "L4FlightEnabler"
   Transform {

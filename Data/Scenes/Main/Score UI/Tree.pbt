@@ -1,9 +1,13 @@
 Name: "Score UI"
 RootId: 4832139476130371488
 Objects {
-  Id: 3396169375425881704
+  Id: 1708646417279369685
   Name: "Game Instructions"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -22,46 +26,21 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 385136201106535374
-      value {
-        Overrides {
-          Name: "UIX"
-          Float: 20
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 10
-        }
-        Overrides {
-          Name: "Label"
-          String: "Reach the end the quickest!"
-        }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
       }
     }
-    ParameterOverrideMap {
-      key: 13035584137771081688
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Game Instructions"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
+    Canvas {
     }
-    TemplateAsset {
-      Id: 17719802504190886190
-    }
+  }
+  InstanceHistory {
+    SelfId: 1708646417279369685
+    SubobjectId: 13035584137771081688
+    InstanceId: 3396169375425881704
+    TemplateId: 17719802504190886190
+    WasRoot: true
   }
 }
 Objects {

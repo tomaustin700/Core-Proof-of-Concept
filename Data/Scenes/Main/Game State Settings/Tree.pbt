@@ -98,6 +98,12 @@ Objects {
         SelfId: 12705758940345181877
       }
     }
+    Overrides {
+      Name: "cs:L4WinTrigger"
+      ObjectReference {
+        SelfId: 14199656628956585762
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

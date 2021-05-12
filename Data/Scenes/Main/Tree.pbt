@@ -219,7 +219,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Fog Density"
-      Float: 1
+      Float: 50
     }
   }
   Collidable_v2 {

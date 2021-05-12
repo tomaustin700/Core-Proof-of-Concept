@@ -1,13 +1,71 @@
 Name: "End"
 RootId: 3130381744395711183
 Objects {
+  Id: 2797457923103816631
+  Name: "Main Street Floor 01 - 8m x 8m"
+  Transform {
+    Location {
+      X: -16449.5488
+      Y: -20800
+      Z: 7000
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 8.14221737e-13
+      Roll: 180
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 1
+    }
+  }
+  ParentId: 3130381744395711183
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Floor:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13751408475123645462
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 1199604989801949589
   Name: "GeoVisual"
   Transform {
     Location {
-      X: -12500
-      Y: -24750
-      Z: 14450
+      X: -11299.749
+      Y: -16900
+      Z: 1900
     }
     Rotation {
     }
@@ -29,7 +87,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsGroup: true
@@ -177,11 +235,12 @@ Objects {
   Name: "L4WinTrigger"
   Transform {
     Location {
-      X: -12450
-      Y: -24800
-      Z: 14450
+      X: -12550
+      Y: -16750
+      Z: 14249.998
     }
     Rotation {
+      Roll: 180
     }
     Scale {
       X: 80
@@ -222,6 +281,7 @@ Objects {
       Z: 14400
     }
     Rotation {
+      Roll: 180
     }
     Scale {
       X: 10

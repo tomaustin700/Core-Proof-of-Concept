@@ -27,6 +27,7 @@ local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local L1WIN_TRIGGER = script:GetCustomProperty("L1WinTrigger"):WaitForObject()
 local L2WIN_TRIGGER = script:GetCustomProperty("L2WinTrigger"):WaitForObject()
 local L3WIN_TRIGGER = script:GetCustomProperty("L3WinTrigger"):WaitForObject()
+local L4WIN_TRIGGER = script:GetCustomProperty("L4WinTrigger"):WaitForObject()
 local winner = nil
 local second = nil
 local third = nil
@@ -90,6 +91,7 @@ function Tick(deltaTime)
     if ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1_START or
         ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_2_START or
         ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_3_START or
+        ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_4_START or
         ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_5_START then
         completedPlayers = {}
         winner = nil
@@ -147,4 +149,5 @@ end
 L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L2WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L3WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
+L4WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 
