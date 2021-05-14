@@ -37,4 +37,5 @@ function OnPlayerJoined(player)
     player.movementModeChangedEvent:Connect(OnMovementModeChanged)
 end
 
+--maybe change to only active on l3
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

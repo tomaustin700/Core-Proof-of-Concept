@@ -5,15 +5,15 @@ Objects {
   Name: "L2WinTrigger"
   Transform {
     Location {
-      X: -60750
-      Y: -25550
-      Z: 7700
+      X: -61200
+      Y: -26100
+      Z: 7500
     }
     Rotation {
     }
     Scale {
-      X: 30
-      Y: 40
+      X: 40
+      Y: 34
       Z: 1
     }
   }
