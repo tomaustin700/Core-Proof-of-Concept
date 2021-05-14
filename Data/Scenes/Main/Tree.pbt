@@ -45,7 +45,7 @@ Objects {
     Location {
       X: -52700
       Y: -15450
-      Z: 10400
+      Z: 10450
     }
     Scale {
       X: 1

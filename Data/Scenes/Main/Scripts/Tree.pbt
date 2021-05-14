@@ -17,7 +17,7 @@ Objects {
   ParentId: 17045676539577920579
   UnregisteredParameters {
     Overrides {
-      Name: "cs:APIBasicGameState"
+      Name: "cs:API"
       AssetReference {
         Id: 2752319624123459090
       }

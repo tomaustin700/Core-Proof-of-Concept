@@ -197,7 +197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9521456143057412330
+  Id: 3443953976844427379
   Name: "Level3"
   Transform {
     Location {
@@ -213,6 +213,39 @@ Objects {
     }
   }
   ParentId: 7335477459098176817
+  ChildIds: 14819069786497382998
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 14819069786497382998
+  Name: "Obs"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3443953976844427379
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -227,7 +260,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Level3"
+    FilePartitionName: "Obs"
   }
 }
 Objects {
