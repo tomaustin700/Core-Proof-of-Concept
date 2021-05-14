@@ -45,8 +45,8 @@ Objects {
   Name: "3Start"
   Transform {
     Location {
-      X: -300
-      Y: -10000
+      X: 79300
+      Y: -71050
       Z: 50200
     }
     Rotation {

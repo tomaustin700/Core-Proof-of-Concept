@@ -1,8 +1,8 @@
 Name: "Level3"
-RootId: 3530011650646499949
+RootId: 9521456143057412330
 Objects {
-  Id: 14193472477606496562
-  Name: "End"
+  Id: 14819069786497382998
+  Name: "Obs"
   Transform {
     Location {
     }
@@ -14,8 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3530011650646499949
-  WantsNetworking: true
+  ParentId: 9521456143057412330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,72 +29,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End_1"
-  }
-}
-Objects {
-  Id: 13968773500198811288
-  Name: "Start"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3530011650646499949
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Start_1"
-  }
-}
-Objects {
-  Id: 5008768442939200306
-  Name: "Platforms"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3530011650646499949
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Platforms"
+    FilePartitionName: "Obs"
   }
 }

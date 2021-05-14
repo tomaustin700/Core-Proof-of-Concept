@@ -197,10 +197,46 @@ Objects {
   }
 }
 Objects {
-  Id: 3530011650646499949
+  Id: 9521456143057412330
   Name: "Level3"
   Transform {
     Location {
+      X: 79600
+      Y: -61050
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7335477459098176817
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Level3"
+  }
+}
+Objects {
+  Id: 3530011650646499949
+  Name: "Level3N"
+  Transform {
+    Location {
+      X: 79600
+      Y: -61050
     }
     Rotation {
     }
@@ -226,7 +262,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Level3"
+    FilePartitionName: "Level3N"
   }
 }
 Objects {
