@@ -1,4 +1,5 @@
 local jumpStartHeight = {}
+local events = {}
 
 local MAX_SAFE_FALL_HEIGHT = 1500
 local FALL_DAMAGE_MULTIPLIER = 5 / 10
@@ -35,13 +36,14 @@ end
 function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     if newState == ABGS.GAME_STATE_ROUND_3 then
         for _, player in pairs(Game.GetPlayers()) do
-            player.movementModeChangedEvent:Connect(OnMovementModeChanged)
+            local event = player.movementModeChangedEvent:Connect(OnMovementModeChanged)
+            table.insert(events, event)
         end
     end
 
     if newState == ABGS.GAME_STATE_ROUND_4 then
-        for _, player in pairs(Game.GetPlayers()) do
-            player.movementModeChangedEvent:Disconnect()
+        for _, event in events do
+            event:Disconnect()
         end
     end
 end
