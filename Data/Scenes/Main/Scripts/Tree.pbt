@@ -15,6 +15,14 @@ Objects {
     }
   }
   ParentId: 17045676539577920579
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIBasicGameState"
+      AssetReference {
+        Id: 2752319624123459090
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

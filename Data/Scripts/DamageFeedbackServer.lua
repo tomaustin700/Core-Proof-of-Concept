@@ -1,26 +1,26 @@
-
 local jumpStartHeight = {}
 
-local MAX_SAFE_FALL_HEIGHT = 2000
-local FALL_DAMAGE_MULTIPLIER = 5/10
+local MAX_SAFE_FALL_HEIGHT = 1500
+local FALL_DAMAGE_MULTIPLIER = 5 / 10
+local ABGS = require(script:GetCustomProperty("API"))
 
 function OnMovementModeChanged(player, mode)
-    --print("change!")
+    -- print("change!")
     if mode == MovementMode.FALLING then
-        --print("jump")
+        -- print("jump")
         jumpStartHeight[player] = player:GetWorldPosition().z
     elseif mode == MovementMode.WALKING then
-        --print("walk")
+        -- print("walk")
         if jumpStartHeight[player] ~= nil then
             local fallDistance = jumpStartHeight[player] - player:GetWorldPosition().z
-           -- print("Fell " ..fallDistance)
+            -- print("Fell " ..fallDistance)
             if fallDistance > MAX_SAFE_FALL_HEIGHT then
                 local damageFromFalling = (fallDistance - MAX_SAFE_FALL_HEIGHT) * FALL_DAMAGE_MULTIPLIER
 
                 if damageFromFalling >= 100 then
-                    --player:EnableRagdoll()
-                    --Task.Wait(5)
-                    --player:Respawn()
+                    player:EnableRagdoll()
+                    Task.Wait(5)
+                    player:Respawn()
                 end
 
             end
@@ -32,10 +32,19 @@ function OnMovementModeChanged(player, mode)
     end
 end
 
--- Outfit all players with the movementModeChanged listener
-function OnPlayerJoined(player)
-    player.movementModeChangedEvent:Connect(OnMovementModeChanged)
+function OnGameStateChanged(oldState, newState, hasDuration, endTime)
+    if newState == ABGS.GAME_STATE_ROUND_3 then
+        for _, player in pairs(Game.GetPlayers()) do
+            player.movementModeChangedEvent:Connect(OnMovementModeChanged)
+        end
+    end
+
+    if newState == ABGS.GAME_STATE_ROUND_4 then
+        for _, player in pairs(Game.GetPlayers()) do
+            player.movementModeChangedEvent:Disconnect()
+        end
+    end
 end
 
---maybe change to only active on l3
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+Events.Connect("GameStateChanged", OnGameStateChanged)
+

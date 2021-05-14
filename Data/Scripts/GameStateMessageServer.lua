@@ -42,13 +42,13 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
         Events.BroadcastToAllPlayers("BannerMessage", "Round 1 - Rooftops")
     elseif newState == ABGS.GAME_STATE_ROUND_1 and oldState ~=
         ABGS.GAME_STATE_ROUND_1 then
-        Events.BroadcastToAllPlayers("BannerMessage", "Race to the end")
+        Events.BroadcastToAllPlayers("BannerMessage", "Race over the rooftops")
     elseif newState == ABGS.GAME_STATE_ROUND_2_START and oldState ~=
         ABGS.GAME_STATE_ROUND_2_START then
         Events.BroadcastToAllPlayers("BannerMessage", "Round 2 - Jump Pads")
     elseif newState == ABGS.GAME_STATE_ROUND_2 and oldState ~=
         ABGS.GAME_STATE_ROUND_2 then
-        Events.BroadcastToAllPlayers("BannerMessage", "Race to the end")
+        Events.BroadcastToAllPlayers("BannerMessage", "Race across the high rises")
     elseif newState == ABGS.GAME_STATE_ROUND_3_START and oldState ~=
         ABGS.GAME_STATE_ROUND_3_START then
         Events.BroadcastToAllPlayers("BannerMessage", "Round 3 - Dropzone")
