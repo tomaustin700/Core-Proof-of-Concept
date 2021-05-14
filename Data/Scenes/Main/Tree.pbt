@@ -23,6 +23,7 @@ Objects {
   ChildIds: 5561596894153728145
   ChildIds: 5300107151472708879
   ChildIds: 3147085681161289114
+  ChildIds: 10213304903235838084
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,51 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10213304903235838084
+  Name: "Goal"
+  Transform {
+    Location {
+      X: -52700
+      Y: -15450
+      Z: 10400
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 2752319624123459090
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10213304903235838084
+    SubobjectId: 15607021917237138495
+    InstanceId: 17764295603122844940
+    TemplateId: 804434200567944567
+    WasRoot: true
   }
 }
 Objects {

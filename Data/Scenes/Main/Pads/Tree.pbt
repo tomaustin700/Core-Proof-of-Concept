@@ -1,13 +1,13 @@
 Name: "Pads"
-RootId: 2812444516925447232
+RootId: 2084520394549679067
 Objects {
-  Id: 6815976524921871889
+  Id: 13988293254604417499
   Name: "JumpPad"
   Transform {
     Location {
-      X: -13400
-      Y: -9850
-      Z: 1800
+      X: -64150
+      Y: -9900
+      Z: 14500
     }
     Rotation {
     }
@@ -17,8 +17,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 16661582585234660925
+  ParentId: 2084520394549679067
+  ChildIds: 3421453108351076871
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -69,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16661582585234660925
+  Id: 3421453108351076871
   Name: "Trigger"
   Transform {
     Location {
@@ -84,7 +84,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6815976524921871889
+  ParentId: 13988293254604417499
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -108,13 +108,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9119628246549773926
+  Id: 16124500945541880475
   Name: "JumpPad"
   Transform {
     Location {
-      X: -15300
-      Y: -11200
-      Z: 1800
+      X: -61600
+      Y: -9900
+      Z: 14500
     }
     Rotation {
     }
@@ -124,8 +124,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 8510595953763288354
+  ParentId: 2084520394549679067
+  ChildIds: 14900380652486604298
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -176,7 +176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8510595953763288354
+  Id: 14900380652486604298
   Name: "Trigger"
   Transform {
     Location {
@@ -191,7 +191,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9119628246549773926
+  ParentId: 16124500945541880475
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -215,13 +215,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14424619175556863864
+  Id: 17218240408136065537
   Name: "JumpPad"
   Transform {
     Location {
-      X: -17050
-      Y: -9850
-      Z: 1800
+      X: -58750
+      Y: -9900
+      Z: 14500
     }
     Rotation {
     }
@@ -231,8 +231,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 8817390087692277388
+  ParentId: 2084520394549679067
+  ChildIds: 7757131126661541371
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -283,7 +283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8817390087692277388
+  Id: 7757131126661541371
   Name: "Trigger"
   Transform {
     Location {
@@ -298,7 +298,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14424619175556863864
+  ParentId: 17218240408136065537
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -322,13 +322,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7534370131610718207
+  Id: 10335593345964136617
   Name: "JumpPad"
   Transform {
     Location {
-      X: -18950
-      Y: -11200
-      Z: 1800
+      X: -60750
+      Y: 250
+      Z: 14650
     }
     Rotation {
     }
@@ -338,8 +338,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 14593037437395203008
+  ParentId: 2084520394549679067
+  ChildIds: 16802688474908374230
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -390,7 +390,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14593037437395203008
+  Id: 16802688474908374230
   Name: "Trigger"
   Transform {
     Location {
@@ -405,7 +405,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7534370131610718207
+  ParentId: 10335593345964136617
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -429,13 +429,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15040678855194278694
+  Id: 10488128426423508588
   Name: "JumpPad"
   Transform {
     Location {
-      X: 2400
-      Y: -11200
-      Z: 1800
+      X: -61950
+      Y: 2100
+      Z: 14650
     }
     Rotation {
     }
@@ -445,8 +445,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 7023895895786797675
+  ParentId: 2084520394549679067
+  ChildIds: 6659101969597477651
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -497,7 +497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7023895895786797675
+  Id: 6659101969597477651
   Name: "Trigger"
   Transform {
     Location {
@@ -512,7 +512,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15040678855194278694
+  ParentId: 10488128426423508588
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -536,13 +536,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15123517851680259909
+  Id: 8918374226066577423
   Name: "JumpPad"
   Transform {
     Location {
-      X: 650
-      Y: -9850
-      Z: 1800
+      X: -44900
+      Y: -12700
+      Z: 14500
     }
     Rotation {
     }
@@ -552,8 +552,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 1261323497353692780
+  ParentId: 2084520394549679067
+  ChildIds: 3456526349275041044
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -604,7 +604,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1261323497353692780
+  Id: 3456526349275041044
   Name: "Trigger"
   Transform {
     Location {
@@ -619,7 +619,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15123517851680259909
+  ParentId: 8918374226066577423
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -643,13 +643,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15561489120067479482
+  Id: 16481693913652720429
   Name: "JumpPad"
   Transform {
     Location {
-      X: -1250
-      Y: -11200
-      Z: 1800
+      X: -47750
+      Y: -12700
+      Z: 14500
     }
     Rotation {
     }
@@ -659,8 +659,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 11311232544913857156
+  ParentId: 2084520394549679067
+  ChildIds: 1538235795666601526
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -711,7 +711,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11311232544913857156
+  Id: 1538235795666601526
   Name: "Trigger"
   Transform {
     Location {
@@ -726,7 +726,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15561489120067479482
+  ParentId: 16481693913652720429
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -750,13 +750,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3935994818745642714
+  Id: 13035600382643642423
   Name: "JumpPad"
   Transform {
     Location {
-      X: -3000
-      Y: -9850
-      Z: 1800
+      X: -50300
+      Y: -12700
+      Z: 14500
     }
     Rotation {
     }
@@ -766,8 +766,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 699541710191107203
+  ParentId: 2084520394549679067
+  ChildIds: 15323713583602422928
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -818,7 +818,7 @@ Objects {
   }
 }
 Objects {
-  Id: 699541710191107203
+  Id: 15323713583602422928
   Name: "Trigger"
   Transform {
     Location {
@@ -833,7 +833,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3935994818745642714
+  ParentId: 13035600382643642423
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -857,13 +857,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5133965519930656007
+  Id: 2968422868933896175
   Name: "JumpPad"
   Transform {
     Location {
-      X: -4400
-      Y: -11200
-      Z: 1800
+      X: -51150
+      Y: 14000
+      Z: 14600
     }
     Rotation {
     }
@@ -873,8 +873,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 3050289041910241499
+  ParentId: 2084520394549679067
+  ChildIds: 5762186467289957311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -925,7 +925,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3050289041910241499
+  Id: 5762186467289957311
   Name: "Trigger"
   Transform {
     Location {
@@ -940,7 +940,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5133965519930656007
+  ParentId: 2968422868933896175
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -964,13 +964,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7527267719887924412
+  Id: 7731053156140350782
   Name: "JumpPad"
   Transform {
     Location {
-      X: -6150
-      Y: -9850
-      Z: 1800
+      X: -51150
+      Y: 15850
+      Z: 14600
     }
     Rotation {
     }
@@ -980,8 +980,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 16588069837612324869
+  ParentId: 2084520394549679067
+  ChildIds: 6857576967119566095
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1032,7 +1032,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16588069837612324869
+  Id: 6857576967119566095
   Name: "Trigger"
   Transform {
     Location {
@@ -1047,7 +1047,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7527267719887924412
+  ParentId: 7731053156140350782
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1071,13 +1071,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6414248829967960710
+  Id: 3667724195505066790
   Name: "JumpPad"
   Transform {
     Location {
-      X: -8050
-      Y: -11200
-      Z: 1800
+      X: -51150
+      Y: 2100
+      Z: 14600
     }
     Rotation {
     }
@@ -1087,8 +1087,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 12886892998021646585
+  ParentId: 2084520394549679067
+  ChildIds: 11734856273213708327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1139,7 +1139,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12886892998021646585
+  Id: 11734856273213708327
   Name: "Trigger"
   Transform {
     Location {
@@ -1154,7 +1154,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6414248829967960710
+  ParentId: 3667724195505066790
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1178,13 +1178,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13766897732398068528
+  Id: 13865555224670569096
   Name: "JumpPad"
   Transform {
     Location {
-      X: -4400
-      Y: -11200
-      Z: 1800
+      X: -51150
+      Y: 250
+      Z: 14600
     }
     Rotation {
     }
@@ -1194,8 +1194,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 12526867663847784285
+  ParentId: 2084520394549679067
+  ChildIds: 5615072295197144634
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1246,7 +1246,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12526867663847784285
+  Id: 5615072295197144634
   Name: "Trigger"
   Transform {
     Location {
@@ -1261,7 +1261,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13766897732398068528
+  ParentId: 13865555224670569096
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1285,13 +1285,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8655429164081357926
+  Id: 1146059108572400699
   Name: "JumpPad"
   Transform {
     Location {
-      X: -6150
-      Y: -9850
-      Z: 1800
+      X: -38050
+      Y: 2100
+      Z: 14500
     }
     Rotation {
     }
@@ -1301,8 +1301,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 14564781297358346563
+  ParentId: 2084520394549679067
+  ChildIds: 6499891774988263860
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1353,7 +1353,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14564781297358346563
+  Id: 6499891774988263860
   Name: "Trigger"
   Transform {
     Location {
@@ -1368,7 +1368,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8655429164081357926
+  ParentId: 1146059108572400699
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1392,13 +1392,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3456949430154153449
+  Id: 12328847757175918242
   Name: "JumpPad"
   Transform {
     Location {
-      X: -8050
-      Y: -11200
-      Z: 1800
+      X: -42750
+      Y: 2100
+      Z: 14500
     }
     Rotation {
     }
@@ -1408,8 +1408,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 421877569042186788
+  ParentId: 2084520394549679067
+  ChildIds: 8100336098918079075
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1460,7 +1460,7 @@ Objects {
   }
 }
 Objects {
-  Id: 421877569042186788
+  Id: 8100336098918079075
   Name: "Trigger"
   Transform {
     Location {
@@ -1475,7 +1475,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3456949430154153449
+  ParentId: 12328847757175918242
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1499,13 +1499,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11925663199796198377
+  Id: 11005146113286530393
   Name: "JumpPad"
   Transform {
     Location {
-      X: -9800
-      Y: -9850
-      Z: 1800
+      X: -38050
+      Y: 250
+      Z: 14500
     }
     Rotation {
     }
@@ -1515,8 +1515,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 13464279102558442053
+  ParentId: 2084520394549679067
+  ChildIds: 1784002694691383993
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1567,7 +1567,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13464279102558442053
+  Id: 1784002694691383993
   Name: "Trigger"
   Transform {
     Location {
@@ -1582,7 +1582,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11925663199796198377
+  ParentId: 11005146113286530393
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1606,13 +1606,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8215056175196518343
+  Id: 4805330391434770312
   Name: "JumpPad"
   Transform {
     Location {
-      X: -1250
-      Y: -11200
-      Z: 1800
+      X: -42750
+      Y: 250
+      Z: 14500
     }
     Rotation {
     }
@@ -1622,8 +1622,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 613574721471198448
+  ParentId: 2084520394549679067
+  ChildIds: 18317412912995040381
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1674,7 +1674,7 @@ Objects {
   }
 }
 Objects {
-  Id: 613574721471198448
+  Id: 18317412912995040381
   Name: "Trigger"
   Transform {
     Location {
@@ -1689,7 +1689,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8215056175196518343
+  ParentId: 4805330391434770312
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1713,13 +1713,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17551124977731105167
+  Id: 9104430598254880171
   Name: "JumpPad"
   Transform {
     Location {
-      X: -3000
-      Y: -9850
-      Z: 1800
+      X: -42200
+      Y: 15500
+      Z: 14450
     }
     Rotation {
     }
@@ -1729,8 +1729,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 15312867431618718225
+  ParentId: 2084520394549679067
+  ChildIds: 3851941020696966963
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1781,7 +1781,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15312867431618718225
+  Id: 3851941020696966963
   Name: "Trigger"
   Transform {
     Location {
@@ -1796,7 +1796,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17551124977731105167
+  ParentId: 9104430598254880171
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1820,13 +1820,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3115648470511061149
+  Id: 12153002157530307930
   Name: "JumpPad"
   Transform {
     Location {
-      X: 4050
-      Y: -9750
-      Z: 1800
+      X: -42200
+      Y: 17350
+      Z: 14450
     }
     Rotation {
     }
@@ -1836,8 +1836,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 13370929675235988334
+  ParentId: 2084520394549679067
+  ChildIds: 9772520964840678026
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1888,7 +1888,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13370929675235988334
+  Id: 9772520964840678026
   Name: "Trigger"
   Transform {
     Location {
@@ -1903,7 +1903,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3115648470511061149
+  ParentId: 12153002157530307930
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1927,13 +1927,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7573620470237721267
+  Id: 17606579563780348626
   Name: "JumpPad"
   Transform {
     Location {
-      X: 650
-      Y: -9850
-      Z: 1800
+      X: -37500
+      Y: 15500
+      Z: 14450
     }
     Rotation {
     }
@@ -1943,8 +1943,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 2267346481474012421
+  ParentId: 2084520394549679067
+  ChildIds: 7852536818723393728
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -1995,7 +1995,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2267346481474012421
+  Id: 7852536818723393728
   Name: "Trigger"
   Transform {
     Location {
@@ -2010,7 +2010,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7573620470237721267
+  ParentId: 17606579563780348626
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2034,13 +2034,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14548355615788123628
+  Id: 12784710637668280248
   Name: "JumpPad"
   Transform {
     Location {
-      X: 2400
-      Y: -11200
-      Z: 1800
+      X: -37500
+      Y: 17350
+      Z: 14450
     }
     Rotation {
     }
@@ -2050,8 +2050,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 3059662369856873932
+  ParentId: 2084520394549679067
+  ChildIds: 12534303523545678590
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2102,7 +2102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3059662369856873932
+  Id: 12534303523545678590
   Name: "Trigger"
   Transform {
     Location {
@@ -2117,7 +2117,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14548355615788123628
+  ParentId: 12784710637668280248
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2141,13 +2141,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13730246394885411225
+  Id: 1866849626408793013
   Name: "JumpPad"
   Transform {
     Location {
-      X: 650
-      Y: -9850
-      Z: 1800
+      X: -42750
+      Y: 6950
+      Z: 14500
     }
     Rotation {
     }
@@ -2157,8 +2157,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 15175562964366290953
+  ParentId: 2084520394549679067
+  ChildIds: 3705060627870035334
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2209,7 +2209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15175562964366290953
+  Id: 3705060627870035334
   Name: "Trigger"
   Transform {
     Location {
@@ -2224,7 +2224,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13730246394885411225
+  ParentId: 1866849626408793013
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2248,13 +2248,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4034471648266166290
+  Id: 14121831045323001309
   Name: "JumpPad"
   Transform {
     Location {
-      X: 2400
-      Y: -11200
-      Z: 1800
+      X: -42750
+      Y: 8800
+      Z: 14500
     }
     Rotation {
     }
@@ -2264,8 +2264,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 4649621779798013506
+  ParentId: 2084520394549679067
+  ChildIds: 1356729319850110211
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2316,7 +2316,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4649621779798013506
+  Id: 1356729319850110211
   Name: "Trigger"
   Transform {
     Location {
@@ -2331,7 +2331,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4034471648266166290
+  ParentId: 14121831045323001309
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2355,13 +2355,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9471392622155619370
+  Id: 779643540721903638
   Name: "JumpPad"
   Transform {
     Location {
-      X: -10450
-      Y: -14550
-      Z: 1800
+      X: -38050
+      Y: 6950
+      Z: 14500
     }
     Rotation {
     }
@@ -2371,8 +2371,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 4552786318965283019
+  ParentId: 2084520394549679067
+  ChildIds: 11358694129973183508
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2423,7 +2423,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4552786318965283019
+  Id: 11358694129973183508
   Name: "Trigger"
   Transform {
     Location {
@@ -2438,7 +2438,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9471392622155619370
+  ParentId: 779643540721903638
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2462,13 +2462,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12488222432326782670
+  Id: 3267265848390297268
   Name: "JumpPad"
   Transform {
     Location {
-      X: -12200
-      Y: -13200
-      Z: 1800
+      X: -38050
+      Y: 8800
+      Z: 14500
     }
     Rotation {
     }
@@ -2478,8 +2478,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 11488307715480397258
+  ParentId: 2084520394549679067
+  ChildIds: 3303249667780475547
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2530,7 +2530,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11488307715480397258
+  Id: 3303249667780475547
   Name: "Trigger"
   Transform {
     Location {
@@ -2545,7 +2545,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12488222432326782670
+  ParentId: 3267265848390297268
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2569,13 +2569,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11186176161375892711
+  Id: 8292090908296034463
   Name: "JumpPad"
   Transform {
     Location {
-      X: -14100
-      Y: -14550
-      Z: 1800
+      X: -23350
+      Y: 12650
+      Z: 10700
     }
     Rotation {
     }
@@ -2585,8 +2585,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 9728473698693718704
+  ParentId: 2084520394549679067
+  ChildIds: 6407062281601406210
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2637,7 +2637,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9728473698693718704
+  Id: 6407062281601406210
   Name: "Trigger"
   Transform {
     Location {
@@ -2652,7 +2652,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11186176161375892711
+  ParentId: 8292090908296034463
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2676,13 +2676,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1398359287658536901
+  Id: 578177456607839467
   Name: "JumpPad"
   Transform {
     Location {
-      X: -15850
-      Y: -13200
-      Z: 1800
+      X: -23350
+      Y: 8150
+      Z: 10700
     }
     Rotation {
     }
@@ -2692,8 +2692,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 14044130490437149586
+  ParentId: 2084520394549679067
+  ChildIds: 12279448949421053686
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2744,7 +2744,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14044130490437149586
+  Id: 12279448949421053686
   Name: "Trigger"
   Transform {
     Location {
@@ -2759,7 +2759,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1398359287658536901
+  ParentId: 578177456607839467
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2783,13 +2783,13 @@ Objects {
   }
 }
 Objects {
-  Id: 18045797379106999573
+  Id: 794059559740960997
   Name: "JumpPad"
   Transform {
     Location {
-      X: -17250
-      Y: -14550
-      Z: 1800
+      X: -23350
+      Y: 10000
+      Z: 10700
     }
     Rotation {
     }
@@ -2799,8 +2799,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 7767697794914734690
+  ParentId: 2084520394549679067
+  ChildIds: 16357979869908325298
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2851,7 +2851,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7767697794914734690
+  Id: 16357979869908325298
   Name: "Trigger"
   Transform {
     Location {
@@ -2866,7 +2866,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18045797379106999573
+  ParentId: 794059559740960997
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2890,13 +2890,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15620955129566912481
+  Id: 12834629159632792109
   Name: "JumpPad"
   Transform {
     Location {
-      X: -19000
-      Y: -13200
-      Z: 1800
+      X: -18650
+      Y: 8150
+      Z: 10700
     }
     Rotation {
     }
@@ -2906,8 +2906,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 14273799703364870181
+  ParentId: 2084520394549679067
+  ChildIds: 10883184228322086648
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -2958,7 +2958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14273799703364870181
+  Id: 10883184228322086648
   Name: "Trigger"
   Transform {
     Location {
@@ -2973,7 +2973,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15620955129566912481
+  ParentId: 12834629159632792109
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2997,13 +2997,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7657949236973394057
+  Id: 7494047707083479207
   Name: "JumpPad"
   Transform {
     Location {
-      X: 3600
-      Y: -14550
-      Z: 1800
+      X: -18650
+      Y: 10000
+      Z: 10700
     }
     Rotation {
     }
@@ -3013,8 +3013,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 10748340847114864832
+  ParentId: 2084520394549679067
+  ChildIds: 13505281732433938747
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3065,7 +3065,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10748340847114864832
+  Id: 13505281732433938747
   Name: "Trigger"
   Transform {
     Location {
@@ -3080,7 +3080,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7657949236973394057
+  ParentId: 7494047707083479207
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3104,13 +3104,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14417015616925569039
+  Id: 15577284035106468895
   Name: "JumpPad"
   Transform {
     Location {
-      X: 1850
-      Y: -13200
-      Z: 1800
+      X: -26500
+      Y: 200
+      Z: 10800
     }
     Rotation {
     }
@@ -3120,8 +3120,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 291980383655792994
+  ParentId: 2084520394549679067
+  ChildIds: 16650186210035905345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3172,7 +3172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 291980383655792994
+  Id: 16650186210035905345
   Name: "Trigger"
   Transform {
     Location {
@@ -3187,7 +3187,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14417015616925569039
+  ParentId: 15577284035106468895
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3211,13 +3211,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1402305384450849338
+  Id: 7095979887458743930
   Name: "JumpPad"
   Transform {
     Location {
-      X: -50
-      Y: -14550
-      Z: 1800
+      X: -26500
+      Y: 2050
+      Z: 10800
     }
     Rotation {
     }
@@ -3227,8 +3227,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 10100772977566106022
+  ParentId: 2084520394549679067
+  ChildIds: 3423135411107273425
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3279,7 +3279,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10100772977566106022
+  Id: 3423135411107273425
   Name: "Trigger"
   Transform {
     Location {
@@ -3294,7 +3294,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1402305384450849338
+  ParentId: 7095979887458743930
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3318,13 +3318,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17758929754189500469
+  Id: 12826706433946313372
   Name: "JumpPad"
   Transform {
     Location {
-      X: -1800
-      Y: -13200
-      Z: 1800
+      X: -21800
+      Y: 200
+      Z: 10800
     }
     Rotation {
     }
@@ -3334,8 +3334,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 13209190603069682572
+  ParentId: 2084520394549679067
+  ChildIds: 496367681618957296
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3386,7 +3386,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13209190603069682572
+  Id: 496367681618957296
   Name: "Trigger"
   Transform {
     Location {
@@ -3401,7 +3401,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17758929754189500469
+  ParentId: 12826706433946313372
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3425,13 +3425,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11213972663766416767
+  Id: 11558142266632958264
   Name: "JumpPad"
   Transform {
     Location {
-      X: -3200
-      Y: -14550
-      Z: 1800
+      X: -21800
+      Y: 2050
+      Z: 10800
     }
     Rotation {
     }
@@ -3441,8 +3441,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 218663117961167507
+  ParentId: 2084520394549679067
+  ChildIds: 10431230692986051825
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3493,7 +3493,7 @@ Objects {
   }
 }
 Objects {
-  Id: 218663117961167507
+  Id: 10431230692986051825
   Name: "Trigger"
   Transform {
     Location {
@@ -3508,7 +3508,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11213972663766416767
+  ParentId: 11558142266632958264
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3532,13 +3532,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16675985590439878029
+  Id: 11524179767394500453
   Name: "JumpPad"
   Transform {
     Location {
-      X: -4950
-      Y: -13200
-      Z: 1800
+      X: -7100
+      Y: 1000
+      Z: 11550
     }
     Rotation {
     }
@@ -3548,8 +3548,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 8836282596007639962
+  ParentId: 2084520394549679067
+  ChildIds: 16165274248540463307
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3600,7 +3600,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8836282596007639962
+  Id: 16165274248540463307
   Name: "Trigger"
   Transform {
     Location {
@@ -3615,7 +3615,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16675985590439878029
+  ParentId: 11524179767394500453
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3639,13 +3639,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12659200785443987585
+  Id: 11451280657411568010
   Name: "JumpPad"
   Transform {
     Location {
-      X: -6850
-      Y: -14550
-      Z: 1800
+      X: -7100
+      Y: 2850
+      Z: 11550
     }
     Rotation {
     }
@@ -3655,8 +3655,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 5469969033581509733
+  ParentId: 2084520394549679067
+  ChildIds: 15945277762372451590
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3707,7 +3707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5469969033581509733
+  Id: 15945277762372451590
   Name: "Trigger"
   Transform {
     Location {
@@ -3722,7 +3722,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12659200785443987585
+  ParentId: 11451280657411568010
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3746,13 +3746,13 @@ Objects {
   }
 }
 Objects {
-  Id: 18356605430841182507
+  Id: 10348085061489302199
   Name: "JumpPad"
   Transform {
     Location {
-      X: -3200
-      Y: -14550
-      Z: 1800
+      X: -2400
+      Y: 1000
+      Z: 11550
     }
     Rotation {
     }
@@ -3762,8 +3762,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 11404015833156121230
+  ParentId: 2084520394549679067
+  ChildIds: 6625711523075205129
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3814,7 +3814,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11404015833156121230
+  Id: 6625711523075205129
   Name: "Trigger"
   Transform {
     Location {
@@ -3829,7 +3829,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18356605430841182507
+  ParentId: 10348085061489302199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3853,13 +3853,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1228697072903235225
+  Id: 617433062580424810
   Name: "JumpPad"
   Transform {
     Location {
-      X: -4950
-      Y: -13200
-      Z: 1800
+      X: -2400
+      Y: 2850
+      Z: 11550
     }
     Rotation {
     }
@@ -3869,8 +3869,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2812444516925447232
-  ChildIds: 5041083505135514175
+  ParentId: 2084520394549679067
+  ChildIds: 17156703094246036479
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -3921,7 +3921,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5041083505135514175
+  Id: 17156703094246036479
   Name: "Trigger"
   Transform {
     Location {
@@ -3936,1291 +3936,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1228697072903235225
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 10515069659922588743
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: -6850
-      Y: -14550
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 14269939369375279403
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14269939369375279403
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 10515069659922588743
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 12633878846051782055
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: -8600
-      Y: -13200
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 4370122653775181761
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 4370122653775181761
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 12633878846051782055
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 15242979342145224477
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: -50
-      Y: -14550
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 9218585317576591446
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 9218585317576591446
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 15242979342145224477
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 14069210059917749787
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: -1800
-      Y: -13200
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 124392180290255394
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 124392180290255394
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 14069210059917749787
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 17953824068614107066
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 5250
-      Y: -13100
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 5069015788453810903
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 5069015788453810903
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 17953824068614107066
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 6899352892428709584
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 1850
-      Y: -13200
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 9314033590105568990
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 9314033590105568990
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 6899352892428709584
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 1158262869185443236
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 3600
-      Y: -14550
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 7732649981554667584
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 7732649981554667584
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 1158262869185443236
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 17971690815478840676
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 1850
-      Y: -13200
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 7173572129105998003
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 7173572129105998003
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 17971690815478840676
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 14372452519991103077
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 3600
-      Y: -14550
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 10466149770692175830
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10466149770692175830
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 14372452519991103077
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 15206494251250605613
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 5250
-      Y: -11050
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 14632767872005111758
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14632767872005111758
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 15206494251250605613
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 456078028233814799
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: 5250
-      Y: -13100
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 16897799089256011302
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16897799089256011302
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 456078028233814799
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 9385150343323691189
-  Name: "JumpPad"
-  Transform {
-    Location {
-      X: -11650
-      Y: -11200
-      Z: 1800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2812444516925447232
-  ChildIds: 16858951451282632285
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Ceiling:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Roof:id"
-      AssetReference {
-        Id: 4367680979899409124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3757607954138577006
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16858951451282632285
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 400
-      Y: -400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 1
-    }
-  }
-  ParentId: 9385150343323691189
+  ParentId: 617433062580424810
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

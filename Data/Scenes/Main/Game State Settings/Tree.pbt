@@ -89,7 +89,7 @@ Objects {
     Overrides {
       Name: "cs:L2WinTrigger"
       ObjectReference {
-        SelfId: 17137778680319736694
+        SelfId: 724374342650602904
       }
     }
     Overrides {

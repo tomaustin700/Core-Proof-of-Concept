@@ -16,12 +16,13 @@ function OnMovementModeChanged(player, mode)
            -- print("Fell " ..fallDistance)
             if fallDistance > MAX_SAFE_FALL_HEIGHT then
                 local damageFromFalling = (fallDistance - MAX_SAFE_FALL_HEIGHT) * FALL_DAMAGE_MULTIPLIER
-                --print("Took " .. damageFromFalling .. " as fall damage!")
-                player:ApplyDamage(Damage.New(damageFromFalling))
-                if player.isDead then
-                    Task.Wait(5)
-                    player:Respawn()
+
+                if damageFromFalling >= 100 then
+                    --player:EnableRagdoll()
+                    --Task.Wait(5)
+                    --player:Respawn()
                 end
+
             end
         end
         jumpStartHeight[player] = nil

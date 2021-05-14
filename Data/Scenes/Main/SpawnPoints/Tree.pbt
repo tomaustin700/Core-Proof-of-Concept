@@ -81,16 +81,16 @@ Objects {
   }
 }
 Objects {
-  Id: 13287510656572996974
+  Id: 10943215261785564840
   Name: "2Start"
   Transform {
     Location {
-      X: 16650
-      Y: -2550
-      Z: 5000
+      X: 16750
+      Y: 13100
+      Z: 21750
     }
     Rotation {
-      Yaw: 180
+      Yaw: -179.999985
     }
     Scale {
       X: 1
