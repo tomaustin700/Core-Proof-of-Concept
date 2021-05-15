@@ -1,16 +1,15 @@
 Name: "SpawnPoints"
 RootId: 10132089353512407308
 Objects {
-  Id: 14915761252442178203
+  Id: 6902375403875891468
   Name: "4Start"
   Transform {
     Location {
-      X: 25900
-      Y: -14800
-      Z: 20350
+      X: -3500
+      Y: -8500
+      Z: 8750
     }
     Rotation {
-      Yaw: -179.999985
     }
     Scale {
       X: 1

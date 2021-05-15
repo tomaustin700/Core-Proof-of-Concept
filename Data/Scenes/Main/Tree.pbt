@@ -87,9 +87,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 61400
-            Y: -28450
-            Z: -39450
+            X: 120751.086
+            Y: -33750
+            Z: -38800
           }
         }
       }
@@ -232,7 +232,7 @@ Objects {
     }
     AutoPlay: true
     Repeat: true
-    Volume: 1
+    Volume: 1.63170719
     Falloff: -1
     Radius: 100000
     IsSpatializationEnabled: true

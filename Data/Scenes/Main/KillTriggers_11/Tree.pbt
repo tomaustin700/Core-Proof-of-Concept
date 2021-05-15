@@ -1,13 +1,13 @@
 Name: "KillTriggers_11"
-RootId: 5833889990912637574
+RootId: 14182842527759361035
 Objects {
-  Id: 17725659363500954067
+  Id: 14187250652230452745
   Name: "Trigger"
   Transform {
     Location {
-      X: 17400
-      Y: -26300
-      Z: 18650
+      X: 12900
+      Y: -20200
+      Z: 78446.625
     }
     Rotation {
     }
@@ -17,7 +17,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,13 +41,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15876836531404421851
+  Id: 17097168101424406177
   Name: "Trigger"
   Transform {
     Location {
-      X: 17400
-      Y: -23750
-      Z: 18650
+      X: 12900
+      Y: -17650
+      Z: 78446.625
     }
     Rotation {
     }
@@ -57,7 +57,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -81,13 +81,13 @@ Objects {
   }
 }
 Objects {
-  Id: 883511651191777623
+  Id: 11682154173214401018
   Name: "Trigger"
   Transform {
     Location {
-      X: 17350
-      Y: -24050
-      Z: 18000
+      X: 12850.5703
+      Y: -17950
+      Z: 77796.7422
     }
     Rotation {
       Roll: 135
@@ -98,7 +98,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -122,13 +122,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13582859885993135102
+  Id: 16664482134393380158
   Name: "Trigger"
   Transform {
     Location {
-      X: 17350
-      Y: -26000
-      Z: 19550
+      X: 12850.6563
+      Y: -19900
+      Z: 79346.2188
     }
     Rotation {
       Roll: 135
@@ -139,7 +139,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -163,13 +163,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16620513801193958781
+  Id: 11390652019275649622
   Name: "Trigger"
   Transform {
     Location {
-      X: 17350
-      Y: -26000
-      Z: 18000
+      X: 12850.5703
+      Y: -19900
+      Z: 77796.7422
     }
     Rotation {
       Roll: 44.9999924
@@ -180,7 +180,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -204,13 +204,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17449675385525715860
+  Id: 1309088588250163181
   Name: "Trigger"
   Transform {
     Location {
-      X: 17350
-      Y: -24050
-      Z: 19600
+      X: 12850.2109
+      Y: -17950
+      Z: 79396.2109
     }
     Rotation {
       Roll: 44.9999962
@@ -221,7 +221,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -245,13 +245,13 @@ Objects {
   }
 }
 Objects {
-  Id: 16024147499907905109
+  Id: 10212877543812724098
   Name: "Trigger"
   Transform {
     Location {
-      X: 17400
-      Y: -24950
-      Z: 20000
+      X: 12900.3203
+      Y: -18850
+      Z: 79796.0078
     }
     Rotation {
     }
@@ -261,7 +261,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -285,13 +285,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4092817775526555238
+  Id: 12587735017294225866
   Name: "Trigger"
   Transform {
     Location {
-      X: 17350
-      Y: -24950
-      Z: 17650
+      X: 12849.7422
+      Y: -18850
+      Z: 77446.9688
     }
     Rotation {
     }
@@ -301,7 +301,7 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 5833889990912637574
+  ParentId: 14182842527759361035
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

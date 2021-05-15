@@ -1,6 +1,6 @@
 function BoostOverlap(trigger, other)
     if other:IsA("Player") then
-        other:AddImpulse(Vector3.FORWARD * other.mass * -5500)
+        other:AddImpulse(Vector3.UP * other.mass * 7000)
     end
 end
 

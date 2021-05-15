@@ -1,34 +1,24 @@
 Name: "End"
 RootId: 3130381744395711183
 Objects {
-  Id: 2797457923103816631
-  Name: "Main Street Floor 01 - 8m x 8m"
+  Id: 11370954541203355232
+  Name: "L4WinTrigger"
   Transform {
     Location {
-      X: -16449.5488
-      Y: -20800
-      Z: 7000
+      X: 296591.531
+      Y: -20350
+      Z: -274798.406
     }
     Rotation {
-      Pitch: 90
-      Yaw: 8.14221737e-13
-      Roll: 180
+      Pitch: -90
     }
     Scale {
-      X: 10
-      Y: 10
-      Z: 1
+      X: 40
+      Y: 40
+      Z: 40
     }
   }
   ParentId: 3130381744395711183
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Floor:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,43 +31,37 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751408475123645462
-    }
-    Teams {
+  Trigger {
+    TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
     }
   }
 }
 Objects {
-  Id: 1199604989801949589
+  Id: 12965634249143919792
   Name: "GeoVisual"
   Transform {
     Location {
-      X: -11299.749
-      Y: -16900
-      Z: 1900
+      X: 298044.656
+      Y: -20350
+      Z: -274713.25
     }
     Rotation {
+      Pitch: 90
     }
     Scale {
-      X: 10
-      Y: 10
-      Z: 10
+      X: 3
+      Y: 3
+      Z: 3
     }
   }
   ParentId: 3130381744395711183
-  ChildIds: 17094476098994771327
-  ChildIds: 16451023872895196839
+  ChildIds: 5652354770796533850
+  ChildIds: 5118115350790099842
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -87,20 +71,20 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Folder {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 1199604989801949589
+    SelfId: 12965634249143919792
     SubobjectId: 11938771496268476083
-    InstanceId: 1029713696379294474
+    InstanceId: 8248494463391901388
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 16451023872895196839
+  Id: 5118115350790099842
   Name: "Diamond"
   Transform {
     Location {
@@ -114,7 +98,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 1199604989801949589
+  ParentId: 12965634249143919792
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -159,14 +143,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16451023872895196839
+    SelfId: 5118115350790099842
     SubobjectId: 5856671861138119041
-    InstanceId: 1029713696379294474
+    InstanceId: 8248494463391901388
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 17094476098994771327
+  Id: 5652354770796533850
   Name: "Cube Highlight"
   Transform {
     Location {
@@ -179,7 +163,7 @@ Objects {
       Z: 11
     }
   }
-  ParentId: 1199604989801949589
+  ParentId: 12965634249143919792
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -224,106 +208,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17094476098994771327
+    SelfId: 5652354770796533850
     SubobjectId: 6354883067772359257
-    InstanceId: 1029713696379294474
+    InstanceId: 8248494463391901388
     TemplateId: 804434200567944567
-  }
-}
-Objects {
-  Id: 14199656628956585762
-  Name: "L4WinTrigger"
-  Transform {
-    Location {
-      X: -12550
-      Y: -16750
-      Z: 14249.998
-    }
-    Rotation {
-      Roll: 180
-    }
-    Scale {
-      X: 80
-      Y: 80
-      Z: 1
-    }
-  }
-  ParentId: 3130381744395711183
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 11340979436648406606
-  Name: "Main Street Floor 01 - 8m x 8m"
-  Transform {
-    Location {
-      X: -16450
-      Y: -20800
-      Z: 14400
-    }
-    Rotation {
-      Roll: 180
-    }
-    Scale {
-      X: 10
-      Y: 10
-      Z: 1
-    }
-  }
-  ParentId: 3130381744395711183
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Floor:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13751408475123645462
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
   }
 }

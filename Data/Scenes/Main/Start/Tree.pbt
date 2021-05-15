@@ -5,9 +5,9 @@ Objects {
   Name: "Main Street Floor 01 - 8m x 8m"
   Transform {
     Location {
-      X: 15100
-      Y: -20800
-      Z: 20050
+      X: -11900
+      Y: -14550
+      Z: 8000
     }
     Rotation {
     }

@@ -42,7 +42,6 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
 
-       
     end
 
     --Spawn players at L1 Start
