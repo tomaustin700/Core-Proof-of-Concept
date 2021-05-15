@@ -76,7 +76,11 @@ Objects {
         }
         Overrides {
           Name: "PlayerMaxFlightSpeed"
-          Float: 6000
+          Float: 25000
+        }
+        Overrides {
+          Name: "PlayerBrakingDecelerationFlying"
+          Float: 200
         }
       }
     }

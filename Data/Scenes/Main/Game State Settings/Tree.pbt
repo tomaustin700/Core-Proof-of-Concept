@@ -101,7 +101,7 @@ Objects {
     Overrides {
       Name: "cs:L4WinTrigger"
       ObjectReference {
-        SelfId: 841534158063459245
+        SelfId: 11370954541203355232
       }
     }
   }

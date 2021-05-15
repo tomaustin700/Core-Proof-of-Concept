@@ -76,7 +76,6 @@ Objects {
     }
   }
   ParentId: 7335477459098176817
-  ChildIds: 9888532392796661415
   ChildIds: 16207422659821075962
   ChildIds: 3130381744395711183
   ChildIds: 14191478940390391519
@@ -195,58 +194,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Start"
-  }
-}
-Objects {
-  Id: 9888532392796661415
-  Name: "Sky Sci-fi 01"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16634710550389161066
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12743596547252287504
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Sky Sci-fi 01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -7800
-            Y: -10150
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12438716704664327534
-    }
   }
 }
 Objects {
