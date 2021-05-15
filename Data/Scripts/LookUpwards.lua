@@ -1,14 +1,14 @@
-local ABGS = require(script:GetCustomProperty("API"))
+-- local ABGS = require(script:GetCustomProperty("API"))
 
-function OnGameStateChanged(oldState, newState, hasDuration, endTime)
+-- function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
-    if newState == ABGS.GAME_STATE_ROUND_4 then
+--     if newState == ABGS.GAME_STATE_ROUND_4 then
         
-        local player = Game.GetLocalPlayer()
-        player:SetLookWorldRotation(player:GetLookWorldRotation() +
-                                        Rotation.New(0, 80, 0))
+--         local player = Game.GetLocalPlayer()
+--         player:SetLookWorldRotation(player:GetLookWorldRotation() +
+--                                         Rotation.New(0, 80, 0))
 
-    end
-end
+--     end
+-- end
 
-Events.Connect("GameStateChanged", OnGameStateChanged)
+-- Events.Connect("GameStateChanged", OnGameStateChanged)

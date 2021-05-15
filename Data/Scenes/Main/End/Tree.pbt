@@ -5,16 +5,16 @@ Objects {
   Name: "L4WinTrigger"
   Transform {
     Location {
-      X: 296591.531
-      Y: -20350
-      Z: -274798.406
+      X: 600079.625
+      Y: -31700
+      Z: -271823.781
     }
     Rotation {
       Pitch: -90
     }
     Scale {
-      X: 40
-      Y: 40
+      X: 2000
+      Y: 2000
       Z: 40
     }
   }
@@ -46,9 +46,9 @@ Objects {
   Name: "GeoVisual"
   Transform {
     Location {
-      X: 298044.656
-      Y: -20350
-      Z: -274713.25
+      X: 586678.875
+      Y: -30000
+      Z: -271843.781
     }
     Rotation {
       Pitch: 90
@@ -88,7 +88,8 @@ Objects {
   Name: "Diamond"
   Transform {
     Location {
-      Z: 875.000122
+      X: -4769.21436
+      Z: 2110.70752
     }
     Rotation {
     }
@@ -154,6 +155,8 @@ Objects {
   Name: "Cube Highlight"
   Transform {
     Location {
+      X: -4769.21436
+      Z: 1235.70825
     }
     Rotation {
     }
