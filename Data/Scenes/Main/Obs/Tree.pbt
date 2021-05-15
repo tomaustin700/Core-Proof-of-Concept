@@ -8336,7 +8336,7 @@ Objects {
   Transform {
     Location {
       X: 6100
-      Y: -22050
+      Y: -28900
       Z: 2250
     }
     Rotation {
@@ -10893,9 +10893,9 @@ Objects {
   Name: "Scifi Panel 1x4m"
   Transform {
     Location {
-      X: 32.7578125
-      Y: 1203.08594
-      Z: 12658.5488
+      X: 1288.62988
+      Y: 11250.166
+      Z: 12651.71
     }
     Rotation {
       Yaw: -87.3289185

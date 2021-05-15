@@ -1,0 +1,87 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "49a195ac9d76489ebe54fd62cdf32cae"
+  OwnerAccountId: "0c3ba58f7cd94e3e84115ae71335c42e"
+  OwnerName: "Dargo4"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 621782261612844046
+  value: 8485314366595206582
+}
+AssetIdsOriginalToNew {
+  key: 1864310503849716940
+  value: 13751045671136906571
+}
+AssetIdsOriginalToNew {
+  key: 2331688389429807128
+  value: 9781985759901838810
+}
+AssetIdsOriginalToNew {
+  key: 2484397976846108094
+  value: 14171188765513974646
+}
+AssetIdsOriginalToNew {
+  key: 3714654770766104191
+  value: 7726528038157693688
+}
+AssetIdsOriginalToNew {
+  key: 4681713903297122277
+  value: 11625567936467859940
+}
+AssetIdsOriginalToNew {
+  key: 4964215646333124731
+  value: 13629440207746342642
+}
+AssetIdsOriginalToNew {
+  key: 5049470299132475441
+  value: 4498461031282986286
+}
+AssetIdsOriginalToNew {
+  key: 5686720607445435090
+  value: 4828474117197152603
+}
+AssetIdsOriginalToNew {
+  key: 6927843456015767261
+  value: 15085579082146748835
+}
+AssetIdsOriginalToNew {
+  key: 7654906802773922100
+  value: 1071322728243217280
+}
+AssetIdsOriginalToNew {
+  key: 10469919178021841703
+  value: 17339186726473695770
+}
+AssetIdsOriginalToNew {
+  key: 10580115485433932515
+  value: 4639644286995441749
+}
+AssetIdsOriginalToNew {
+  key: 10929414184571229478
+  value: 7520889209938713915
+}
+AssetIdsOriginalToNew {
+  key: 11430434702090067649
+  value: 7913618669337805492
+}
+AssetIdsOriginalToNew {
+  key: 11887389273411486819
+  value: 9228166294013061079
+}
+AssetIdsOriginalToNew {
+  key: 14278482860986951316
+  value: 13203585359490352238
+}
+AssetIdsOriginalToNew {
+  key: 14633632985083390763
+  value: 2323362032894382233
+}
+AssetIdsOriginalToNew {
+  key: 16672718015936260910
+  value: 8344251123914923367
+}
+AssetIdsOriginalToNew {
+  key: 17268170560234094500
+  value: 10935855866925379046
+}

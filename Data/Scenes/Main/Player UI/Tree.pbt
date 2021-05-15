@@ -38,6 +38,10 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:ShowHealthbars"
+          Bool: false
+        }
       }
     }
     TemplateAsset {
