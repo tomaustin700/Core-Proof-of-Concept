@@ -341,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11721941323670792327
-  Name: "Additive Edgeline Top Fade"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_add_edgeline_sharpline_topfade"
-  }
-}
-Assets {
   Id: 11615716110344107020
   Name: "Craftsman Wall Interior 01"
   PlatformAssetType: 1
@@ -530,15 +521,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6804933249785415704
-  Name: "Emissive Glow Transparent"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
   Id: 6358471158957620124
   Name: "Craftsman Stairs 01 Railing Post"
   PlatformAssetType: 1
@@ -689,15 +671,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_doorway_ref"
-  }
-}
-Assets {
-  Id: 3052095933182283692
-  Name: "Diamond"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_001"
   }
 }
 Assets {

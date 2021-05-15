@@ -21,9 +21,9 @@ Objects {
   ChildIds: 4235079353815018496
   ChildIds: 1762394650260175503
   ChildIds: 5561596894153728145
-  ChildIds: 5300107151472708879
   ChildIds: 3147085681161289114
   ChildIds: 10213304903235838084
+  ChildIds: 8975296893592495695
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +36,67 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8975296893592495695
+  Name: "Kill Zone"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5000
+            Y: 5000
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -66900
+            Y: 27100
+            Z: 40050
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 61400
+            Y: -28450
+            Z: -39450
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2857347357152813362
+    }
   }
 }
 Objects {
@@ -132,73 +193,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 5300107151472708879
-  Name: "Kill Zone"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8568336417442047963
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13591331349196528036
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1000
-            Y: 1000
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: -12050
-            Z: -5250
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13648825478633622894
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Kill Zone"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: -800
-            Z: 2750
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2857347357152813362
     }
   }
 }

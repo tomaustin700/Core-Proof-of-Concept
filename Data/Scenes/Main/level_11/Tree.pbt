@@ -1,7 +1,7 @@
 Name: "level_11"
-RootId: 49298313776580111
+RootId: 9808850816051139282
 Objects {
-  Id: 8664396581907279758
+  Id: 6318959271238261392
   Name: "Group"
   Transform {
     Location {
@@ -18,19 +18,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 49298313776580111
-  ChildIds: 9916402470553098082
-  ChildIds: 10110830168185831578
-  ChildIds: 16894205802974304366
-  ChildIds: 16471817786048205026
-  ChildIds: 15413329501806390535
-  ChildIds: 1715100985554046792
-  ChildIds: 2660903679747236651
-  ChildIds: 14114621153773363552
-  ChildIds: 18138414738121642635
-  ChildIds: 10903975438110191413
-  ChildIds: 10264705113094248683
-  ChildIds: 13673720595324004960
+  ParentId: 9808850816051139282
+  ChildIds: 12564918315366566887
+  ChildIds: 11888261547103036744
+  ChildIds: 1825494046173460965
+  ChildIds: 11683106315321114908
+  ChildIds: 17785163172977943486
+  ChildIds: 113868055166017289
+  ChildIds: 5590618764839057180
+  ChildIds: 13352450672238065024
+  ChildIds: 459916380979956699
+  ChildIds: 14025713712814793062
+  ChildIds: 14268716397501098674
+  ChildIds: 7375194938210216468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -51,7 +51,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13673720595324004960
+  Id: 7375194938210216468
   Name: "column"
   Transform {
     Location {
@@ -68,7 +68,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -113,7 +113,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10264705113094248683
+  Id: 14268716397501098674
   Name: "column"
   Transform {
     Location {
@@ -130,7 +130,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -175,7 +175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10903975438110191413
+  Id: 14025713712814793062
   Name: "column"
   Transform {
     Location {
@@ -192,7 +192,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -237,7 +237,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18138414738121642635
+  Id: 459916380979956699
   Name: "column"
   Transform {
     Location {
@@ -254,7 +254,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -299,7 +299,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14114621153773363552
+  Id: 13352450672238065024
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -313,7 +313,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -368,7 +368,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2660903679747236651
+  Id: 5590618764839057180
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -382,7 +382,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -437,7 +437,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1715100985554046792
+  Id: 113868055166017289
   Name: "Glass"
   Transform {
     Location {
@@ -456,7 +456,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -497,7 +497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15413329501806390535
+  Id: 17785163172977943486
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -511,7 +511,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -566,7 +566,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16471817786048205026
+  Id: 11683106315321114908
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -581,7 +581,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -636,7 +636,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16894205802974304366
+  Id: 1825494046173460965
   Name: "Glass"
   Transform {
     Location {
@@ -654,7 +654,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -695,7 +695,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10110830168185831578
+  Id: 11888261547103036744
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -709,7 +709,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -764,7 +764,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9916402470553098082
+  Id: 12564918315366566887
   Name: "Glass"
   Transform {
     Location {
@@ -783,7 +783,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8664396581907279758
+  ParentId: 6318959271238261392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -824,7 +824,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18403986230091387497
+  Id: 17854876190760783035
   Name: "Group"
   Transform {
     Location {
@@ -841,19 +841,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 49298313776580111
-  ChildIds: 11014899476337632589
-  ChildIds: 456635345282245343
-  ChildIds: 2475017315408267644
-  ChildIds: 15960690969683227469
-  ChildIds: 3992593937157169707
-  ChildIds: 5252947545260594567
-  ChildIds: 9078708977272087101
-  ChildIds: 254240375180423231
-  ChildIds: 8002152301697052973
-  ChildIds: 11127614513834801866
-  ChildIds: 12632900791786176151
-  ChildIds: 5513556628376418438
+  ParentId: 9808850816051139282
+  ChildIds: 18272400422469675777
+  ChildIds: 11247455602130760391
+  ChildIds: 10324807234027332360
+  ChildIds: 6455617040962988565
+  ChildIds: 3830731285040803069
+  ChildIds: 12613590719213661672
+  ChildIds: 12784828694346794752
+  ChildIds: 11485643865112666685
+  ChildIds: 1353867523584330529
+  ChildIds: 14646318859173080816
+  ChildIds: 5178802607855748507
+  ChildIds: 6281215672920092872
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -874,7 +874,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5513556628376418438
+  Id: 6281215672920092872
   Name: "column"
   Transform {
     Location {
@@ -891,7 +891,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -936,7 +936,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12632900791786176151
+  Id: 5178802607855748507
   Name: "column"
   Transform {
     Location {
@@ -953,7 +953,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -998,7 +998,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11127614513834801866
+  Id: 14646318859173080816
   Name: "column"
   Transform {
     Location {
@@ -1015,7 +1015,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1060,7 +1060,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8002152301697052973
+  Id: 1353867523584330529
   Name: "column"
   Transform {
     Location {
@@ -1077,7 +1077,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1122,7 +1122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 254240375180423231
+  Id: 11485643865112666685
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1136,7 +1136,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -1191,7 +1191,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9078708977272087101
+  Id: 12784828694346794752
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1205,7 +1205,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -1260,7 +1260,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5252947545260594567
+  Id: 12613590719213661672
   Name: "Glass"
   Transform {
     Location {
@@ -1279,7 +1279,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1320,7 +1320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3992593937157169707
+  Id: 3830731285040803069
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1334,7 +1334,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -1389,7 +1389,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15960690969683227469
+  Id: 6455617040962988565
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1404,7 +1404,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -1459,7 +1459,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2475017315408267644
+  Id: 10324807234027332360
   Name: "Glass"
   Transform {
     Location {
@@ -1477,7 +1477,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1518,7 +1518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 456635345282245343
+  Id: 11247455602130760391
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1532,7 +1532,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -1587,7 +1587,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11014899476337632589
+  Id: 18272400422469675777
   Name: "Glass"
   Transform {
     Location {
@@ -1606,7 +1606,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18403986230091387497
+  ParentId: 17854876190760783035
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1647,7 +1647,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6052583252236921225
+  Id: 2530880916679540665
   Name: "Group"
   Transform {
     Location {
@@ -1663,19 +1663,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 49298313776580111
-  ChildIds: 11754189237994527076
-  ChildIds: 14350195550161772671
-  ChildIds: 7264096325159693118
-  ChildIds: 17044620741731747440
-  ChildIds: 3484184173524994148
-  ChildIds: 16765410629136209144
-  ChildIds: 9507515492038826742
-  ChildIds: 4620239799788382833
-  ChildIds: 9576873596235405075
-  ChildIds: 13684321010746270227
-  ChildIds: 17820663030539516569
-  ChildIds: 3559437604151560745
+  ParentId: 9808850816051139282
+  ChildIds: 9603854942324166094
+  ChildIds: 8519324416405731042
+  ChildIds: 8603387046729406384
+  ChildIds: 15797128671777368323
+  ChildIds: 5035302887988935702
+  ChildIds: 2887690945191326080
+  ChildIds: 10016230104063972387
+  ChildIds: 8168537323599822483
+  ChildIds: 5241034471465627468
+  ChildIds: 9729460433217783903
+  ChildIds: 8343917272555955447
+  ChildIds: 14016719041334513964
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1696,7 +1696,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3559437604151560745
+  Id: 14016719041334513964
   Name: "column"
   Transform {
     Location {
@@ -1713,7 +1713,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1758,7 +1758,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17820663030539516569
+  Id: 8343917272555955447
   Name: "column"
   Transform {
     Location {
@@ -1775,7 +1775,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1820,7 +1820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13684321010746270227
+  Id: 9729460433217783903
   Name: "column"
   Transform {
     Location {
@@ -1837,7 +1837,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1882,7 +1882,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9576873596235405075
+  Id: 5241034471465627468
   Name: "column"
   Transform {
     Location {
@@ -1899,7 +1899,7 @@ Objects {
       Z: 9
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1944,7 +1944,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4620239799788382833
+  Id: 8168537323599822483
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -1958,7 +1958,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -2013,7 +2013,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9507515492038826742
+  Id: 10016230104063972387
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -2027,7 +2027,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -2082,7 +2082,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16765410629136209144
+  Id: 2887690945191326080
   Name: "Glass"
   Transform {
     Location {
@@ -2101,7 +2101,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2142,7 +2142,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3484184173524994148
+  Id: 5035302887988935702
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -2156,7 +2156,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -2211,7 +2211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17044620741731747440
+  Id: 15797128671777368323
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -2226,7 +2226,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -2281,7 +2281,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7264096325159693118
+  Id: 8603387046729406384
   Name: "Glass"
   Transform {
     Location {
@@ -2299,7 +2299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2340,7 +2340,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14350195550161772671
+  Id: 8519324416405731042
   Name: "ConcretePanel"
   Transform {
     Location {
@@ -2354,7 +2354,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -2409,7 +2409,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11754189237994527076
+  Id: 9603854942324166094
   Name: "Glass"
   Transform {
     Location {
@@ -2428,7 +2428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6052583252236921225
+  ParentId: 2530880916679540665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2469,7 +2469,7 @@ Objects {
   }
 }
 Objects {
-  Id: 63987487686068983
+  Id: 11613262100727099154
   Name: "Prism - 6-Sided Polished"
   Transform {
     Location {
@@ -2482,7 +2482,7 @@ Objects {
       Z: 6.79999495
     }
   }
-  ParentId: 49298313776580111
+  ParentId: 9808850816051139282
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
