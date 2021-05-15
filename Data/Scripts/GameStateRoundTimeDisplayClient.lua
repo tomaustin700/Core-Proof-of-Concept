@@ -14,17 +14,19 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]] -- Internal custom properties
-
 local ABGS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
-local STATE_NAME_TEXT = script:GetCustomProperty("StateNameText"):WaitForObject()
-local STATE_TIME_TEXT = script:GetCustomProperty("StateTimeText"):WaitForObject()
+local STATE_NAME_TEXT = script:GetCustomProperty("StateNameText")
+                            :WaitForObject()
+local STATE_TIME_TEXT = script:GetCustomProperty("StateTimeText")
+                            :WaitForObject()
 
 -- User exposed settings
 local SHOW_STATE_NAME = COMPONENT_ROOT:GetCustomProperty("ShowStateName")
 local SHOW_DURING_LOBBY = COMPONENT_ROOT:GetCustomProperty("ShowDuringLobby")
 local SHOW_DURING_ROUND = COMPONENT_ROOT:GetCustomProperty("ShowDuringRound")
-local SHOW_DURING_ROUND_END = COMPONENT_ROOT:GetCustomProperty("ShowDuringRoundEnd")
+local SHOW_DURING_ROUND_END = COMPONENT_ROOT:GetCustomProperty(
+                                  "ShowDuringRoundEnd")
 
 -- nil UpdateTimeRemaining(int)
 -- Displays time remaining in hh:mm:ss format
@@ -52,29 +54,33 @@ function Tick(deltaTime)
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1_START or currentState == ABGS.GAME_STATE_ROUND_2_START or
-            currentState == ABGS.GAME_STATE_ROUND_3_START or currentState == ABGS.GAME_STATE_ROUND_4_START or
-            currentState == ABGS.GAME_STATE_ROUND_5_START then
+        if currentState == ABGS.GAME_STATE_ROUND_1_START or currentState ==
+            ABGS.GAME_STATE_ROUND_2_START or currentState ==
+            ABGS.GAME_STATE_ROUND_3_START or currentState ==
+            ABGS.GAME_STATE_ROUND_4_START or currentState ==
+            ABGS.GAME_STATE_ROUND_5_START then
+            STATE_NAME_TEXT.text = "Round Start"
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1 or currentState == ABGS.GAME_STATE_ROUND_2 or currentState ==
-            ABGS.GAME_STATE_ROUND_3 or currentState == ABGS.GAME_STATE_ROUND_4 or currentState ==
+        if currentState == ABGS.GAME_STATE_ROUND_1 or currentState ==
+            ABGS.GAME_STATE_ROUND_2 or currentState == ABGS.GAME_STATE_ROUND_3 or
+            currentState == ABGS.GAME_STATE_ROUND_4 or currentState ==
             ABGS.GAME_STATE_ROUND_5 and SHOW_DURING_ROUND then
-            STATE_NAME_TEXT.text = "Round"
+            --STATE_NAME_TEXT.text = "Round"
             UpdateTimeRemaining(remainingTime)
         end
 
-        if currentState == ABGS.GAME_STATE_ROUND_1_END or currentState == ABGS.GAME_STATE_ROUND_2_END or currentState ==
-            ABGS.GAME_STATE_ROUND_3_END or currentState == ABGS.GAME_STATE_ROUND_4_END or currentState ==
+        if currentState == ABGS.GAME_STATE_ROUND_1_END or currentState ==
+            ABGS.GAME_STATE_ROUND_2_END or currentState ==
+            ABGS.GAME_STATE_ROUND_3_END or currentState ==
+            ABGS.GAME_STATE_ROUND_4_END or currentState ==
             ABGS.GAME_STATE_ROUND_5_END and SHOW_DURING_ROUND_END then
-            STATE_NAME_TEXT.text = "End"
+            STATE_NAME_TEXT.text = "Round End"
             UpdateTimeRemaining(remainingTime)
         end
     end
 end
 
 -- Set round time visibility off at the beginning
-if not SHOW_STATE_NAME then
-    STATE_NAME_TEXT.visibility = Visibility.FORCE_OFF
-end
+if not SHOW_STATE_NAME then STATE_NAME_TEXT.visibility = Visibility.FORCE_OFF end

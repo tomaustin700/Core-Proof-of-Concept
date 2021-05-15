@@ -46,7 +46,7 @@ function WinBeginOverlap(trigger, other)
             Events.Broadcast("PlayerVictory", winner)
             SCOREMANAGERAPI.PlayerFirst(winner)
 
-            Task.Wait(30)
+            --Task.Wait(30)
             if (ABGS.GetGameState() == ABGS.GAME_STATE_ROUND_1) then
                 ABGS.SetGameState(ABGS.GAME_STATE_ROUND_1_END)
             end

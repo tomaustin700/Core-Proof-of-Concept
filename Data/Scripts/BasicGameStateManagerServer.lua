@@ -77,7 +77,7 @@ function SetGameState(newState)
         stateDuration = ROUND_DURATION
     elseif newState == ABGS.GAME_STATE_ROUND_1_END then
         stateHasduration = true
-        stateDuration = 5
+        stateDuration = 30
     elseif newState == ABGS.GAME_STATE_ROUND_2_START then
         stateHasduration = true
         stateDuration = 10
@@ -86,7 +86,7 @@ function SetGameState(newState)
         stateDuration = 120
     elseif newState == ABGS.GAME_STATE_ROUND_2_END then
         stateHasduration = true
-        stateDuration = 5
+        stateDuration = 30
     elseif newState == ABGS.GAME_STATE_ROUND_3_START then
         stateHasduration = true
         stateDuration = 10
@@ -95,7 +95,7 @@ function SetGameState(newState)
         stateDuration = 120
     elseif newState == ABGS.GAME_STATE_ROUND_3_END then
         stateHasduration = true
-        stateDuration = 5
+        stateDuration = 30
     elseif newState == ABGS.GAME_STATE_ROUND_4_START then
         stateHasduration = true
         stateDuration = 10
@@ -104,7 +104,7 @@ function SetGameState(newState)
         stateDuration = 120
     elseif newState == ABGS.GAME_STATE_ROUND_4_END then
         stateHasduration = true
-        stateDuration = 5
+        stateDuration = 30
     elseif newState == ABGS.GAME_STATE_ROUND_5_START then
         stateHasduration = true
         stateDuration = 10
@@ -113,7 +113,7 @@ function SetGameState(newState)
         stateDuration = 120
     elseif newState == ABGS.GAME_STATE_ROUND_5_END then
         stateHasduration = true
-        stateDuration = 5
+        stateDuration = 30
     else
         error("Tried to set game state to unknown state %d", newState)
     end
