@@ -46,17 +46,17 @@ Objects {
   Name: "GeoVisual"
   Transform {
     Location {
-      X: 586678.875
-      Y: -30000
-      Z: -271843.781
+      X: 586667.75
+      Y: -53300
+      Z: -271838.281
     }
     Rotation {
       Pitch: 90
     }
     Scale {
-      X: 3
-      Y: 3
-      Z: 3
+      X: 5
+      Y: 5
+      Z: 5
     }
   }
   ParentId: 3130381744395711183
