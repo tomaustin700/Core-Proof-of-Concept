@@ -42,6 +42,23 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
 
+        if oldState == ABGS.GAME_STATE_END then
+            World.FindObjectByName("Lobby").visibility = Visibility.FORCE_ON
+
+            local start = World.FindObjectByName("LobbySpawn")
+            start.isEnabled = true
+
+            for _, player in pairs(Game.GetPlayers()) do
+                player:Respawn({
+                    position = start:GetPosition(),
+                    rotation = start:GetRotation()
+                })
+                Task.Wait(perPlayerDelay)
+
+            end
+
+        end
+
     end
 
     -- Spawn players at L1 Start
@@ -65,7 +82,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         end
 
-        ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_START) -- TEMP
+        --ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_START) -- TEMP
 
     end
 
@@ -189,12 +206,12 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_ROUND_5_START) then -- and oldState ==
-        -- ABGS.GAME_STATE_ROUND_4_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_5_START)and oldState ==
+         ABGS.GAME_STATE_ROUND_4_END) then
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("4Start").isEnabled = false
-        World.FindObjectByName("1Start").isEnabled = false -- TEMP
+        --World.FindObjectByName("1Start").isEnabled = false -- TEMP
 
         local start = World.FindObjectByName("5Start")
         start.isEnabled = true
@@ -202,7 +219,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
-            player:ActivateFlying()
+            player:ActivateWalking()
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
@@ -236,7 +253,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
-            player:ActivateWalking()
+            --player:ActivateWalking()
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
@@ -248,10 +265,9 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         end
 
-        --Task.Wait(1000)
+        -- Task.Wait(1000)
 
         SCOREAPI.GetOverallWinner()
-        
 
     end
 
