@@ -62,15 +62,28 @@ function ScoreManager.GetOverallWinner()
     end
 
     local winner = nil
+    local second = nil
     if scoreOrdered[0] ~= nil then
         winner = scoreOrdered[0]
+        second = scoreOrdered[1]
     else
         winner = scoreOrdered[1]
+        second = scoreOrdered[2]
     end
 
-    Events.Broadcast("OverallVictory", winner)
+    Events.Broadcast("OverallVictory", winner, 5000)
+
+    Task.Wait(5000)
+
+    Events.Broadcast("SecondPlace", second)
+
+    
 
  
+end
+
+function ScoreManager.Reset()
+    completedPlayers = {}
 end
 
 function ScoreManager.spairs(t, order)

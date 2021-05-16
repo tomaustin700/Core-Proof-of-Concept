@@ -263,6 +263,12 @@ Objects {
         SelfId: 5056591131134987722
       }
     }
+    Overrides {
+      Name: "cs:ScoreManagerAPI"
+      AssetReference {
+        Id: 5552338303805604554
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

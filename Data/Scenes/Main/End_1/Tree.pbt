@@ -5,9 +5,9 @@ Objects {
   Name: "L4WinTrigger"
   Transform {
     Location {
-      X: 575671.813
-      Y: -31700
-      Z: -279402.281
+      X: 575659.25
+      Y: -32000
+      Z: -279395.844
     }
     Rotation {
       Pitch: -90

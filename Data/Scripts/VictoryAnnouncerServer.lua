@@ -30,6 +30,10 @@ function OnOverallVictory(player)
 	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s is the overall winner!", player))
 end
 
+function OnOverallSecond(player)
+	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s came in second!", player))
+end
+
 -- nil OnPlayerVictory(Player)
 -- Announces the winning team
 function OnTeamVictory(team)
@@ -47,3 +51,4 @@ Events.Connect("PlayerVictory", OnPlayerVictory)
 Events.Connect("TeamVictory", OnTeamVictory)
 Events.Connect("TieVictory", OnTieVictory)
 Events.Connect("OverallVictory", OnOverallVictory)
+Events.Connect("SecondPlace", OnOverallSecond)

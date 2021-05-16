@@ -15,6 +15,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER I
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]] -- Internal custom properties
 local ABGS = require(script:GetCustomProperty("API"))
+local SCOREAPI = require(script:GetCustomProperty("ScoreManagerAPI"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
 -- User exposed properties
@@ -40,7 +41,6 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
-        World.FindObjectByName("End").visibility = Visibility.FORCE_OFF
 
     end
 
@@ -65,7 +65,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         end
 
-        ABGS.SetGameState(ABGS.GAME_STATE_ROUND_3_START) -- TEMP
+        ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_START) -- TEMP
 
     end
 
@@ -114,14 +114,13 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- Spawn players at L3 Start
-    if (newState == ABGS.GAME_STATE_ROUND_3_START) then -- and oldState == ABGS.GAME_STATE_ROUND_2_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_3_START and oldState ==
+        ABGS.GAME_STATE_ROUND_2_END) then
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level2N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("2Start").isEnabled = false
-
-        World.FindObjectByName("1Start").isEnabled = false -- TEMP
 
         local start = World.FindObjectByName("3Start")
         start.isEnabled = true
@@ -190,11 +189,12 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState ==
-        ABGS.GAME_STATE_ROUND_4_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_5_START) then -- and oldState ==
+        -- ABGS.GAME_STATE_ROUND_4_END) then
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("4Start").isEnabled = false
+        World.FindObjectByName("1Start").isEnabled = false -- TEMP
 
         local start = World.FindObjectByName("5Start")
         start.isEnabled = true
@@ -202,7 +202,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
-            player:ActivateWalking()
+            player:ActivateFlying()
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
@@ -222,6 +222,36 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
+
+    end
+
+    if (newState == ABGS.GAME_STATE_END and oldState ==
+        ABGS.GAME_STATE_ROUND_5_END) then
+        World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("5Start").isEnabled = false
+
+        local start = World.FindObjectByName("EndStart")
+        start.isEnabled = true
+
+        local numPlayers = #Game.GetPlayers()
+        local perPlayerDelay = PERIOD / numPlayers
+        for _, player in pairs(Game.GetPlayers()) do
+            player:ActivateWalking()
+            player:Respawn({
+                position = start:GetPosition(),
+                rotation = start:GetRotation()
+            })
+
+            Task.Wait(perPlayerDelay)
+
+            player:EnableRagdoll()
+
+        end
+
+        --Task.Wait(1000)
+
+        SCOREAPI.GetOverallWinner()
+        
 
     end
 

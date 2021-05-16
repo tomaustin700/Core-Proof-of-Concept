@@ -6,8 +6,8 @@ Objects {
   Transform {
     Location {
       X: 12900
-      Y: -20200
-      Z: 78446.625
+      Y: -20500
+      Z: 78444.9375
     }
     Rotation {
     }
@@ -126,9 +126,9 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: 12850.6563
-      Y: -19900
-      Z: 79346.2188
+      X: 12850.6328
+      Y: -20200
+      Z: 79344.5078
     }
     Rotation {
       Roll: 135
