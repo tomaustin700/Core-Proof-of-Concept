@@ -206,7 +206,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_ROUND_5_START)and oldState ==
+    if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState ==
          ABGS.GAME_STATE_ROUND_4_END) then
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF

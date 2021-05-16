@@ -1,9 +1,13 @@
 Name: "Game State UI"
 RootId: 1181990906915773202
 Objects {
-  Id: 11281982108516004925
+  Id: 11116125138296811841
   Name: "Game State Display"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -11,6 +15,79 @@ Objects {
     }
   }
   ParentId: 1181990906915773202
+  ChildIds: 1306234500952762242
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShowStateName"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowDuringLobby"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowDuringRound"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ShowDuringRoundEnd"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowStateName:tooltip"
+      String: "Whether to show which state the game is in"
+    }
+    Overrides {
+      Name: "cs:ShowDuringLobby:tooltip"
+      String: "Whether to show during the lobby state"
+    }
+    Overrides {
+      Name: "cs:ShowDuringRound:tooltip"
+      String: "Whether to show during the round state"
+    }
+    Overrides {
+      Name: "cs:ShowDuringRoundEnd:tooltip"
+      String: "Whether to show during the round end state"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11116125138296811841
+    SubobjectId: 11397727575064778677
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 1306234500952762242
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11116125138296811841
+  ChildIds: 11965189423116109225
+  ChildIds: 6885294996068999475
+  ChildIds: 15257008551667946733
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -22,123 +99,358 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3299506318204361248
-      value {
-        Overrides {
-          Name: "Anchor"
-          Enum {
-            Value: "mc:euianchor:topcenter"
-          }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 1306234500952762242
+    SubobjectId: 1605561193072132470
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+  }
+}
+Objects {
+  Id: 15257008551667946733
+  Name: "DeathFeed"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1306234500952762242
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "DeathFeed"
+  }
+}
+Objects {
+  Id: 6885294996068999475
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1306234500952762242
+  ChildIds: 13792334640450647691
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+  }
+  InstanceHistory {
+    SelfId: 6885294996068999475
+    SubobjectId: 6621926890735536071
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+  }
+}
+Objects {
+  Id: 13792334640450647691
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6885294996068999475
+  ChildIds: 5829298669267483631
+  ChildIds: 3000109553274322132
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 50
+    UIX: -15
+    UIY: -1015
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
         }
-        Overrides {
-          Name: "Dock"
-          Enum {
-            Value: "mc:euianchor:topcenter"
-          }
-        }
-        Overrides {
-          Name: "Size"
-          Int: 100
-        }
-        Overrides {
-          Name: "UIX"
-          Float: -1000
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 100
-        }
-        Overrides {
-          Name: "Justification"
-          Enum {
-            Value: "mc:etextjustify:center"
-          }
-        }
-        Overrides {
-          Name: "VerticalJustification"
-          Enum {
-            Value: "mc:everticaljustification:center"
-          }
-        }
-        Overrides {
-          Name: "Width"
-          Int: 550
-        }
-        Overrides {
-          Name: "Height"
-          Int: 200
-        }
-        Overrides {
-          Name: "UIInheritParentWidth"
-          Bool: false
-        }
-        Overrides {
-          Name: "UIInheritParentHeight"
-          Bool: false
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
         }
       }
     }
-    ParameterOverrideMap {
-      key: 6092631959476493595
-      value {
-        Overrides {
-          Name: "Anchor"
-          Enum {
-            Value: "mc:euianchor:topcenter"
-          }
+  }
+  InstanceHistory {
+    SelfId: 13792334640450647691
+    SubobjectId: 13474914646443004031
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+  }
+}
+Objects {
+  Id: 3000109553274322132
+  Name: "StateTime"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13792334640450647691
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 550
+    Height: 200
+    UIX: -1000
+    UIY: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "00:00"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 100
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
-        Overrides {
-          Name: "Dock"
-          Enum {
-            Value: "mc:euianchor:topcenter"
-          }
-        }
-        Overrides {
-          Name: "Size"
-          Int: 21
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 0
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 0
-        }
-        Overrides {
-          Name: "Width"
-          Int: 100
-        }
-        Overrides {
-          Name: "Height"
-          Int: 60
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
-    ParameterOverrideMap {
-      key: 11397727575064778677
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Game State Display"
+  }
+  InstanceHistory {
+    SelfId: 3000109553274322132
+    SubobjectId: 3299506318204361248
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+  }
+}
+Objects {
+  Id: 5829298669267483631
+  Name: "StateName"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13792334640450647691
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 60
+    UIX: -2750
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "State"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 21
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
-    TemplateAsset {
-      Id: 12110771893887422485
+  }
+  InstanceHistory {
+    SelfId: 5829298669267483631
+    SubobjectId: 6092631959476493595
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
+  }
+}
+Objects {
+  Id: 11965189423116109225
+  Name: "GameStateRoundTimeDisplayClient"
+  Transform {
+    Location {
     }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1306234500952762242
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 11116125138296811841
+      }
+    }
+    Overrides {
+      Name: "cs:StateNameText"
+      ObjectReference {
+        SelfId: 5829298669267483631
+      }
+    }
+    Overrides {
+      Name: "cs:StateTimeText"
+      ObjectReference {
+        SelfId: 3000109553274322132
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3307912974547883426
+    }
+  }
+  InstanceHistory {
+    SelfId: 11965189423116109225
+    SubobjectId: 11701566102101910365
+    InstanceId: 11281982108516004925
+    TemplateId: 12110771893887422485
   }
 }
 Objects {

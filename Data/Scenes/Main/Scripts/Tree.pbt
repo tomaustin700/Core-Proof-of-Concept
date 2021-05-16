@@ -16,6 +16,7 @@ Objects {
   }
   ParentId: 17045676539577920579
   ChildIds: 7522352910940128967
+  ChildIds: 1663210721617485063
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -29,6 +30,49 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 1663210721617485063
+  Name: "DeathFeedClient"
+  Transform {
+    Location {
+      X: -7800
+      Y: -10150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9265820898548009841
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DeathFeed"
+      ObjectReference {
+        SelfId: 13641030041833818347
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9999502938393679725
+    }
   }
 }
 Objects {
@@ -69,6 +113,39 @@ Objects {
   Script {
     ScriptAsset {
       Id: 10065345423955966896
+    }
+  }
+}
+Objects {
+  Id: 8723694205669107491
+  Name: "DeathPublisher"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17045676539577920579
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9762919059545401776
     }
   }
 }

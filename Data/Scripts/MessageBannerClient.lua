@@ -13,16 +13,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
---]]
-
---[[
+--]] --[[
 Displays text associated with the BannerMessage() event that takes the following forms:
 
 BannerMessage(String message)
 BannerMessage(String message, float duration)
---]]
-
--- Internal custom properties
+--]] -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
@@ -51,15 +47,15 @@ function OnBannerMessageEvent(message, duration)
     TEXT_BOX.text = message
 end
 
-
 -- nil Tick(float)
 -- Hides the banner when the message has expired
 function Tick(deltaTime)
-    if time() > messageEndTime then
-        PANEL.visibility = Visibility.FORCE_OFF
-    end
+    if time() > messageEndTime then PANEL.visibility = Visibility.FORCE_OFF end
 end
+
+function Died(player) print "death message recievd" end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
 Events.Connect("BannerMessage", OnBannerMessageEvent)
+Events.Connect("PlayerDeath", Died)
