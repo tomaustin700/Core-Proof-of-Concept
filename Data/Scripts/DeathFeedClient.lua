@@ -17,14 +17,11 @@ function Died(player)
         deathFeed.text = player .. " didn't look where they were going!"
     end
 
-    print "death message recievd"
-
-    Task.Wait(2000)
+    Task.Wait(3)
     deathFeed.text = ""
 
 end
 
-print "death feed start"
 
 Events.Connect("PlayerDeath", Died)
 

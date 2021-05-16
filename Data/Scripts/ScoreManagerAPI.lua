@@ -73,7 +73,7 @@ function ScoreManager.GetOverallWinner()
 
     Events.Broadcast("OverallVictory", winner, 5000)
 
-    Task.Wait(5000)
+    Task.Wait(5)
 
     Events.Broadcast("SecondPlace", second)
 
