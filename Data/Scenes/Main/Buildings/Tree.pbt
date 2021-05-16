@@ -1,38 +1,6 @@
 Name: "Buildings"
 RootId: 7335477459098176817
 Objects {
-  Id: 17045676539577920579
-  Name: "Scripts"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7335477459098176817
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Scripts"
-  }
-}
-Objects {
   Id: 1359327369480474169
   Name: "Level5"
   Transform {

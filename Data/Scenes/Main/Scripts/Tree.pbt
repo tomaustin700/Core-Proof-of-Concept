@@ -117,6 +117,47 @@ Objects {
   }
 }
 Objects {
+  Id: 17239241438883514389
+  Name: "Shove"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17045676539577920579
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShoveTemplate"
+      AssetReference {
+        Id: 13738172648212417323
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10051441659555316019
+    }
+  }
+}
+Objects {
   Id: 8723694205669107491
   Name: "DeathPublisher"
   Transform {
