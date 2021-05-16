@@ -40,6 +40,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("End").visibility = Visibility.FORCE_OFF
 
     end
 

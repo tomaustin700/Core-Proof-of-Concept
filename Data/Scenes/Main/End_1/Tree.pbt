@@ -5,9 +5,9 @@ Objects {
   Name: "L4WinTrigger"
   Transform {
     Location {
-      X: 586678.75
+      X: 575671.813
       Y: -31700
-      Z: -279416.094
+      Z: -279402.281
     }
     Rotation {
       Pitch: -90
@@ -87,16 +87,16 @@ Objects {
   Name: "Diamond"
   Transform {
     Location {
-      X: -2082.14819
-      Y: 5090
-      Z: 1193.51245
+      X: -982.300476
+      Y: 6620
+      Z: 1193.51221
     }
     Rotation {
     }
     Scale {
-      X: 6
-      Y: 6
-      Z: 6
+      X: 30
+      Y: 30
+      Z: 30
     }
   }
   ParentId: 12965634249143919792

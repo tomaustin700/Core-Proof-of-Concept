@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3158590338481751893
+  Name: "Metal Corrugated 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_mil_metal_corrugated_metal_003_uv_ref"
+  }
+}
+Assets {
   Id: 2228648801996413513
   Name: "Text 04: M"
   PlatformAssetType: 1
