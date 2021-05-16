@@ -60,7 +60,6 @@ Objects {
     }
   }
   ParentId: 3130381744395711183
-  ChildIds: 5652354770796533850
   ChildIds: 5118115350790099842
   UnregisteredParameters {
   }
@@ -88,15 +87,16 @@ Objects {
   Name: "Diamond"
   Transform {
     Location {
-      X: -4769.21436
-      Z: 2110.70752
+      X: -2082.14819
+      Y: 5090
+      Z: 1193.51245
     }
     Rotation {
     }
     Scale {
-      X: 3
-      Y: 3
-      Z: 3
+      X: 6
+      Y: 6
+      Z: 6
     }
   }
   ParentId: 12965634249143919792
@@ -146,73 +146,6 @@ Objects {
   InstanceHistory {
     SelfId: 5118115350790099842
     SubobjectId: 5856671861138119041
-    InstanceId: 8248494463391901388
-    TemplateId: 804434200567944567
-  }
-}
-Objects {
-  Id: 5652354770796533850
-  Name: "Cube Highlight"
-  Transform {
-    Location {
-      X: -4769.21436
-      Z: 1235.70825
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8
-      Y: 8
-      Z: 11
-    }
-  }
-  ParentId: 12965634249143919792
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11721941323670792327
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14176234275809442376
-    }
-    Teams {
-      UseTeamColor: true
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 5652354770796533850
-    SubobjectId: 6354883067772359257
     InstanceId: 8248494463391901388
     TemplateId: 804434200567944567
   }

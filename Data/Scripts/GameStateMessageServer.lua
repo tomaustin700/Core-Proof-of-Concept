@@ -60,8 +60,14 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
         Events.BroadcastToAllPlayers("BannerMessage", "Round 4 - Rings")
     elseif newState == ABGS.GAME_STATE_ROUND_4 and oldState ~=
         ABGS.GAME_STATE_ROUND_4 then
-        Events.BroadcastToAllPlayers("BannerMessage", "Race through the rings to the top")
-        
+        Events.BroadcastToAllPlayers("BannerMessage",
+                                     "Race through the rings to the top")
+    elseif newState == ABGS.GAME_STATE_ROUND_5_START and oldState ~=
+        ABGS.GAME_STATE_ROUND_5_START then
+        Events.BroadcastToAllPlayers("BannerMessage", "Round 5 - GAMEJAM")
+    elseif newState == ABGS.GAME_STATE_ROUND_5 and oldState ~=
+        ABGS.GAME_STATE_ROUND_5 then
+        Events.BroadcastToAllPlayers("BannerMessage", "Race across the letters")
 
     end
 
