@@ -30,7 +30,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End_1"
+    FilePartitionName: "End_2"
   }
 }
 Objects {
@@ -63,7 +63,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start_1"
+    FilePartitionName: "Start_2"
   }
 }
 Objects {

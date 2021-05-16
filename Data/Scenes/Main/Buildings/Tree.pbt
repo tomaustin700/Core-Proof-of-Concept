@@ -47,6 +47,9 @@ Objects {
     }
   }
   ParentId: 7335477459098176817
+  ChildIds: 10367898333576247643
+  ChildIds: 14232829814450611953
+  ChildIds: 2589406468880865152
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59,6 +62,102 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 2589406468880865152
+  Name: "End"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1359327369480474169
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "End"
+  }
+}
+Objects {
+  Id: 14232829814450611953
+  Name: "Start"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1359327369480474169
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Start"
+  }
+}
+Objects {
+  Id: 10367898333576247643
+  Name: "Text"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1359327369480474169
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Text"
   }
 }
 Objects {
@@ -161,7 +260,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End"
+    FilePartitionName: "End_1"
   }
 }
 Objects {
@@ -193,7 +292,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start"
+    FilePartitionName: "Start_1"
   }
 }
 Objects {
@@ -460,7 +559,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Start_2"
+    FilePartitionName: "Start_3"
   }
 }
 Objects {
@@ -493,7 +592,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "End_2"
+    FilePartitionName: "End_3"
   }
 }
 Objects {

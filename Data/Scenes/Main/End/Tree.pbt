@@ -1,24 +1,23 @@
 Name: "End"
-RootId: 3130381744395711183
+RootId: 2589406468880865152
 Objects {
-  Id: 11370954541203355232
-  Name: "L4WinTrigger"
+  Id: 16057217930382114906
+  Name: "L5WinTrigger"
   Transform {
     Location {
-      X: 586678.75
-      Y: -31700
-      Z: -279416.094
+      X: 29550
+      Y: -25700
+      Z: 10550
     }
     Rotation {
-      Pitch: -90
     }
     Scale {
-      X: 2000
-      Y: 2000
-      Z: 40
+      X: 10
+      Y: 18
+      Z: 1
     }
   }
-  ParentId: 3130381744395711183
+  ParentId: 2589406468880865152
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42,26 +41,25 @@ Objects {
   }
 }
 Objects {
-  Id: 12965634249143919792
+  Id: 16945563828862773246
   Name: "GeoVisual"
   Transform {
     Location {
-      X: 586667.75
-      Y: -53300
-      Z: -271838.281
+      X: 29800
+      Y: -26000
+      Z: 10300
     }
     Rotation {
-      Pitch: 90
     }
     Scale {
-      X: 5
-      Y: 5
-      Z: 5
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 3130381744395711183
-  ChildIds: 5652354770796533850
-  ChildIds: 5118115350790099842
+  ParentId: 2589406468880865152
+  ChildIds: 1636110228917426964
+  ChildIds: 2288569585619636428
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -77,19 +75,18 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 12965634249143919792
+    SelfId: 16945563828862773246
     SubobjectId: 11938771496268476083
-    InstanceId: 8248494463391901388
+    InstanceId: 12949759112417490414
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 5118115350790099842
+  Id: 2288569585619636428
   Name: "Diamond"
   Transform {
     Location {
-      X: -4769.21436
-      Z: 2110.70752
+      Z: 875.000122
     }
     Rotation {
     }
@@ -99,7 +96,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 12965634249143919792
+  ParentId: 16945563828862773246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -144,19 +141,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5118115350790099842
+    SelfId: 2288569585619636428
     SubobjectId: 5856671861138119041
-    InstanceId: 8248494463391901388
+    InstanceId: 12949759112417490414
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 5652354770796533850
+  Id: 1636110228917426964
   Name: "Cube Highlight"
   Transform {
     Location {
-      X: -4769.21436
-      Z: 1235.70825
     }
     Rotation {
     }
@@ -166,7 +161,7 @@ Objects {
       Z: 11
     }
   }
-  ParentId: 12965634249143919792
+  ParentId: 16945563828862773246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -211,9 +206,57 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5652354770796533850
+    SelfId: 1636110228917426964
     SubobjectId: 6354883067772359257
-    InstanceId: 8248494463391901388
+    InstanceId: 12949759112417490414
     TemplateId: 804434200567944567
+  }
+}
+Objects {
+  Id: 1442550020573355208
+  Name: "Container - Hex- Rounded"
+  Transform {
+    Location {
+      X: 29650
+      Y: -26000
+      Z: 10250
+    }
+    Rotation {
+      Yaw: 89.9999619
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 2589406468880865152
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6188929176580718838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }

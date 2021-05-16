@@ -1,67 +1,25 @@
-Name: "End_1"
-RootId: 3130381744395711183
+Name: "End_3"
+RootId: 17703299596797693643
 Objects {
-  Id: 11370954541203355232
-  Name: "L4WinTrigger"
-  Transform {
-    Location {
-      X: 586678.75
-      Y: -31700
-      Z: -279416.094
-    }
-    Rotation {
-      Pitch: -90
-    }
-    Scale {
-      X: 2000
-      Y: 2000
-      Z: 40
-    }
-  }
-  ParentId: 3130381744395711183
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 12965634249143919792
+  Id: 7831011304620755777
   Name: "GeoVisual"
   Transform {
     Location {
-      X: 586667.75
-      Y: -53300
-      Z: -271838.281
+      X: -83450
+      Y: 10000
+      Z: 21950
     }
     Rotation {
-      Pitch: 90
     }
     Scale {
-      X: 5
-      Y: 5
-      Z: 5
+      X: 4
+      Y: 4
+      Z: 4
     }
   }
-  ParentId: 3130381744395711183
-  ChildIds: 5652354770796533850
-  ChildIds: 5118115350790099842
+  ParentId: 17703299596797693643
+  ChildIds: 11558924857720580097
+  ChildIds: 5388874261531532267
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -77,19 +35,18 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 12965634249143919792
+    SelfId: 17331184417118575112
     SubobjectId: 11938771496268476083
-    InstanceId: 8248494463391901388
+    InstanceId: 17764295603122844940
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 5118115350790099842
+  Id: 5388874261531532267
   Name: "Diamond"
   Transform {
     Location {
-      X: -4769.21436
-      Z: 2110.70752
+      Z: 875.000122
     }
     Rotation {
     }
@@ -99,7 +56,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 12965634249143919792
+  ParentId: 7831011304620755777
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -144,29 +101,29 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5118115350790099842
+    SelfId: 318806746274377018
     SubobjectId: 5856671861138119041
-    InstanceId: 8248494463391901388
+    InstanceId: 17764295603122844940
     TemplateId: 804434200567944567
   }
 }
 Objects {
-  Id: 5652354770796533850
+  Id: 11558924857720580097
   Name: "Cube Highlight"
   Transform {
     Location {
-      X: -4769.21436
-      Z: 1235.70825
+      X: -50
+      Z: -1537.5
     }
     Rotation {
     }
     Scale {
       X: 8
       Y: 8
-      Z: 11
+      Z: 40
     }
   }
-  ParentId: 12965634249143919792
+  ParentId: 7831011304620755777
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -211,9 +168,49 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5652354770796533850
+    SelfId: 944244608474293986
     SubobjectId: 6354883067772359257
-    InstanceId: 8248494463391901388
+    InstanceId: 17764295603122844940
     TemplateId: 804434200567944567
+  }
+}
+Objects {
+  Id: 724374342650602904
+  Name: "L2WinTrigger"
+  Transform {
+    Location {
+      X: -83350
+      Y: 10150
+      Z: 19800
+    }
+    Rotation {
+    }
+    Scale {
+      X: 50
+      Y: 50
+      Z: 1
+    }
+  }
+  ParentId: 17703299596797693643
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }

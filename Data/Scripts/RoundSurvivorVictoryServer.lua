@@ -28,6 +28,7 @@ local L1WIN_TRIGGER = script:GetCustomProperty("L1WinTrigger"):WaitForObject()
 local L2WIN_TRIGGER = script:GetCustomProperty("L2WinTrigger"):WaitForObject()
 local L3WIN_TRIGGER = script:GetCustomProperty("L3WinTrigger"):WaitForObject()
 local L4WIN_TRIGGER = script:GetCustomProperty("L4WinTrigger"):WaitForObject()
+local L5WIN_TRIGGER = script:GetCustomProperty("L5WinTrigger"):WaitForObject()
 local winner = nil
 local second = nil
 local third = nil
@@ -150,4 +151,5 @@ L1WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L2WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L3WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 L4WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
+L5WIN_TRIGGER.beginOverlapEvent:Connect(WinBeginOverlap)
 

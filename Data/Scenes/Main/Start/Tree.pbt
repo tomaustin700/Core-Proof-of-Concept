@@ -1,31 +1,24 @@
 Name: "Start"
-RootId: 16207422659821075962
+RootId: 14232829814450611953
 Objects {
-  Id: 13841496431693564669
-  Name: "Main Street Floor 01 - 8m x 8m"
+  Id: 14591195727212934560
+  Name: "Container - Hex- Rounded"
   Transform {
     Location {
-      X: -11900
-      Y: -14550
-      Z: 8000
+      X: -6050
+      Y: -26000
+      Z: 10350
     }
     Rotation {
+      Yaw: 89.9999924
     }
     Scale {
-      X: 6
-      Y: 10
+      X: 2
+      Y: 2
       Z: 1
     }
   }
-  ParentId: 16207422659821075962
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Building_Floor:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-  }
+  ParentId: 14232829814450611953
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40,7 +33,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13751408475123645462
+      Id: 6188929176580718838
     }
     Teams {
       IsTeamCollisionEnabled: true

@@ -183,9 +183,44 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         for _, player in pairs(Game.GetPlayers()) do
             player:ActivateFlying()
-            player:AddImpulse(Vector3.FORWARD * player.mass * -4000)
+            player:AddImpulse(Vector3.UP * player.mass * 1500)
 
         end
+
+        for _, player in pairs(Game.GetPlayers()) do
+            player.maxWalkSpeed = 1000
+        end
+
+
+    end
+
+    if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState == ABGS.GAME_STATE_ROUND_4_END) then
+        World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
+        World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("4Start").isEnabled = false
+
+
+
+        local start = World.FindObjectByName("5Start")
+        start.isEnabled = true
+
+        local numPlayers = #Game.GetPlayers()
+        local perPlayerDelay = PERIOD / numPlayers
+        for _, player in pairs(Game.GetPlayers()) do
+            player:Respawn({
+                position = start:GetPosition(),
+                rotation = start:GetRotation()
+            })
+            Task.Wait(perPlayerDelay)
+            player.maxWalkSpeed = 0
+
+        end
+
+
+    end
+
+    --L5 started so unfreeze players
+    if (newState == ABGS.GAME_STATE_ROUND_5 and oldState == ABGS.GAME_STATE_ROUND_5_START) then
 
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000

@@ -104,6 +104,12 @@ Objects {
         SelfId: 11370954541203355232
       }
     }
+    Overrides {
+      Name: "cs:L5WinTrigger"
+      ObjectReference {
+        SelfId: 16057217930382114906
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
