@@ -162,9 +162,9 @@ Objects {
   Name: "2Start"
   Transform {
     Location {
-      X: 16750
-      Y: 14200
-      Z: 21900
+      X: 16700
+      Y: 14900
+      Z: 21950
     }
     Rotation {
       Yaw: -179.999985

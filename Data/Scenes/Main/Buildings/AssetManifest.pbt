@@ -818,15 +818,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1104198953447072835
-  Name: "Object Domestic Doors & Creaks Set 01 SFX"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "sfxabp_object_domestic_door_ref"
-  }
-}
-Assets {
   Id: 1085692155132102910
   Name: "Decal Burnt Streaks 01"
   PlatformAssetType: 14

@@ -8,6 +8,7 @@ Objects {
       Z: 610
     }
     Rotation {
+      Yaw: 25
     }
     Scale {
       X: 88
@@ -83,6 +84,7 @@ Objects {
       Z: 290
     }
     Rotation {
+      Yaw: 25
     }
     Scale {
       X: 88
@@ -158,6 +160,7 @@ Objects {
       Z: 565
     }
     Rotation {
+      Yaw: 25
     }
     Scale {
       X: 60
@@ -232,6 +235,7 @@ Objects {
     Location {
     }
     Rotation {
+      Yaw: 25
     }
     Scale {
       X: 80
