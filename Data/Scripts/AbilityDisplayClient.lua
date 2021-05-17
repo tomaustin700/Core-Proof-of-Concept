@@ -77,7 +77,7 @@ function UpdateCurrentAbility()
             ICON:SetImage(DEFAULT_IMAGE)
         end
 
-        NAME_TEXT.text = currentAbility.name
+        --NAME_TEXT.text = currentAbility.name
         executeDuration = currentAbility.executePhaseSettings.duration
         recoveryDuration = currentAbility.recoveryPhaseSettings.duration
         cooldownDuration = currentAbility.cooldownPhaseSettings.duration

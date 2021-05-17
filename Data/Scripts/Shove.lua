@@ -1,29 +1,34 @@
-local Ability = script:GetCustomProperty("Ability")
+local Ability = script:GetCustomProperty("ShoveTemplate")
 
-function OnBindingPressed(player, bindingPressed)
-    if bindingPressed == "ability_primary" then
-        print "left click pressed"
-        local playersInRange = Game.FindPlayersInSphere(
-                                   (player:GetLookWorldRotation() *
-                                       (Vector3.FORWARD * 50)), 100)
-        for _, p in pairs(playersInRange) do
-            if player.id ~= p.id then
-                p:AddImpulse((player:GetLookWorldRotation() * Vector3.FORWARD) *
-                                 p.mass * 2000)
-            end
+function OnCast(ability)
+
+    local player = ability.owner
+    local playersInRange = Game.FindPlayersInSphere(player:GetWorldPosition(), 150)
+    for _, p in pairs(playersInRange) do
+        if player.id ~= p.id then
+
+            p:AddImpulse(Vector3.UP * p.mass * 500)
+            p:AddImpulse((player:GetLookWorldRotation() * Vector3.FORWARD) * p.mass * 800)
+            Task.Wait(0.1)
+            p:EnableRagdoll()
+
+            Task.Wait(2)
+            p:AddImpulse(Vector3.UP * p.mass * 500)
+
+            p:DisableRagdoll()
+
+            break
+
         end
-
-        Task.Wait(3)
-
     end
+
 end
 
 function OnPlayerJoined(player)
-    -- print "shove player joined triggered"
-    player.bindingPressedEvent:Connect(OnBindingPressed)
 
     local ability = World.SpawnAsset(Ability)
     ability.owner = player
+    ability.castEvent:Connect(OnCast)
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
