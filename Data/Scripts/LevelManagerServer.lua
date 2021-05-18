@@ -41,6 +41,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("Level5N").visibility = Visibility.FORCE_OFF
 
         if oldState == ABGS.GAME_STATE_END then
             World.FindObjectByName("Lobby").visibility = Visibility.FORCE_ON
@@ -208,6 +209,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState ==
          ABGS.GAME_STATE_ROUND_4_END) then
+        World.FindObjectByName("Level5N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("4Start").isEnabled = false

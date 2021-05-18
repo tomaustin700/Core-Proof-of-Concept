@@ -1,6 +1,38 @@
 Name: "Buildings"
 RootId: 7335477459098176817
 Objects {
+  Id: 8137900052842243658
+  Name: "Level5N"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7335477459098176817
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Level5N"
+  }
+}
+Objects {
   Id: 1359327369480474169
   Name: "Level5"
   Transform {
@@ -18,7 +50,6 @@ Objects {
   ChildIds: 10367898333576247643
   ChildIds: 14232829814450611953
   ChildIds: 2589406468880865152
-  ChildIds: 4285163367592114928
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31,38 +62,6 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
-  }
-}
-Objects {
-  Id: 4285163367592114928
-  Name: "Pads"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1359327369480474169
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Pads"
   }
 }
 Objects {
@@ -162,6 +161,38 @@ Objects {
   }
 }
 Objects {
+  Id: 17019276615035847583
+  Name: "Level4N"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7335477459098176817
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Level4N"
+  }
+}
+Objects {
   Id: 16634710550389161066
   Name: "Level4"
   Transform {
@@ -178,7 +209,6 @@ Objects {
   ParentId: 7335477459098176817
   ChildIds: 16207422659821075962
   ChildIds: 3130381744395711183
-  ChildIds: 14191478940390391519
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -194,38 +224,6 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
-  }
-}
-Objects {
-  Id: 14191478940390391519
-  Name: "Rings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16634710550389161066
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Rings"
   }
 }
 Objects {
