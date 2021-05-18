@@ -1968,7 +1968,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -76150
+      X: -75950
       Y: 14250
       Z: 19550
     }
@@ -2119,7 +2119,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -76550
+      X: -76350
       Y: 7000
       Z: 19550
     }
@@ -2270,7 +2270,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -76300
+      X: -76100
       Y: 10200
       Z: 19550
     }
@@ -2421,7 +2421,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -76550
+      X: -76350
       Y: 3450
       Z: 19550
     }
@@ -2572,7 +2572,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -75200
+      X: -74100
       Y: 15450
       Z: 17500
     }
@@ -2723,7 +2723,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -75200
+      X: -74100
       Y: 8200
       Z: 17500
     }
@@ -2874,7 +2874,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -75200
+      X: -74100
       Y: 11400
       Z: 17500
     }
@@ -3025,7 +3025,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -75200
+      X: -74100
       Y: 4650
       Z: 17500
     }
@@ -3176,7 +3176,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -72600
+      X: -71400
       Y: 3600
       Z: 16500
     }
@@ -3327,7 +3327,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -72600
+      X: -71400
       Y: 7150
       Z: 16500
     }
@@ -3478,7 +3478,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -72600
+      X: -71400
       Y: 10350
       Z: 16500
     }
@@ -3629,7 +3629,7 @@ Objects {
   Name: "JumpPad"
   Transform {
     Location {
-      X: -72600
+      X: -71400
       Y: 14400
       Z: 16500
     }
