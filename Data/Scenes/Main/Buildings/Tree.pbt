@@ -450,7 +450,6 @@ Objects {
   ChildIds: 17703299596797693643
   ChildIds: 14768814636993011725
   ChildIds: 9950718360320489293
-  ChildIds: 2084520394549679067
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -463,38 +462,6 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
-  }
-}
-Objects {
-  Id: 2084520394549679067
-  Name: "Pads"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14370466571844126172
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Pads_1"
   }
 }
 Objects {
