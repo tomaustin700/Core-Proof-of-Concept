@@ -145,7 +145,7 @@ Objects {
     AudioBP {
       AutoPlay: true
       Repeat: true
-      Volume: 0.25
+      Volume: 0.15
       Falloff: 3600
       Radius: 400
     }
@@ -239,7 +239,7 @@ Objects {
     }
     AutoPlay: true
     Repeat: true
-    Volume: 1.63170719
+    Volume: 1.8
     Falloff: -1
     Radius: 100000
   }
