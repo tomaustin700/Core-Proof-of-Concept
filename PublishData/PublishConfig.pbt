@@ -8,5 +8,6 @@ Tags: "Multiplayer"
 ScreenshotPaths: "C:\\Users\\TomA\\Desktop\\corescreenshot.png"
 OwnerId: "d52626d5cab84d0785d07202c79efcc7"
 SerializationVersion: 1
+CubemapPath: "C:/Users/TomA/Documents/My Games/Core/Saved/Maps/FallLMS/Screenshots/Cubemaps/Cubemap0001.png"
 IsQueued: true
 MinPlayersToStart: 2

@@ -239,7 +239,7 @@ Objects {
     }
     AutoPlay: true
     Repeat: true
-    Volume: 1.8
+    Volume: 2
     Falloff: -1
     Radius: 100000
   }
