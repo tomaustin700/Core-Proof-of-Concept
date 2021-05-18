@@ -1,4 +1,13 @@
 Assets {
+  Id: 16392338552185129515
+  Name: "\"Cyberpunk EDM Fusion\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_cyberpunk_edm_fusion_sections_kit_ref"
+  }
+}
+Assets {
   Id: 9250553188382621454
   Name: "Ambience Nature Wind 01 SFX"
   PlatformAssetType: 7

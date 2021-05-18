@@ -24,6 +24,7 @@ Objects {
   ChildIds: 1762394650260175503
   ChildIds: 5561596894153728145
   ChildIds: 3147085681161289114
+  ChildIds: 4204754570597714340
   ChildIds: 8975296893592495695
   UnregisteredParameters {
   }
@@ -97,6 +98,56 @@ Objects {
     }
     TemplateAsset {
       Id: 2857347357152813362
+    }
+  }
+}
+Objects {
+  Id: 4204754570597714340
+  Name: "\"Cyberpunk EDM Fusion\" Music Construction Kit (Sections) 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_cyberpunk_edm_fusion_sections_kit:14"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16392338552185129515
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 0.25
+      Falloff: 3600
+      Radius: 400
     }
   }
 }
@@ -191,7 +242,6 @@ Objects {
     Volume: 1.63170719
     Falloff: -1
     Radius: 100000
-    IsSpatializationEnabled: true
   }
 }
 Objects {
