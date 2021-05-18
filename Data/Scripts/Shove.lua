@@ -7,7 +7,7 @@ function OnCast(ability)
 
     local rayStart = player:GetWorldPosition() 
     local cameraForward = player:GetWorldRotation() * Vector3.FORWARD
-    local rayEnd = rayStart + cameraForward * 500
+    local rayEnd = rayStart + cameraForward * 200
 
     local hitResult = World.Raycast(rayStart, rayEnd, {
         ignorePlayers = player
