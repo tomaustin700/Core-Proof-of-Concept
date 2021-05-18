@@ -3,22 +3,27 @@ local Ability = script:GetCustomProperty("ShoveTemplate")
 function OnCast(ability)
 
     local player = ability.owner
-    local playersInRange = Game.FindPlayersInSphere(player:GetWorldPosition(), 150)
-    for _, p in pairs(playersInRange) do
-        if player.id ~= p.id then
+    
 
-            p:AddImpulse(Vector3.UP * p.mass * 500)
-            p:AddImpulse((player:GetLookWorldRotation() * Vector3.FORWARD) * p.mass * 800)
+    local rayStart = player:GetWorldPosition() 
+    local cameraForward = player:GetWorldRotation() * Vector3.FORWARD
+    local rayEnd = rayStart + cameraForward * 500
+
+    local hitResult = World.Raycast(rayStart, rayEnd, {
+        ignorePlayers = player
+    })
+
+    if hitResult and hitResult.other and hitResult.other:IsA("Player") then
+        if player.id ~= hitResult.other.id then
+            hitResult.other:AddImpulse(Vector3.UP * hitResult.other.mass * 500)
+            hitResult.other:AddImpulse((player:GetLookWorldRotation() * Vector3.FORWARD) * hitResult.other.mass * 800)
             Task.Wait(0.1)
-            p:EnableRagdoll()
+            hitResult.other:EnableRagdoll()
 
             Task.Wait(2)
-            p:AddImpulse(Vector3.UP * p.mass * 500)
+            hitResult.other:AddImpulse(Vector3.UP * hitResult.other.mass * 500)
 
-            p:DisableRagdoll()
-
-            break
-
+            hitResult.other:DisableRagdoll()
         end
     end
 
