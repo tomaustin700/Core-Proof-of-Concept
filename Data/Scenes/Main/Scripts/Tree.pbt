@@ -17,6 +17,7 @@ Objects {
   ParentId: 17045676539577920579
   ChildIds: 7522352910940128967
   ChildIds: 1663210721617485063
+  ChildIds: 3301317802733677486
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -30,6 +31,39 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 3301317802733677486
+  Name: "RayTest"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9265820898548009841
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6878642544564253041
+    }
   }
 }
 Objects {

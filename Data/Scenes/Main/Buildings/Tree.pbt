@@ -16096,7 +16096,6 @@ Objects {
     }
   }
   ParentId: 7899777597423611073
-  ChildIds: 4008053395848190369
   ChildIds: 5273744599941946058
   UnregisteredParameters {
     Overrides {
@@ -16389,87 +16388,6 @@ Objects {
   InstanceHistory {
     SelfId: 15781008494228796106
     SubobjectId: 15688263102280970080
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 4008053395848190369
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7981345218603792954
-  ChildIds: 1009191017266587232
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 10947277695106933521
-    SubobjectId: 10761919374321860283
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 1009191017266587232
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 4008053395848190369
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 4087356672711235101
-    SubobjectId: 4183767681506757559
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
@@ -19771,7 +19689,6 @@ Objects {
     }
   }
   ParentId: 9993829787433184485
-  ChildIds: 8967045916283323364
   ChildIds: 13870871815468080201
   UnregisteredParameters {
     Overrides {
@@ -20004,87 +19921,6 @@ Objects {
   InstanceHistory {
     SelfId: 9468097534357969248
     SubobjectId: 9355101491785254090
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 8967045916283323364
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11556509336751570887
-  ChildIds: 10999205113791488948
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 16987313661356562355
-    SubobjectId: 16792093918730816025
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 10999205113791488948
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 8967045916283323364
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 3695426978645122434
-    SubobjectId: 3602392570433847336
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
@@ -21724,7 +21560,6 @@ Objects {
     }
   }
   ParentId: 6421219104171444737
-  ChildIds: 10292000097833349629
   ChildIds: 15771380906236807242
   UnregisteredParameters {
     Overrides {
@@ -21957,87 +21792,6 @@ Objects {
   InstanceHistory {
     SelfId: 17039764411036910849
     SubobjectId: 17208228635447400619
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 10292000097833349629
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14888472816675656234
-  ChildIds: 12701386600779613484
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 14062642695190734620
-    SubobjectId: 13951593853622106806
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 12701386600779613484
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 10292000097833349629
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 7569255641971276889
-    SubobjectId: 7763618969565487603
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
@@ -22931,7 +22685,6 @@ Objects {
     }
   }
   ParentId: 4034043941427336463
-  ChildIds: 10947277695106933521
   ChildIds: 4028522375348941836
   UnregisteredParameters {
     Overrides {
@@ -23224,87 +22977,6 @@ Objects {
   InstanceHistory {
     SelfId: 15781008494228796106
     SubobjectId: 15688263102280970080
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 10947277695106933521
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14232950511799158065
-  ChildIds: 4087356672711235101
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 10947277695106933521
-    SubobjectId: 10761919374321860283
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 4087356672711235101
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 10947277695106933521
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 4087356672711235101
-    SubobjectId: 4183767681506757559
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
@@ -26728,7 +26400,6 @@ Objects {
     }
   }
   ParentId: 1896503325900898930
-  ChildIds: 16987313661356562355
   ChildIds: 15861082218711699102
   UnregisteredParameters {
     Overrides {
@@ -26961,87 +26632,6 @@ Objects {
   InstanceHistory {
     SelfId: 9468097534357969248
     SubobjectId: 9355101491785254090
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 16987313661356562355
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4502184278949583142
-  ChildIds: 3695426978645122434
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 16987313661356562355
-    SubobjectId: 16792093918730816025
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 3695426978645122434
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 16987313661356562355
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 3695426978645122434
-    SubobjectId: 3602392570433847336
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
@@ -28681,7 +28271,6 @@ Objects {
     }
   }
   ParentId: 3023483053636946984
-  ChildIds: 14062642695190734620
   ChildIds: 17197056643218700749
   UnregisteredParameters {
     Overrides {
@@ -28914,87 +28503,6 @@ Objects {
   InstanceHistory {
     SelfId: 17039764411036910849
     SubobjectId: 17208228635447400619
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 14062642695190734620
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 105525494002517295
-  ChildIds: 7569255641971276889
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  InstanceHistory {
-    SelfId: 14062642695190734620
-    SubobjectId: 13951593853622106806
-    InstanceId: 15978452250216796086
-    TemplateId: 11158564689558631822
-  }
-}
-Objects {
-  Id: 7569255641971276889
-  Name: "StaticTrigger"
-  Transform {
-    Location {
-      Y: 90
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.8
-      Z: 3
-    }
-  }
-  ParentId: 14062642695190734620
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 7569255641971276889
-    SubobjectId: 7763618969565487603
     InstanceId: 15978452250216796086
     TemplateId: 11158564689558631822
   }
