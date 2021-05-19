@@ -3817,6 +3817,6 @@ Assets {
   Marketplace {
     Description: "Giant Obelisk with Tron based aesthetic. "
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

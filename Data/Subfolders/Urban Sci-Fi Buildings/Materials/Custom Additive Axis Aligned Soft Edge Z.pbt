@@ -2,7 +2,7 @@ Assets {
   Id: 3022944580134280554
   Name: "Custom Additive Axis Aligned Soft Edge Z"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 9400480339689480952
     ParameterOverrides {

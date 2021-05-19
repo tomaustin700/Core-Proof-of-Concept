@@ -1151,5 +1151,5 @@ Assets {
       AssetId: "Basic_Rifle"
     }
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

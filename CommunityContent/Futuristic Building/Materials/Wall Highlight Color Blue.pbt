@@ -2,7 +2,7 @@ Assets {
   Id: 15263055008763382506
   Name: "Wall Highlight Color Blue"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 18190835432145168213
     ParameterOverrides {

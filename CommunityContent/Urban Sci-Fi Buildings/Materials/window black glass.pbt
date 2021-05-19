@@ -2,7 +2,7 @@ Assets {
   Id: 9730000078633001023
   Name: "window black glass"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 10766975867019021707
     ParameterOverrides {

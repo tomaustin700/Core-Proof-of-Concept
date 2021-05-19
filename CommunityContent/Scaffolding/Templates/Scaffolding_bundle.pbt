@@ -43,5 +43,5 @@ Assets {
     Version: "1.1.0"
     Description: "Walkable Scaffolding"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

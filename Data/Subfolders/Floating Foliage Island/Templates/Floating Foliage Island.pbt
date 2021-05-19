@@ -51,5 +51,5 @@ Assets {
     Version: "1.0.0"
     Description: "Foliage laden rock structure - great for floating in air or used as a terrain piece."
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

@@ -90,7 +90,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 120812.406
-            Y: -33750
+            Y: -29650
             Z: -39900
           }
         }

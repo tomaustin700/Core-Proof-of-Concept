@@ -49,5 +49,5 @@ Assets {
     Version: "1.1.0"
     Description: "Comes with a trigger."
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

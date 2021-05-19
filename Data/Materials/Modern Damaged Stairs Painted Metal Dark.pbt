@@ -2,7 +2,7 @@ Assets {
   Id: 13841958887620630136
   Name: "Modern Damaged Stairs Painted Metal Dark"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 2436680026600990936
     ParameterOverrides {

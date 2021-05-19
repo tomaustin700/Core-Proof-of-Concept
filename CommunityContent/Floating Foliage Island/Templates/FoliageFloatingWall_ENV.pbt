@@ -9974,6 +9974,6 @@ Assets {
   Marketplace {
     Description: "Foliage laden rock structure - great for floating in air or used as a terrain piece."
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

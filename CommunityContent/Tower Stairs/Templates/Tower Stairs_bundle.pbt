@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Normal tower stairs\r\n\r\n\r\n-Ahega0"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

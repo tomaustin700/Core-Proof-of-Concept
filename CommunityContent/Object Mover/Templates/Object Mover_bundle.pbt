@@ -40,5 +40,5 @@ Assets {
     Version: "1.0.0"
     Description: "This scrip will move an object from its start position to another. It has some basic properties for looping and delays. Ideal for platform mover"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 6906167164262197369
   Name: "Plastic"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 17892039050704465680
     ParameterOverrides {

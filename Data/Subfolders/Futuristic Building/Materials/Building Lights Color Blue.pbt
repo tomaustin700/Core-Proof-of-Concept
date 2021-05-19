@@ -2,7 +2,7 @@ Assets {
   Id: 3792098205244948265
   Name: "Building Lights Color Blue"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 18190835432145168213
     ParameterOverrides {

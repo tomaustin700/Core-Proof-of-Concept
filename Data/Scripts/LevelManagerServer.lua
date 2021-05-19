@@ -14,14 +14,14 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]] -- Internal custom properties
+
 local ABGS = require(script:GetCustomProperty("API"))
 local SCOREAPI = require(script:GetCustomProperty("ScoreManagerAPI"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
 -- User exposed properties
 local PERIOD = COMPONENT_ROOT:GetCustomProperty("Period")
-local RESPAWN_ON_ROUND_START = COMPONENT_ROOT:GetCustomProperty(
-                                   "RespawnOnRoundStart")
+local RESPAWN_ON_ROUND_START = COMPONENT_ROOT:GetCustomProperty("RespawnOnRoundStart")
 
 -- Check user properties
 if PERIOD < 0.0 then
@@ -42,6 +42,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level5N").visibility = Visibility.FORCE_OFF
+        World.FindObjectByName("LevelEnd").visibility = Visibility.FORCE_OFF
 
         if oldState == ABGS.GAME_STATE_END then
             World.FindObjectByName("Lobby").visibility = Visibility.FORCE_ON
@@ -63,33 +64,40 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- Spawn players at L1 Start
-    if (newState == ABGS.GAME_STATE_ROUND_1_START and oldState ==
-        ABGS.GAME_STATE_LOBBY) then
+    if (newState == ABGS.GAME_STATE_ROUND_1_START and oldState == ABGS.GAME_STATE_LOBBY) then
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Lobby").visibility = Visibility.FORCE_OFF
-        local start = World.FindObjectByName("1Start")
-        start.isEnabled = true
-        World.FindObjectByName("LobbySpawn").isEnabled = false
+
+        local spawns = World.FindObjectsByName("1Start")
+        for _, spawn in pairs(spawns) do
+            spawn.isEnabled = true
+        end
+
+        for _, spawn in pairs(World.FindObjectsByName("LobbySpawn")) do
+            spawn.isEnabled = false
+        end
 
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
+            local start = spawns[1]
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
             })
+            table.remove(spawns, 1)
+
             Task.Wait(perPlayerDelay)
             player.maxWalkSpeed = 0
 
         end
 
-        --ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_START) -- TEMP
+        -- ABGS.SetGameState(ABGS.GAME_STATE_ROUND_5_START) -- TEMP
 
     end
 
     -- L1 started so unfreeze players
-    if (newState == ABGS.GAME_STATE_ROUND_1 and oldState ==
-        ABGS.GAME_STATE_ROUND_1_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_1 and oldState == ABGS.GAME_STATE_ROUND_1_START) then
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
@@ -97,24 +105,30 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- Spawn players at L2 Start
-    if (newState == ABGS.GAME_STATE_ROUND_2_START and oldState ==
-        ABGS.GAME_STATE_ROUND_1_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_2_START and oldState == ABGS.GAME_STATE_ROUND_1_END) then
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level2N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level1").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("1Start").isEnabled = false
 
-        local start = World.FindObjectByName("2Start")
-        start.isEnabled = true
-        -- Enable L2 spawns here
+        local spawns = World.FindObjectsByName("2Start")
+        for _, spawn in pairs(spawns) do
+            spawn.isEnabled = true
+        end
+
+        for _, spawn in pairs(World.FindObjectsByName("1Start")) do
+            spawn.isEnabled = false
+        end
 
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
+            local start = spawns[1]
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
             })
+            table.remove(spawns, 1)
             Task.Wait(perPlayerDelay)
             player.maxWalkSpeed = 0
 
@@ -123,8 +137,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- L2 started so unfreeze players
-    if (newState == ABGS.GAME_STATE_ROUND_2 and oldState ==
-        ABGS.GAME_STATE_ROUND_2_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_2 and oldState == ABGS.GAME_STATE_ROUND_2_START) then
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
@@ -132,24 +145,30 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- Spawn players at L3 Start
-    if (newState == ABGS.GAME_STATE_ROUND_3_START and oldState ==
-        ABGS.GAME_STATE_ROUND_2_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_3_START and oldState == ABGS.GAME_STATE_ROUND_2_END) then
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level2").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level2N").visibility = Visibility.FORCE_OFF
-        World.FindObjectByName("2Start").isEnabled = false
 
-        local start = World.FindObjectByName("3Start")
-        start.isEnabled = true
+        local spawns = World.FindObjectsByName("3Start")
+        for _, spawn in pairs(spawns) do
+            spawn.isEnabled = true
+        end
+
+        for _, spawn in pairs(World.FindObjectsByName("2Start")) do
+            spawn.isEnabled = false
+        end
 
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
+            local start = spawns[1]
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
-            })
+            })            
+            table.remove(spawns, 1)
             Task.Wait(perPlayerDelay)
             player.maxWalkSpeed = 0
 
@@ -158,8 +177,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- L3 started so unfreeze players
-    if (newState == ABGS.GAME_STATE_ROUND_3 and oldState ==
-        ABGS.GAME_STATE_ROUND_3_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_3 and oldState == ABGS.GAME_STATE_ROUND_3_START) then
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
         end
@@ -167,23 +185,30 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- Spawn players at L4 Start
-    if (newState == ABGS.GAME_STATE_ROUND_4_START and oldState ==
-        ABGS.GAME_STATE_ROUND_3_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_4_START and oldState == ABGS.GAME_STATE_ROUND_3_END) then
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level3").visibility = Visibility.FORCE_OFF
         World.FindObjectByName("Level3N").visibility = Visibility.FORCE_OFF
-        World.FindObjectByName("3Start").isEnabled = false
 
-        local start = World.FindObjectByName("4Start")
-        start.isEnabled = true
+        local spawns = World.FindObjectsByName("4Start")
+        for _, spawn in pairs(spawns) do
+            spawn.isEnabled = true
+        end
+
+        for _, spawn in pairs(World.FindObjectsByName("3Start")) do
+            spawn.isEnabled = false
+        end
+
 
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
+            local start = spawns[1]
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
-            })
+            })  
+            table.remove(spawns, 1)
             Task.Wait(perPlayerDelay)
             player.maxWalkSpeed = 0
 
@@ -192,8 +217,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- L4 started so unfreeze players
-    if (newState == ABGS.GAME_STATE_ROUND_4 and oldState ==
-        ABGS.GAME_STATE_ROUND_4_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_4 and oldState == ABGS.GAME_STATE_ROUND_4_START) then
 
         for _, player in pairs(Game.GetPlayers()) do
             player:ActivateFlying()
@@ -207,26 +231,31 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState ==
-         ABGS.GAME_STATE_ROUND_4_END) then
+    if (newState == ABGS.GAME_STATE_ROUND_5_START and oldState == ABGS.GAME_STATE_ROUND_4_END) then
         World.FindObjectByName("Level5N").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level4").visibility = Visibility.FORCE_OFF
-        World.FindObjectByName("4Start").isEnabled = false
-        --World.FindObjectByName("1Start").isEnabled = false -- TEMP
 
-        local start = World.FindObjectByName("5Start")
-        start.isEnabled = true
+        local spawns = World.FindObjectsByName("5Start")
+        for _, spawn in pairs(spawns) do
+            spawn.isEnabled = true
+        end
+
+        for _, spawn in pairs(World.FindObjectsByName("4Start")) do
+            spawn.isEnabled = false
+        end
+
 
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
             player:ActivateWalking()
+            local start = spawns[1]
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()
-            })
-
+            })  
+            table.remove(spawns, 1)
             Task.Wait(perPlayerDelay)
             player.maxWalkSpeed = 0
 
@@ -235,8 +264,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
     end
 
     -- L5 started so unfreeze players
-    if (newState == ABGS.GAME_STATE_ROUND_5 and oldState ==
-        ABGS.GAME_STATE_ROUND_5_START) then
+    if (newState == ABGS.GAME_STATE_ROUND_5 and oldState == ABGS.GAME_STATE_ROUND_5_START) then
 
         for _, player in pairs(Game.GetPlayers()) do
             player.maxWalkSpeed = 1000
@@ -244,10 +272,13 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
     end
 
-    if (newState == ABGS.GAME_STATE_END and oldState ==
-        ABGS.GAME_STATE_ROUND_5_END) then
+    if (newState == ABGS.GAME_STATE_END and oldState == ABGS.GAME_STATE_ROUND_5_END) then
+        World.FindObjectByName("LevelEnd").visibility = Visibility.FORCE_ON
         World.FindObjectByName("Level5").visibility = Visibility.FORCE_OFF
-        World.FindObjectByName("5Start").isEnabled = false
+
+        for _, spawn in pairs(World.FindObjectsByName("5Start")) do
+            spawn.isEnabled = true
+        end
 
         local start = World.FindObjectByName("EndStart")
         start.isEnabled = true
@@ -255,7 +286,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         local numPlayers = #Game.GetPlayers()
         local perPlayerDelay = PERIOD / numPlayers
         for _, player in pairs(Game.GetPlayers()) do
-            --player:ActivateWalking()
+            -- player:ActivateWalking()
             player:Respawn({
                 position = start:GetPosition(),
                 rotation = start:GetRotation()

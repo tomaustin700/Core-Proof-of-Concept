@@ -24115,6 +24115,6 @@ Assets {
   Marketplace {
     Description: "Misccellaneous Apartment Building 1 (Tier 2)"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

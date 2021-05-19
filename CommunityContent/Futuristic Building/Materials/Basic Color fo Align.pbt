@@ -2,7 +2,7 @@ Assets {
   Id: 10462126635077689028
   Name: "Basic Color fo Align"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 9213062599532889944
     ParameterOverrides {

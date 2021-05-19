@@ -28590,6 +28590,6 @@ Assets {
   Marketplace {
     Description: "A simple set of obstacles with flying and boost jumping."
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

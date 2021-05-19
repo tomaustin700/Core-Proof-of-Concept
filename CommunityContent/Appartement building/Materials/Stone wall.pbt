@@ -2,7 +2,7 @@ Assets {
   Id: 12606401853504245853
   Name: "Stone wall"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 13443199950920918099
     ParameterOverrides {

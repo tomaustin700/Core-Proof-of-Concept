@@ -2,7 +2,7 @@ Assets {
   Id: 1045745059316198947
   Name: "Custom Magic Gem Family"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 1205133024444304745
     ParameterOverrides {

@@ -560,6 +560,6 @@ Assets {
   Marketplace {
     Description: "moving blocks"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }
